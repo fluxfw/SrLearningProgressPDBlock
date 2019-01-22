@@ -2,6 +2,8 @@
 
 namespace srag\Plugins\SrLearningProgressPDBlock\Utils;
 
+use srag\Plugins\SrLearningProgressPDBlock\Access\Ilias;
+
 /**
  * Trait SrLearningProgressPDBlockTrait
  *
@@ -11,4 +13,10 @@ namespace srag\Plugins\SrLearningProgressPDBlock\Utils;
  */
 trait SrLearningProgressPDBlockTrait {
 
+	/**
+	 * @return Ilias
+	 */
+	protected static function ilias(): Ilias {
+		return Ilias::getInstance();
+	}
 }
