@@ -42,6 +42,8 @@ abstract class BaseBlock extends ilBlockGUI {
 	 *
 	 */
 	protected function initBlock()/*: void*/ {
+		self::dic()->language()->loadLanguageModule("trac");
+
 		self::dic()->mainTemplate()->addCss(self::plugin()->directory() . "/css/srlearningprogresspdblock.css");
 
 		self::dic()->mainTemplate()->addJavaScript(self::plugin()->directory() . "/node_modules/d3/dist/d3.min.js");
@@ -49,8 +51,6 @@ abstract class BaseBlock extends ilBlockGUI {
 		$this->initTitle();
 
 		$this->initObjIds();
-
-		self::dic()->language()->loadLanguageModule("trac");
 	}
 
 

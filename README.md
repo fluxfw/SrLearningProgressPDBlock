@@ -16,6 +16,9 @@ Config:
 Personal desktop:
 ![Personal desktop](./doc/screenshots/personal_desktop.png)
 
+Course:
+![Course](./doc/screenshots/course.png)
+
 ### Dependencies
 * ILIAS 5.3
 * PHP >=7.0
