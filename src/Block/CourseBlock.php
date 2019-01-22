@@ -2,6 +2,8 @@
 
 namespace srag\Plugins\SrLearningProgressPDBlock\Block;
 
+use ilObject;
+
 /**
  * Class CourseBlock
  *
@@ -14,7 +16,15 @@ class CourseBlock extends BaseBlock {
 	/**
 	 * @inheritdoc
 	 */
-	protected function initRefIds()/*: void*/ {
-		$this->ref_ids = [ intval(filter_input(INPUT_GET, "ref_id")) ];
+	protected function initObjIds()/*: void*/ {
+		$this->obj_ids = [ intval(ilObject::_lookupObjectId(filter_input(INPUT_GET, "ref_id"))) ];
+	}
+
+
+	/**
+	 * @inheritdoc
+	 */
+	protected function initTitle()/*: void*/ {
+
 	}
 }

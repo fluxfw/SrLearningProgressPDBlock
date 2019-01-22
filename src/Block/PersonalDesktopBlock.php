@@ -14,7 +14,15 @@ class PersonalDesktopBlock extends BaseBlock {
 	/**
 	 * @inheritdoc
 	 */
-	protected function initRefIds()/*: void*/ {
-		$this->ref_ids = self::ilias()->courses()->getCoursesOfUser(self::dic()->user());;
+	protected function initObjIds()/*: void*/ {
+		$this->obj_ids = self::ilias()->courses()->getCoursesOfUser(self::dic()->user());;
+	}
+
+
+	/**
+	 * @inheritdoc
+	 */
+	protected function initTitle()/*: void*/ {
+		$this->setTitle(self::plugin()->translate("learning_progress_of_my_courses", self::LANG_MODULE_BLOCK));
 	}
 }

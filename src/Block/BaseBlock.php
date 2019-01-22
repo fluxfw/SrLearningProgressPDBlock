@@ -25,7 +25,7 @@ abstract class BaseBlock extends ilBlockGUI {
 	/**
 	 * @var int[]
 	 */
-	protected $ref_ids = [];
+	protected $obj_ids = [];
 
 
 	/**
@@ -46,9 +46,9 @@ abstract class BaseBlock extends ilBlockGUI {
 
 		self::dic()->mainTemplate()->addJavaScript(self::plugin()->directory() . "/node_modules/d3/dist/d3.min.js");
 
-		$this->setTitle(self::plugin()->translate("learning_progress", self::LANG_MODULE_BLOCK));
+		$this->initTitle();
 
-		$this->initRefIds();
+		$this->initObjIds();
 
 		self::dic()->language()->loadLanguageModule("trac");
 	}
@@ -58,7 +58,7 @@ abstract class BaseBlock extends ilBlockGUI {
 	 *
 	 */
 	public function fillDataSection()/*: void*/ {
-		$courses = array_reduce($this->ref_ids, function (array $data, int $obj_id): array {
+		$courses = array_reduce($this->obj_ids, function (array $data, int $obj_id): array {
 			$status = self::ilias()->learningProgress(self::dic()->user())->getStatus($obj_id);
 
 			if (!isset($data[$status])) {
@@ -91,7 +91,7 @@ abstract class BaseBlock extends ilBlockGUI {
 		$tpl = self::plugin()->template("chart.html", false, false);
 
 		$tpl->setVariable("DATA", json_encode($data));
-		$tpl->setVariable("COUNT", count($this->ref_ids));
+		$tpl->setVariable("COUNT", count($this->obj_ids));
 
 		$this->setDataSection(self::output()->getHTML($tpl));
 	}
@@ -116,6 +116,13 @@ abstract class BaseBlock extends ilBlockGUI {
 	/**
 	 *
 	 */
-	protected abstract function initRefIds()/*: void*/
+	protected abstract function initObjIds()/*: void*/
+	;
+
+
+	/**
+	 *
+	 */
+	protected abstract function initTitle()/*: void*/
 	;
 }
