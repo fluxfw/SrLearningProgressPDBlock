@@ -71,6 +71,7 @@ return array(
     'srag\\LibrariesNamespaceChanger\\LibrariesNamespaceChanger' => $vendorDir . '/srag/librariesnamespacechanger/src/LibrariesNamespaceChanger.php',
     'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\Config' => $baseDir . '/src/Config/Config.php',
     'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\ConfigFormGUI' => $baseDir . '/src/Config/ConfigFormGUI.php',
+    'srag\\Plugins\\SrLearningProgressPDBlock\\Search\\PersonalDesktopGUI' => $baseDir . '/src/PersonalDesktop/PersonalDesktopGUI.php',
     'srag\\Plugins\\SrLearningProgressPDBlock\\Utils\\SrLearningProgressPDBlockTrait' => $baseDir . '/src/Utils/SrLearningProgressPDBlockTrait.php',
     'srag\\RemovePluginDataConfirm\\SrLearningProgressPDBlock\\AbstractPluginUninstallTrait' => $vendorDir . '/srag/removeplugindataconfirm/src/AbstractPluginUninstallTrait.php',
     'srag\\RemovePluginDataConfirm\\SrLearningProgressPDBlock\\AbstractRemovePluginDataConfirm' => $vendorDir . '/srag/removeplugindataconfirm/src/AbstractRemovePluginDataConfirm.php',
