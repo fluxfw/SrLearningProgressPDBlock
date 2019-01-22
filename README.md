@@ -10,7 +10,8 @@ git clone git@git.studer-raimann.ch:ILIAS/Plugins/SrLearningProgressPDBlock.git 
 Update, activate and config the plugin in the ILIAS Plugin Administration
 
 ### Some screenshots
-TODO
+Config:
+![Config](./doc/screenshots/config.png)
 
 ### Dependencies
 * ILIAS 5.3

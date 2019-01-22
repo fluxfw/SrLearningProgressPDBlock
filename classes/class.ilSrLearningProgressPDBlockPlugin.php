@@ -2,6 +2,7 @@
 
 require_once __DIR__ . "/../vendor/autoload.php";
 
+use srag\Plugins\SrLearningProgressPDBlock\Config\Config;
 use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
 use srag\RemovePluginDataConfirm\SrLearningProgressPDBlock\PluginUninstallTrait;
 
@@ -56,6 +57,6 @@ class ilSrLearningProgressPDBlockPlugin extends ilUserInterfaceHookPlugin {
 	 * @inheritdoc
 	 */
 	protected function deleteData()/*: void*/ {
-
+		self::dic()->database()->dropTable(Config::TABLE_NAME, false);
 	}
 }

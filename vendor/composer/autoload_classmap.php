@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'SrLearningProgressPDBlockRemoveDataConfirm' => $baseDir . '/classes/uninstall/class.SrLearningProgressPDBlockRemoveDataConfirm.php',
+    'ilSrLearningProgressPDBlockConfigGUI' => $baseDir . '/classes/class.ilSrLearningProgressPDBlockConfigGUI.php',
     'ilSrLearningProgressPDBlockPlugin' => $baseDir . '/classes/class.ilSrLearningProgressPDBlockPlugin.php',
     'ilSrLearningProgressPDBlockUIHookGUI' => $baseDir . '/classes/class.ilSrLearningProgressPDBlockUIHookGUI.php',
     'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\ActiveRecordConfig' => $vendorDir . '/srag/activerecordconfig/src/ActiveRecordConfig.php',
@@ -68,6 +69,8 @@ return array(
     'srag\\DIC\\SrLearningProgressPDBlock\\Version\\Version' => $vendorDir . '/srag/dic/src/Version/Version.php',
     'srag\\DIC\\SrLearningProgressPDBlock\\Version\\VersionInterface' => $vendorDir . '/srag/dic/src/Version/VersionInterface.php',
     'srag\\LibrariesNamespaceChanger\\LibrariesNamespaceChanger' => $vendorDir . '/srag/librariesnamespacechanger/src/LibrariesNamespaceChanger.php',
+    'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\Config' => $baseDir . '/src/Config/Config.php',
+    'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\ConfigFormGUI' => $baseDir . '/src/Config/ConfigFormGUI.php',
     'srag\\Plugins\\SrLearningProgressPDBlock\\Utils\\SrLearningProgressPDBlockTrait' => $baseDir . '/src/Utils/SrLearningProgressPDBlockTrait.php',
     'srag\\RemovePluginDataConfirm\\SrLearningProgressPDBlock\\AbstractPluginUninstallTrait' => $vendorDir . '/srag/removeplugindataconfirm/src/AbstractPluginUninstallTrait.php',
     'srag\\RemovePluginDataConfirm\\SrLearningProgressPDBlock\\AbstractRemovePluginDataConfirm' => $vendorDir . '/srag/removeplugindataconfirm/src/AbstractRemovePluginDataConfirm.php',

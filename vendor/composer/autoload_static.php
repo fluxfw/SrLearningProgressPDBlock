@@ -4,13 +4,13 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit85442f6844a11e7759c1b2726154a12e
+class ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e
 {
     public static $prefixLengthsPsr4 = array (
         's' => 
         array (
             'srag\\RemovePluginDataConfirm\\' => 29,
-            'srag\\Plugins\\SrLearningProgressPDBlock\\' => 29,
+            'srag\\Plugins\\SrLearningProgressPDBlock\\' => 39,
             'srag\\LibrariesNamespaceChanger\\' => 31,
             'srag\\DIC\\' => 9,
             'srag\\CustomInputGUIs\\' => 21,
@@ -23,7 +23,7 @@ class ComposerStaticInit85442f6844a11e7759c1b2726154a12e
         array (
             0 => __DIR__ . '/..' . '/srag/removeplugindataconfirm/src',
         ),
-        'srag\\Plugins\\SrLearningProgressPDBlock\\' =>
+        'srag\\Plugins\\SrLearningProgressPDBlock\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
@@ -47,6 +47,7 @@ class ComposerStaticInit85442f6844a11e7759c1b2726154a12e
 
     public static $classMap = array (
         'SrLearningProgressPDBlockRemoveDataConfirm' => __DIR__ . '/../..' . '/classes/uninstall/class.SrLearningProgressPDBlockRemoveDataConfirm.php',
+        'ilSrLearningProgressPDBlockConfigGUI' => __DIR__ . '/../..' . '/classes/class.ilSrLearningProgressPDBlockConfigGUI.php',
         'ilSrLearningProgressPDBlockPlugin' => __DIR__ . '/../..' . '/classes/class.ilSrLearningProgressPDBlockPlugin.php',
         'ilSrLearningProgressPDBlockUIHookGUI' => __DIR__ . '/../..' . '/classes/class.ilSrLearningProgressPDBlockUIHookGUI.php',
         'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\ActiveRecordConfig' => __DIR__ . '/..' . '/srag/activerecordconfig/src/ActiveRecordConfig.php',
@@ -108,6 +109,8 @@ class ComposerStaticInit85442f6844a11e7759c1b2726154a12e
         'srag\\DIC\\SrLearningProgressPDBlock\\Version\\Version' => __DIR__ . '/..' . '/srag/dic/src/Version/Version.php',
         'srag\\DIC\\SrLearningProgressPDBlock\\Version\\VersionInterface' => __DIR__ . '/..' . '/srag/dic/src/Version/VersionInterface.php',
         'srag\\LibrariesNamespaceChanger\\LibrariesNamespaceChanger' => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src/LibrariesNamespaceChanger.php',
+        'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\Config' => __DIR__ . '/../..' . '/src/Config/Config.php',
+        'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\ConfigFormGUI' => __DIR__ . '/../..' . '/src/Config/ConfigFormGUI.php',
         'srag\\Plugins\\SrLearningProgressPDBlock\\Utils\\SrLearningProgressPDBlockTrait' => __DIR__ . '/../..' . '/src/Utils/SrLearningProgressPDBlockTrait.php',
         'srag\\RemovePluginDataConfirm\\SrLearningProgressPDBlock\\AbstractPluginUninstallTrait' => __DIR__ . '/..' . '/srag/removeplugindataconfirm/src/AbstractPluginUninstallTrait.php',
         'srag\\RemovePluginDataConfirm\\SrLearningProgressPDBlock\\AbstractRemovePluginDataConfirm' => __DIR__ . '/..' . '/srag/removeplugindataconfirm/src/AbstractRemovePluginDataConfirm.php',
@@ -119,9 +122,9 @@ class ComposerStaticInit85442f6844a11e7759c1b2726154a12e
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit85442f6844a11e7759c1b2726154a12e::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit85442f6844a11e7759c1b2726154a12e::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit85442f6844a11e7759c1b2726154a12e::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e::$classMap;
 
         }, null, ClassLoader::class);
     }

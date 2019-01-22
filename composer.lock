@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "098ea90b20612e05a7a7bdac59a65cca",
+    "content-hash": "1581db214dc2557179bf58b49ceec578",
     "packages": [
         {
             "name": "srag/activerecordconfig",
