@@ -29,7 +29,7 @@ Course:
 * [srag/dic](https://packagist.org/packages/srag/dic)
 * [srag/librariesnamespacechanger](https://packagist.org/packages/srag/librariesnamespacechanger)
 * [srag/removeplugindataconfirm](https://packagist.org/packages/srag/removeplugindataconfirm)
-* [d3-legend](https://www.npmjs.com/package/d3-legend)
+* [d3](https://www.npmjs.com/package/d3)
 
 Please use it for further development!
 
