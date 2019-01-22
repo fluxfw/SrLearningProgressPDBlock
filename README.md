@@ -13,6 +13,9 @@ Update, activate and config the plugin in the ILIAS Plugin Administration
 Config:
 ![Config](./doc/screenshots/config.png)
 
+Personal desktop:
+![Personal desktop](./doc/screenshots/personal_desktop.png)
+
 ### Dependencies
 * ILIAS 5.3
 * PHP >=7.0

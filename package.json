@@ -1,5 +1,5 @@
 {
-  "name": "srag.srlppd",
+  "name": "srag.srlearningprogresspdblock",
   "description": "",
   "keywords": [
     "ILIAS",
@@ -10,8 +10,7 @@
     "srag <support-custom1@studer-raimann.ch> (https://studer-raimann.ch)"
   ],
   "dependencies": {
-    "d3": "^5.7.0",
-    "d3-legend": "^1.0.0"
+    "d3": "^5.7.0"
   },
   "private": true
 }
