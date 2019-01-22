@@ -88,12 +88,16 @@ abstract class BaseBlock extends ilBlockGUI {
 			return ($data["value"] > 0);
 		}));
 
-		$tpl = self::plugin()->template("chart.html", false, false);
+		if (count($data) > 0) {
+			$tpl = self::plugin()->template("chart.html", false, false);
 
-		$tpl->setVariable("DATA", json_encode($data));
-		$tpl->setVariable("COUNT", count($this->obj_ids));
+			$tpl->setVariable("DATA", json_encode($data));
+			$tpl->setVariable("COUNT", count($this->obj_ids));
 
-		$this->setDataSection(self::output()->getHTML($tpl));
+			$this->setDataSection(self::output()->getHTML($tpl));
+		} else {
+			$this->setDataSection(self::plugin()->translate("none", self::LANG_MODULE_BLOCK));
+		}
 	}
 
 
