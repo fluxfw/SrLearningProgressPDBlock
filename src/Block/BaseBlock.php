@@ -33,8 +33,20 @@ abstract class BaseBlock extends ilBlockGUI {
 	 */
 	public function __construct() {
 		parent::__construct();
+	}
 
-		$this->initBlock();
+
+	/**
+	 * @return string
+	 */
+	public function getHTML(): string {
+		if ($this->enabled()) {
+			$this->initBlock();
+
+			return parent::getHTML();
+		} else {
+			return "";
+		}
 	}
 
 
@@ -115,6 +127,12 @@ abstract class BaseBlock extends ilBlockGUI {
 	public static function isRepositoryObject(): bool {
 		return false;
 	}
+
+
+	/**
+	 * @return bool
+	 */
+	protected abstract function enabled(): bool;
 
 
 	/**
