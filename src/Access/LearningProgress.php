@@ -68,6 +68,22 @@ class LearningProgress {
 	/**
 	 * @param int $obj_id
 	 *
+	 * @return bool
+	 */
+	public function enabled(int $obj_id): bool {
+		$result = self::dic()->database()->queryF('SELECT u_mode FROM ut_lp_settings WHERE obj_id=%s', [ "integer" ], [ $obj_id ]);
+
+		if (($row = $result->fetchAssoc()) !== false) {
+			return (intval($row["u_mode"]) === ilLPObjSettings::LP_MODE_COLLECTION);
+		} else {
+			return false;
+		}
+	}
+
+
+	/**
+	 * @param int $obj_id
+	 *
 	 * @return int
 	 */
 	public function getStatus(int $obj_id): int {

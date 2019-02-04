@@ -14,6 +14,14 @@ class PersonalDesktopBlock extends BaseBlock {
 	/**
 	 * @inheritdoc
 	 */
+	protected function enabled(): bool {
+		return true;
+	}
+
+
+	/**
+	 * @inheritdoc
+	 */
 	protected function initObjIds()/*: void*/ {
 		$this->obj_ids = self::ilias()->courses()->getCoursesOfUser(self::dic()->user());;
 	}
