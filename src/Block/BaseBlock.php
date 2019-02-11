@@ -70,7 +70,9 @@ abstract class BaseBlock extends ilBlockGUI {
 	 *
 	 */
 	public function fillDataSection()/*: void*/ {
-		$courses = array_reduce($this->obj_ids, function (array $data, int $obj_id): array {
+		$courses = array_reduce(array_filter($this->obj_ids, function (int $obj_id): bool {
+			return self::access()->hasReadAccess($obj_id);
+		}), function (array $data, int $obj_id): array {
 			$status = self::ilias()->learningProgress(self::dic()->user())->getStatus($obj_id);
 
 			if (!isset($data[$status])) {
