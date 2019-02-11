@@ -51,8 +51,16 @@ final class Courses {
 	 * @return int[]
 	 */
 	public function getCoursesOfUser(ilObjUser $user): array {
-		$result = self::dic()->database()->queryF("SELECT obj_id FROM obj_members WHERE usr_id=%s", [ "integer" ], [
-			$user->getId()
+		$result = self::dic()->database()->queryF("SELECT obj_id FROM obj_members WHERE usr_id=%s AND (admin=%s OR tutor=%s OR member=%s)", [
+			"integer",
+			"integer",
+			"integer",
+			"integer"
+		], [
+			$user->getId(),
+			1,
+			1,
+			1
 		]);
 
 		$obj_ids = [];

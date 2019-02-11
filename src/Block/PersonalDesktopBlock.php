@@ -23,7 +23,7 @@ class PersonalDesktopBlock extends BaseBlock {
 	 * @inheritdoc
 	 */
 	protected function initObjIds()/*: void*/ {
-		$this->obj_ids = self::ilias()->courses()->getCoursesOfUser(self::dic()->user());;
+		$this->obj_ids = self::ilias()->courses()->getCoursesOfUser(self::dic()->user());
 	}
 
 

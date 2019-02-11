@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.2.1]
+- Fix count courses
+- Fix get courses of current user
+
 ## [1.2.0]
 - Fix display on course on short url
 - Adjust completed color
