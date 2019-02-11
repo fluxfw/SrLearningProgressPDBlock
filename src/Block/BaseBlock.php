@@ -70,9 +70,11 @@ abstract class BaseBlock extends ilBlockGUI {
 	 *
 	 */
 	public function fillDataSection()/*: void*/ {
-		$courses = array_reduce(array_filter($this->obj_ids, function (int $obj_id): bool {
+		$obj_ids = array_filter($this->obj_ids, function (int $obj_id): bool {
 			return self::access()->hasReadAccess($obj_id);
-		}), function (array $data, int $obj_id): array {
+		});
+
+		$courses = array_reduce($obj_ids, function (array $data, int $obj_id): array {
 			$status = self::ilias()->learningProgress(self::dic()->user())->getStatus($obj_id);
 
 			if (!isset($data[$status])) {
@@ -102,11 +104,11 @@ abstract class BaseBlock extends ilBlockGUI {
 			return ($data["value"] > 0);
 		}));
 
-		if (count($data) > 0) {
+		if (count($obj_ids) > 0 && count($data) > 0) {
 			$tpl = self::plugin()->template("chart.html", false, false);
 
 			$tpl->setVariable("DATA", json_encode($data));
-			$tpl->setVariable("COUNT", count($this->obj_ids));
+			$tpl->setVariable("COUNT", count($obj_ids));
 
 			$this->setDataSection(self::output()->getHTML($tpl));
 		} else {
