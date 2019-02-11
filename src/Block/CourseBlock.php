@@ -15,6 +15,8 @@ use ilObjectLP;
  */
 class CourseBlock extends BaseBlock {
 
+	const GET_PARAM_REF_ID = "ref_id";
+	const GET_PARAM_TARGET = "target";
 	/**
 	 * @var int
 	 */
@@ -29,7 +31,7 @@ class CourseBlock extends BaseBlock {
 	 * CourseBlock constructor
 	 */
 	public function __construct() {
-		$this->course_ref_id = intval(filter_input(INPUT_GET, "ref_id"));
+		$this->course_ref_id = $this->filterRefId();
 		$this->course_obj_id = intval(ilObject::_lookupObjectId($this->course_ref_id));
 
 		parent::__construct();
@@ -73,5 +75,27 @@ class CourseBlock extends BaseBlock {
 	 */
 	protected function initTitle()/*: void*/ {
 		$this->setTitle(self::plugin()->translate("learning_progress", self::LANG_MODULE_BLOCK));
+	}
+
+
+	/**
+	 * @return int|null
+	 */
+	private function filterRefId()/*: ?int*/ {
+		$obj_ref_id = filter_input(INPUT_GET, self::GET_PARAM_REF_ID);
+
+		if ($obj_ref_id === NULL) {
+			$param_target = filter_input(INPUT_GET, self::GET_PARAM_TARGET);
+
+			$obj_ref_id = explode('_', $param_target)[1];
+		}
+
+		$obj_ref_id = intval($obj_ref_id);
+
+		if ($obj_ref_id > 0) {
+			return $obj_ref_id;
+		} else {
+			return NULL;
+		}
 	}
 }

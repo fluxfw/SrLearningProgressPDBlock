@@ -69,6 +69,7 @@ return array(
     'srag\\DIC\\SrLearningProgressPDBlock\\Version\\Version' => $vendorDir . '/srag/dic/src/Version/Version.php',
     'srag\\DIC\\SrLearningProgressPDBlock\\Version\\VersionInterface' => $vendorDir . '/srag/dic/src/Version/VersionInterface.php',
     'srag\\LibrariesNamespaceChanger\\LibrariesNamespaceChanger' => $vendorDir . '/srag/librariesnamespacechanger/src/LibrariesNamespaceChanger.php',
+    'srag\\Plugins\\SrLearningProgressPDBlock\\Access\\Access' => $baseDir . '/src/Access/Access.php',
     'srag\\Plugins\\SrLearningProgressPDBlock\\Access\\Courses' => $baseDir . '/src/Access/Courses.php',
     'srag\\Plugins\\SrLearningProgressPDBlock\\Access\\Ilias' => $baseDir . '/src/Access/Ilias.php',
     'srag\\Plugins\\SrLearningProgressPDBlock\\Access\\LearningProgress' => $baseDir . '/src/Access/LearningProgress.php',
