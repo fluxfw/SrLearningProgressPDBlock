@@ -26,7 +26,7 @@ class LearningProgress {
 	const LP_STATUS_COLOR = [
 		ilLPStatus::LP_STATUS_NOT_ATTEMPTED_NUM => "#DDDDDD",
 		ilLPStatus::LP_STATUS_IN_PROGRESS_NUM => "#F6D842",
-		ilLPStatus::LP_STATUS_COMPLETED_NUM => "#60B060",
+		ilLPStatus::LP_STATUS_COMPLETED_NUM => "#BDCF32",
 		ilLPStatus::LP_STATUS_FAILED => "#B06060"
 	];
 	/**
