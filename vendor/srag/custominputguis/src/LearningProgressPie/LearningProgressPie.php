@@ -31,6 +31,7 @@ class LearningProgressPie {
 		ilLPStatus::LP_STATUS_COMPLETED_NUM => "#BDCF32",
 		ilLPStatus::LP_STATUS_FAILED => "#B06060"
 	];
+	const BASE_ID = "learningprogresspie_";
 	/**
 	 * @var bool
 	 */
@@ -46,7 +47,11 @@ class LearningProgressPie {
 	/**
 	 * @var string
 	 */
-	protected $id;
+	protected $id = "";
+	/**
+	 * @var bool
+	 */
+	protected $show_legend = true;
 
 
 	/**
@@ -94,6 +99,18 @@ class LearningProgressPie {
 
 
 	/**
+	 * @param bool show_legend
+	 *
+	 * @return self
+	 */
+	public function withShowLegend(bool $show_legend): self {
+		$this->show_legend = $show_legend;
+
+		return $this;
+	}
+
+
+	/**
 	 *
 	 */
 	private function initJs()/*: void*/ {
@@ -104,6 +121,8 @@ class LearningProgressPie {
 			$dir = "./" . substr($dir, strpos($dir, "/Customizing/") + 1);
 
 			self::dic()->mainTemplate()->addJavaScript($dir . "/../../node_modules/d3/dist/d3.min.js");
+
+			self::dic()->mainTemplate()->addCss($dir . "/css/learningprogresspie.css");
 		}
 	}
 
@@ -126,10 +145,6 @@ class LearningProgressPie {
 				return $data;
 			}, []);
 
-			$data = array_filter($data, function (int $data): bool {
-				return ($data > 0);
-			});
-
 			$data = array_map(function (int $status) use ($data): array {
 				return [
 					"color" => self::LP_STATUS_COLOR[$status],
@@ -139,6 +154,10 @@ class LearningProgressPie {
 				];
 			}, self::LP_STATUS);
 
+			$data = array_filter($data, function (array $data): bool {
+				return ($data["value"] > 0);
+			});
+
 			$data = array_values($data);
 
 			if (count($data) > 0) {
@@ -146,9 +165,10 @@ class LearningProgressPie {
 
 				$tpl = new ilTemplate(__DIR__ . "/templates/chart.html", false, false);
 
-				$tpl->setVariable("ID", $this->id);
+				$tpl->setVariable("ID", self::BASE_ID . $this->id);
 				$tpl->setVariable("DATA", json_encode($data));
-				$tpl->setVariable("COUNT", count($this->obj_ids));
+				$tpl->setVariable("COUNT", json_encode(count($this->obj_ids)));
+				$tpl->setVariable("SHOW_LEGEND", json_encode($this->show_legend));
 
 				return self::output()->getHTML($tpl);
 			}
