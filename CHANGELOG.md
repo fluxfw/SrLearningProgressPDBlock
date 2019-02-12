@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.2.2]
+- Using LearningProgressPie from CustomInputGUIs
+
 ## [1.2.1]
 - Fix count courses
 - Fix get courses of current user
