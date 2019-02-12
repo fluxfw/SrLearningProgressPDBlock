@@ -3,10 +3,9 @@
 namespace srag\Plugins\SrLearningProgressPDBlock\Block;
 
 use ilBlockGUI;
-use ilLPStatus;
 use ilSrLearningProgressPDBlockPlugin;
+use srag\CustomInputGUIs\SrLearningProgressPDBlock\CustomInputGUIsTrait;
 use srag\DIC\SrLearningProgressPDBlock\DICTrait;
-use srag\Plugins\SrLearningProgressPDBlock\Access\LearningProgress;
 use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
 
 /**
@@ -20,6 +19,7 @@ abstract class BaseBlock extends ilBlockGUI {
 
 	use DICTrait;
 	use SrLearningProgressPDBlockTrait;
+	use CustomInputGUIsTrait;
 	const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
 	const LANG_MODULE_BLOCK = "block";
 	/**
@@ -54,12 +54,6 @@ abstract class BaseBlock extends ilBlockGUI {
 	 *
 	 */
 	protected function initBlock()/*: void*/ {
-		self::dic()->language()->loadLanguageModule("trac");
-
-		self::dic()->mainTemplate()->addCss(self::plugin()->directory() . "/css/srlearningprogresspdblock.css");
-
-		self::dic()->mainTemplate()->addJavaScript(self::plugin()->directory() . "/node_modules/d3/dist/d3.min.js");
-
 		$this->initTitle();
 
 		$this->initObjIds();
@@ -74,43 +68,11 @@ abstract class BaseBlock extends ilBlockGUI {
 			return self::access()->hasReadAccess($obj_id);
 		});
 
-		$courses = array_reduce($obj_ids, function (array $data, int $obj_id): array {
-			$status = self::ilias()->learningProgress(self::dic()->user())->getStatus($obj_id);
+		$pie = self::output()->getHTML(self::customInputGUIs()->LearningProgressPie()->withObjIds($obj_ids)->withUsrId(self::dic()->user()->getId())
+			->withId(self::getBlockType()));
 
-			if (!isset($data[$status])) {
-				$data[$status] = 0;
-			}
-
-			$data[$status] ++;
-
-			return $data;
-		}, []);
-
-		$data = array_map(function (int $status) use ($courses): array {
-			return [
-				"color" => LearningProgress::LP_STATUS_COLOR[$status],
-				"label" => $courses[$status],
-				"title" => self::ilias()->learningProgress(self::dic()->user())->getText($status),
-				"value" => $courses[$status]
-			];
-		}, [
-			ilLPStatus::LP_STATUS_NOT_ATTEMPTED_NUM,
-			ilLPStatus::LP_STATUS_IN_PROGRESS_NUM,
-			ilLPStatus::LP_STATUS_COMPLETED_NUM,
-			ilLPStatus::LP_STATUS_FAILED_NUM
-		]);
-
-		$data = array_values(array_filter($data, function (array $data): bool {
-			return ($data["value"] > 0);
-		}));
-
-		if (count($obj_ids) > 0 && count($data) > 0) {
-			$tpl = self::plugin()->template("chart.html", false, false);
-
-			$tpl->setVariable("DATA", json_encode($data));
-			$tpl->setVariable("COUNT", count($obj_ids));
-
-			$this->setDataSection(self::output()->getHTML($tpl));
+		if (!empty($pie)) {
+			$this->setDataSection($pie);
 		} else {
 			$this->setDataSection(self::plugin()->translate("none", self::LANG_MODULE_BLOCK));
 		}
