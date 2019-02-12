@@ -4,7 +4,7 @@ namespace srag\Plugins\SrLearningProgressPDBlock\Access;
 
 use ilObject;
 use ilSrTilePlugin;
-use srag\DIC\SrTile\DICTrait;
+use srag\DIC\SrLearningProgressPDBlock\DICTrait;
 use srag\Plugins\SrTile\Utils\SrTileTrait;
 
 /**
