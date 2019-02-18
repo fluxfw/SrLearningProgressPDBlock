@@ -68,7 +68,7 @@ abstract class BaseBlock extends ilBlockGUI {
 			return self::access()->hasReadAccess($obj_id);
 		});
 
-		$pie = self::output()->getHTML(self::customInputGUIs()->LearningProgressPie()->withObjIds($obj_ids)->withUsrId(self::dic()->user()->getId())
+		$pie = self::output()->getHTML(self::customInputGUIs()->learningProgressPie()->withObjIds($obj_ids)->withUsrId(self::dic()->user()->getId())
 			->withId(self::getBlockType())->withShowLegend(true));
 
 		if (!empty($pie)) {
