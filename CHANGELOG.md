@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.2.4]
+- Fix an another dependency to SrTile
+
 ## [1.2.3]
 - Fix dependency to SrTile
 
