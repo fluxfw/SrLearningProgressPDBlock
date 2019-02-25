@@ -3,9 +3,9 @@
 namespace srag\Plugins\SrLearningProgressPDBlock\Access;
 
 use ilObject;
-use ilSrTilePlugin;
+use ilSrLearningProgressPDBlockPlugin;
 use srag\DIC\SrLearningProgressPDBlock\DICTrait;
-use srag\Plugins\SrTile\Utils\SrTileTrait;
+use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
 
 /**
  * Class Access
@@ -17,8 +17,8 @@ use srag\Plugins\SrTile\Utils\SrTileTrait;
 final class Access {
 
 	use DICTrait;
-	use SrTileTrait;
-	const PLUGIN_CLASS_NAME = ilSrTilePlugin::class;
+	use SrLearningProgressPDBlockTrait;
+	const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
 	/**
 	 * @var self
 	 */
