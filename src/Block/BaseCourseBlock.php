@@ -6,13 +6,13 @@ use ilLPCollection;
 use ilObjectLP;
 
 /**
- * Class CourseBlock
+ * Class BaseCourseBlock
  *
  * @package srag\Plugins\SrLearningProgressPDBlock\Block
  *
  * @author  studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  */
-class CourseBlock extends BaseBlock {
+abstract class BaseCourseBlock extends BaseBlock {
 
 	const GET_PARAM_REF_ID = "ref_id";
 	const GET_PARAM_TARGET = "target";

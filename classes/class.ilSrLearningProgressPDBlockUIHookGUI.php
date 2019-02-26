@@ -5,8 +5,10 @@ require_once __DIR__ . "/../vendor/autoload.php";
 use srag\ActiveRecordConfig\SrLearningProgressPDBlock\Exception\ActiveRecordConfigException;
 use srag\DIC\SrLearningProgressPDBlock\DICTrait;
 use srag\DIC\SrLearningProgressPDBlock\Exception\DICException;
-use srag\Plugins\SrLearningProgressPDBlock\Block\CourseBlock;
-use srag\Plugins\SrLearningProgressPDBlock\Block\PersonalDesktopBlock;
+use srag\Plugins\SrLearningProgressPDBlock\Block\CourseBlock53;
+use srag\Plugins\SrLearningProgressPDBlock\Block\CourseBlock54;
+use srag\Plugins\SrLearningProgressPDBlock\Block\PersonalDesktopBlock53;
+use srag\Plugins\SrLearningProgressPDBlock\Block\PersonalDesktopBlock54;
 use srag\Plugins\SrLearningProgressPDBlock\Config\Config;
 use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
 
@@ -59,7 +61,7 @@ class ilSrLearningProgressPDBlockUIHookGUI extends ilUIHookPluginGUI {
 
 					return [
 						"mode" => ilUIHookPluginGUI::PREPEND,
-						"html" => self::output()->getHTML(new PersonalDesktopBlock())
+						"html" => self::output()->getHTML(self::version()->is54() ? new PersonalDesktopBlock54() : new PersonalDesktopBlock53())
 					];
 				}
 			}
@@ -76,7 +78,7 @@ class ilSrLearningProgressPDBlockUIHookGUI extends ilUIHookPluginGUI {
 
 					return [
 						"mode" => ilUIHookPluginGUI::PREPEND,
-						"html" => self::output()->getHTML(new CourseBlock())
+						"html" => self::output()->getHTML(self::version()->is54() ? new CourseBlock54() : new CourseBlock53())
 					];
 				}
 			}
