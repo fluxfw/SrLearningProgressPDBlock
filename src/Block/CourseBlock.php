@@ -3,7 +3,6 @@
 namespace srag\Plugins\SrLearningProgressPDBlock\Block;
 
 use ilLPCollection;
-use ilObject;
 use ilObjectLP;
 
 /**
@@ -32,7 +31,7 @@ class CourseBlock extends BaseBlock {
 	 */
 	public function __construct() {
 		$this->course_ref_id = $this->filterRefId();
-		$this->course_obj_id = intval(ilObject::_lookupObjectId($this->course_ref_id));
+		$this->course_obj_id = intval(self::dic()->objDataCache()->lookupObjId($this->course_ref_id));
 
 		parent::__construct();
 	}
@@ -50,7 +49,6 @@ class CourseBlock extends BaseBlock {
 	 * @inheritdoc
 	 */
 	protected function initObjIds()/*: void*/ {
-
 		/**
 		 * @var ilObjectLP $lp
 		 */
@@ -62,7 +60,7 @@ class CourseBlock extends BaseBlock {
 
 		if (method_exists($c, "getPossibleItems")) { // Abstraction?!
 			$this->obj_ids = array_map(function (int $ref_id): int {
-				return intval(ilObject::_lookupObjectId($ref_id));
+				return intval(self::dic()->objDataCache()->lookupObjId($ref_id));
 			}, array_filter($c->getPossibleItems($this->course_ref_id), function (int $ref_id) use ($c): bool {
 				return $c->isAssignedEntry($ref_id);
 			}));
