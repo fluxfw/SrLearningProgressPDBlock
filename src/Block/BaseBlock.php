@@ -77,7 +77,7 @@ abstract class BaseBlock extends ilBlockGUI {
 		if (!empty($pie)) {
 			$this->setDataSection($pie);
 		} else {
-			$this->setDataSection(self::plugin()->translate("none", self::LANG_MODULE_BLOCK));
+			$this->setDataSection(self::dic()->language()->txt("none"));
 		}
 	}
 
@@ -112,7 +112,7 @@ abstract class BaseBlock extends ilBlockGUI {
 
 
 	/**
-	 * @throws DICException
+	 *
 	 */
 	protected abstract function initTitle()/*: void*/
 	;

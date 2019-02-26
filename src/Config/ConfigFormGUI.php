@@ -27,10 +27,12 @@ class ConfigFormGUI extends ActiveRecordConfigFormGUI {
 	protected function initFields()/*: void*/ {
 		$this->fields = [
 			Config::KEY_SHOW_ON_PERSONAL_DESKTOP => [
-				self::PROPERTY_CLASS => ilCheckboxInputGUI::class
+				self::PROPERTY_CLASS => ilCheckboxInputGUI::class,
+				"setTitle" => self::dic()->language()->txt("personal_desktop")
 			],
 			Config::KEY_SHOW_ON_COURSES => [
-				self::PROPERTY_CLASS => ilCheckboxInputGUI::class
+				self::PROPERTY_CLASS => ilCheckboxInputGUI::class,
+				"setTitle" => self::dic()->language()->txt("repository")
 			]
 		];
 	}
