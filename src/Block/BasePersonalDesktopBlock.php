@@ -3,13 +3,13 @@
 namespace srag\Plugins\SrLearningProgressPDBlock\Block;
 
 /**
- * Class PersonalDesktopBlock
+ * Class BasePersonalDesktopBlock
  *
  * @package srag\Plugins\SrLearningProgressPDBlock\Block
  *
  * @author  studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  */
-class PersonalDesktopBlock extends BaseBlock {
+abstract class BasePersonalDesktopBlock extends BaseBlock {
 
 	/**
 	 * @inheritdoc

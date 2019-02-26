@@ -72,29 +72,13 @@ abstract class BaseBlock extends ilBlockGUI {
 		});
 
 		$pie = self::output()->getHTML(self::customInputGUIs()->learningProgressPie()->objIds()->withObjIds($obj_ids)->withUsrId(self::dic()->user()
-			->getId())->withId(self::getBlockType())->withShowLegend(true));
+			->getId())->withId($this->getBlockType())->withShowLegend(true));
 
 		if (!empty($pie)) {
 			$this->setDataSection($pie);
 		} else {
 			$this->setDataSection(self::dic()->language()->txt("none"));
 		}
-	}
-
-
-	/**
-	 * @return string
-	 */
-	public static function getBlockType(): string {
-		return ilSrLearningProgressPDBlockPlugin::PLUGIN_ID;
-	}
-
-
-	/**
-	 * @return bool
-	 */
-	public static function isRepositoryObject(): bool {
-		return false;
 	}
 
 

@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.2.6]
+- Supports ILIAS 5.4
+
 ## [1.2.5]
 - Use more core language
 
