@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.2.5]
+- Use more core language
+
 ## [1.2.4]
 - Fix an another dependency to SrTile
 

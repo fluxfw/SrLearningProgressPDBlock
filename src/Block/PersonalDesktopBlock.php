@@ -31,6 +31,6 @@ class PersonalDesktopBlock extends BaseBlock {
 	 * @inheritdoc
 	 */
 	protected function initTitle()/*: void*/ {
-		$this->setTitle(self::plugin()->translate("learning_progress_of_my_courses", self::LANG_MODULE_BLOCK));
+		$this->setTitle(self::dic()->language()->txt("trac_learning_progress") . " " . self::dic()->language()->txt("my_courses"));
 	}
 }

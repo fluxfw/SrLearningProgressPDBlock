@@ -2,7 +2,9 @@
 
 require_once __DIR__ . "/../vendor/autoload.php";
 
+use srag\ActiveRecordConfig\SrLearningProgressPDBlock\Exception\ActiveRecordConfigException;
 use srag\DIC\SrLearningProgressPDBlock\DICTrait;
+use srag\DIC\SrLearningProgressPDBlock\Exception\DICException;
 use srag\Plugins\SrLearningProgressPDBlock\Block\CourseBlock;
 use srag\Plugins\SrLearningProgressPDBlock\Block\PersonalDesktopBlock;
 use srag\Plugins\SrLearningProgressPDBlock\Config\Config;
@@ -39,6 +41,9 @@ class ilSrLearningProgressPDBlockUIHookGUI extends ilUIHookPluginGUI {
 	 * @param array  $a_par
 	 *
 	 * @return array
+	 * @throws ActiveRecordConfigException
+	 * @throws DICException
+	 * @throws ilTemplateException
 	 */
 	public function getHTML(/*string*/
 		$a_comp, /*string*/

@@ -1,11 +1,6 @@
-block_learning_progress#:#Learning progress
-block_learning_progress_of_my_courses#:#Learning progress of my courses
-block_none#:#None
 config_configuration#:#Configuration
 config_configuration_saved#:#Configuration saved
 config_save#:#Save
-config_show_on_courses#:#Show in courses
-config_show_on_personal_desktop#:#Show on personal desktop
 removeplugindataconfirm_cancel#:#Cancel
 removeplugindataconfirm_confirm_remove_data#:#Do you want to remove the %1$s data as well? At most, you just want to disable the %1$s plugin?
 removeplugindataconfirm_deactivate#:#Just deactivate %1$s plugin
