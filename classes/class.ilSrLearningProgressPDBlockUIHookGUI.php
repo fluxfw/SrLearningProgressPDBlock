@@ -60,7 +60,7 @@ class ilSrLearningProgressPDBlockUIHookGUI extends ilUIHookPluginGUI {
 					self::$load[self::PERSONAL_DESKTOP_INIT] = true;
 
 					return [
-						"mode" => ilUIHookPluginGUI::PREPEND,
+						"mode" => self::PREPEND,
 						"html" => self::output()->getHTML(self::version()->is54() ? new PersonalDesktopBlock54() : new PersonalDesktopBlock53())
 					];
 				}
@@ -77,7 +77,7 @@ class ilSrLearningProgressPDBlockUIHookGUI extends ilUIHookPluginGUI {
 					self::$load[self::COURSES_INIT] = true;
 
 					return [
-						"mode" => ilUIHookPluginGUI::PREPEND,
+						"mode" => self::PREPEND,
 						"html" => self::output()->getHTML(self::version()->is54() ? new CourseBlock54() : new CourseBlock53())
 					];
 				}
