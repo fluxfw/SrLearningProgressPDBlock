@@ -1,7 +1,5 @@
 <?php
 
-require_once __DIR__ . "/../vendor/autoload.php";
-
 use srag\ActiveRecordConfig\SrLearningProgressPDBlock\Exception\ActiveRecordConfigException;
 use srag\DIC\SrLearningProgressPDBlock\DICTrait;
 use srag\DIC\SrLearningProgressPDBlock\Exception\DICException;

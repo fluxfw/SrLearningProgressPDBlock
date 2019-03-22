@@ -1,7 +1,5 @@
 <?php
 
-require_once __DIR__ . "/../vendor/autoload.php";
-
 use srag\ActiveRecordConfig\SrLearningProgressPDBlock\ActiveRecordConfigGUI;
 use srag\Plugins\SrLearningProgressPDBlock\Config\ConfigFormGUI;
 use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
