@@ -1,15 +1,15 @@
 <?php
 
-namespace srag\CustomInputGUIs\SrLearningProgressPDBlock\LearningProgressPie;
+namespace srag\CustomInputGUIs\SrLearningProgressPDBlock\LearningProgressPieUI;
 
 /**
- * Class CountLearningProgressPie
+ * Class CountLearningProgressPieUI
  *
- * @package srag\CustomInputGUIs\SrLearningProgressPDBlock\LearningProgressPie
+ * @package srag\CustomInputGUIs\SrLearningProgressPDBlock\LearningProgressPieUI
  *
  * @author  studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  */
-class CountLearningProgressPie extends AbstractLearningProgressPie {
+class CountLearningProgressPieUI extends AbstractLearningProgressPieUI {
 
 	/**
 	 * @var int[]
@@ -18,7 +18,7 @@ class CountLearningProgressPie extends AbstractLearningProgressPie {
 
 
 	/**
-	 * @param array $count
+	 * @param int[] $count
 	 *
 	 * @return self
 	 */
@@ -45,6 +45,8 @@ class CountLearningProgressPie extends AbstractLearningProgressPie {
 	 * @inheritdoc
 	 */
 	protected function getCount(): int {
-		return count($this->count);
+		return array_reduce($this->count, function (int $sum, int $count): int {
+			return ($sum + $count);
+		}, 0);
 	}
 }
