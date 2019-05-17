@@ -2,6 +2,7 @@
 
 namespace srag\Plugins\SrLearningProgressPDBlock\Access;
 
+use ilDBConstants;
 use ilLPObjSettings;
 use ilObjUser;
 use ilSrLearningProgressPDBlockPlugin;
@@ -62,7 +63,7 @@ class LearningProgress {
 	 * @return bool
 	 */
 	public function enabled(int $obj_id): bool {
-		$result = self::dic()->database()->queryF('SELECT u_mode FROM ut_lp_settings WHERE obj_id=%s', [ "integer" ], [ $obj_id ]);
+		$result = self::dic()->database()->queryF('SELECT u_mode FROM ut_lp_settings WHERE obj_id=%s', [ ilDBConstants::T_INTEGER ], [ $obj_id ]);
 
 		if (($row = $result->fetchAssoc()) !== false) {
 			return (intval($row["u_mode"]) === ilLPObjSettings::LP_MODE_COLLECTION);

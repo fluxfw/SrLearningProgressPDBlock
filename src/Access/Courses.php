@@ -2,6 +2,7 @@
 
 namespace srag\Plugins\SrLearningProgressPDBlock\Access;
 
+use ilDBConstants;
 use ilObjUser;
 use ilSrLearningProgressPDBlockPlugin;
 use srag\DIC\SrLearningProgressPDBlock\DICTrait;
@@ -22,14 +23,14 @@ final class Courses {
 	/**
 	 * @var self
 	 */
-	protected static $instance = NULL;
+	protected static $instance = null;
 
 
 	/**
 	 * @return self
 	 */
 	public static function getInstance(): self {
-		if (self::$instance === NULL) {
+		if (self::$instance === null) {
 			self::$instance = new self();
 		}
 
@@ -52,10 +53,10 @@ final class Courses {
 	 */
 	public function getCoursesOfUser(ilObjUser $user): array {
 		$result = self::dic()->database()->queryF("SELECT obj_id FROM obj_members WHERE usr_id=%s AND (admin=%s OR tutor=%s OR member=%s)", [
-			"integer",
-			"integer",
-			"integer",
-			"integer"
+			ilDBConstants::T_INTEGER,
+			ilDBConstants::T_INTEGER,
+			ilDBConstants::T_INTEGER,
+			ilDBConstants::T_INTEGER
 		], [
 			$user->getId(),
 			1,
