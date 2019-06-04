@@ -45,9 +45,9 @@ class ilSrLearningProgressPDBlockUIHookGUI extends ilUIHookPluginGUI {
 	 * @throws DICException
 	 * @throws ilTemplateException
 	 */
-	public function getHTML(/*string*/
-		$a_comp, /*string*/
-		$a_part, $a_par = []): array {
+	public function getHTML(/*string*/ $a_comp, /*string*/ $a_part, $a_par = []): array {
+
+		self::dic()->language()->loadLanguageModule("trac");
 
 		if (!self::$load[self::PERSONAL_DESKTOP_INIT]) {
 

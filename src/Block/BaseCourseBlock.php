@@ -82,7 +82,7 @@ abstract class BaseCourseBlock extends BaseBlock {
 	private function filterRefId()/*: ?int*/ {
 		$obj_ref_id = filter_input(INPUT_GET, self::GET_PARAM_REF_ID);
 
-		if ($obj_ref_id === NULL) {
+		if ($obj_ref_id === null) {
 			$param_target = filter_input(INPUT_GET, self::GET_PARAM_TARGET);
 
 			$obj_ref_id = explode("_", $param_target)[1];
@@ -93,7 +93,7 @@ abstract class BaseCourseBlock extends BaseBlock {
 		if ($obj_ref_id > 0) {
 			return $obj_ref_id;
 		} else {
-			return NULL;
+			return null;
 		}
 	}
 }
