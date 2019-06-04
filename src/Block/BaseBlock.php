@@ -72,7 +72,7 @@ abstract class BaseBlock extends ilBlockGUI {
 		});
 
 		$pie = self::output()->getHTML(self::customInputGUIs()->learningProgressPie()->objIds()->withObjIds($obj_ids)->withUsrId(self::dic()->user()
-			->getId())->withId($this->getBlockType())->withShowLegend(true));
+			->getId())->withShowLegend(true));
 
 		if (!empty($pie)) {
 			$this->setDataSection($pie);
@@ -91,13 +91,11 @@ abstract class BaseBlock extends ilBlockGUI {
 	/**
 	 *
 	 */
-	protected abstract function initObjIds()/*: void*/
-	;
+	protected abstract function initObjIds()/*: void*/ ;
 
 
 	/**
 	 *
 	 */
-	protected abstract function initTitle()/*: void*/
-	;
+	protected abstract function initTitle()/*: void*/ ;
 }
