@@ -25,8 +25,7 @@ class ilSrLearningProgressPDBlockUIHookGUI extends ilUIHookPluginGUI
     const COURSES_INIT = "courses";
     const COMPONENT_PERSONAL_DESKTOP = "Services/PersonalDesktop";
     const COMPONENT_CONTAINER = "Services/Container";
-    const PART_CENTER_RIGHT = "right_column";
-    const LANG_MODULE_SEARCH = "search";
+    const PART_RIGHT_COLUMN = "right_column";
     /**
      * @var bool[]
      */
@@ -56,7 +55,7 @@ class ilSrLearningProgressPDBlockUIHookGUI extends ilUIHookPluginGUI
 
             if (Config::getField(Config::KEY_SHOW_ON_PERSONAL_DESKTOP)) {
 
-                if ($a_comp === self::COMPONENT_PERSONAL_DESKTOP && $a_part === self::PART_CENTER_RIGHT) {
+                if ($a_comp === self::COMPONENT_PERSONAL_DESKTOP && $a_part === self::PART_RIGHT_COLUMN) {
 
                     self::$load[self::PERSONAL_DESKTOP_INIT] = true;
 
@@ -73,7 +72,7 @@ class ilSrLearningProgressPDBlockUIHookGUI extends ilUIHookPluginGUI
             if (Config::getField(Config::KEY_SHOW_ON_COURSES)) {
 
                 if (self::dic()->ctrl()->getCmdClass() === strtolower(ilObjCourseGUI::class) && $a_comp === self::COMPONENT_CONTAINER
-                    && $a_part === self::PART_CENTER_RIGHT
+                    && $a_part === self::PART_RIGHT_COLUMN
                 ) {
 
                     self::$load[self::COURSES_INIT] = true;
