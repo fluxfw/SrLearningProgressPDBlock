@@ -17,7 +17,13 @@ class Config extends ActiveRecordConfig
 {
 
     use SrLearningProgressPDBlockTrait;
-    const TABLE_NAME = "ui_uihk_srlppd_config";
+    const TABLE_NAME = "srlppd_config";
+    /**
+     * @var string
+     *
+     * @deprecated
+     */
+    const TABLE_NAME_WRONG = "ui_uihk_srlppd_config";
     const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
     const KEY_SHOW_ON_COURSES = "show_on_courses";
     const KEY_SHOW_ON_PERSONAL_DESKTOP = "show_on_personal_desktop";
