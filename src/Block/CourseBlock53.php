@@ -11,20 +11,23 @@ use ilSrLearningProgressPDBlockPlugin;
  *
  * @author  studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  */
-class CourseBlock53 extends BaseCourseBlock {
+class CourseBlock53 extends BaseCourseBlock
+{
 
-	/**
-	 * @return string
-	 */
-	public static function getBlockType(): string {
-		return ilSrLearningProgressPDBlockPlugin::PLUGIN_ID;
-	}
+    /**
+     * @return string
+     */
+    public static function getBlockType() : string
+    {
+        return ilSrLearningProgressPDBlockPlugin::PLUGIN_ID;
+    }
 
 
-	/**
-	 * @return bool
-	 */
-	public static function isRepositoryObject(): bool {
-		return false;
-	}
+    /**
+     * @return bool
+     */
+    public static function isRepositoryObject() : bool
+    {
+        return false;
+    }
 }

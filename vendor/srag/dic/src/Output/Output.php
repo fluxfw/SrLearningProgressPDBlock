@@ -23,9 +23,17 @@ final class Output implements OutputInterface {
 
 
 	/**
+	 * Output constructor
+	 */
+	public function __construct() {
+
+	}
+
+
+	/**
 	 * @inheritdoc
 	 */
-	public function getHTML($value)/*: string*/ {
+	public function getHTML($value): string {
 		if (is_array($value)) {
 			$html = "";
 			foreach ($value as $gui) {
@@ -76,9 +84,7 @@ final class Output implements OutputInterface {
 	/**
 	 * @inheritdoc
 	 */
-	public function output($value, /*bool*/
-		$show = false, /*bool*/
-		$main_template = true)/*: void*/ {
+	public function output($value, bool $show = false, bool $main_template = true)/*: void*/ {
 		$html = $this->getHTML($value);
 
 		if (self::dic()->ctrl()->isAsynch()) {
@@ -110,7 +116,7 @@ final class Output implements OutputInterface {
 			case (is_bool($value)):
 			case (is_array($value)):
 			case ($value instanceof stdClass):
-			case ($value === NULL):
+			case ($value === null):
 			case ($value instanceof JsonSerializable):
 				$value = json_encode($value);
 

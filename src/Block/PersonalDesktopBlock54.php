@@ -11,20 +11,23 @@ use ilSrLearningProgressPDBlockPlugin;
  *
  * @author  studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  */
-class PersonalDesktopBlock54 extends BasePersonalDesktopBlock {
+class PersonalDesktopBlock54 extends BasePersonalDesktopBlock
+{
 
-	/**
-	 * @return string
-	 */
-	public function getBlockType(): string {
-		return ilSrLearningProgressPDBlockPlugin::PLUGIN_ID;
-	}
+    /**
+     * @return string
+     */
+    public function getBlockType() : string
+    {
+        return ilSrLearningProgressPDBlockPlugin::PLUGIN_ID;
+    }
 
 
-	/**
-	 * @return bool
-	 */
-	protected function isRepositoryObject(): bool {
-		return false;
-	}
+    /**
+     * @return bool
+     */
+    protected function isRepositoryObject() : bool
+    {
+        return false;
+    }
 }

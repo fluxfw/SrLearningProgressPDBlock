@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.2.7]
+- Fix wrong db table (Conflict with `SrSearchPDBlock`)
+
 ## [1.2.6]
 - Supports ILIAS 5.4
 

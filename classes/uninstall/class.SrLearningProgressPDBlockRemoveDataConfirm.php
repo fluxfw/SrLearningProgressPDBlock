@@ -12,8 +12,9 @@ use srag\RemovePluginDataConfirm\SrLearningProgressPDBlock\AbstractRemovePluginD
  *
  * @ilCtrl_isCalledBy SrLearningProgressPDBlockRemoveDataConfirm: ilUIPluginRouterGUI
  */
-class SrLearningProgressPDBlockRemoveDataConfirm extends AbstractRemovePluginDataConfirm {
+class SrLearningProgressPDBlockRemoveDataConfirm extends AbstractRemovePluginDataConfirm
+{
 
-	use SrLearningProgressPDBlockTrait;
-	const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
+    use SrLearningProgressPDBlockTrait;
+    const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
 }
