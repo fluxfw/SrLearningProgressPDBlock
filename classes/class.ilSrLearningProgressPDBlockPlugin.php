@@ -20,7 +20,6 @@ class ilSrLearningProgressPDBlockPlugin extends ilUserInterfaceHookPlugin
     const PLUGIN_ID = "srlppd";
     const PLUGIN_NAME = "SrLearningProgressPDBlock";
     const PLUGIN_CLASS_NAME = self::class;
-    const REMOVE_PLUGIN_DATA_CONFIRM_CLASS_NAME = SrLearningProgressPDBlockRemoveDataConfirm::class;
     /**
      * @var self|null
      */
