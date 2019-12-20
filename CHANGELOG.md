@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.2.8]
+- Fix
+
 ## [1.2.7]
 - Fix wrong db table (Conflict with `SrSearchPDBlock`)
 
