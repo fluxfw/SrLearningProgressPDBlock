@@ -1,8 +1,6 @@
 <?php
 
-use srag\ActiveRecordConfig\SrLearningProgressPDBlock\Exception\ActiveRecordConfigException;
 use srag\DIC\SrLearningProgressPDBlock\DICTrait;
-use srag\DIC\SrLearningProgressPDBlock\Exception\DICException;
 use srag\Plugins\SrLearningProgressPDBlock\Block\CourseBlock53;
 use srag\Plugins\SrLearningProgressPDBlock\Block\CourseBlock54;
 use srag\Plugins\SrLearningProgressPDBlock\Block\PersonalDesktopBlock53;
@@ -37,14 +35,7 @@ class ilSrLearningProgressPDBlockUIHookGUI extends ilUIHookPluginGUI
 
 
     /**
-     * @param string $a_comp
-     * @param string $a_part
-     * @param array  $a_par
-     *
-     * @return array
-     * @throws ActiveRecordConfigException
-     * @throws DICException
-     * @throws ilTemplateException
+     * @inheritDoc
      */
     public function getHTML(/*string*/ $a_comp, /*string*/ $a_part, $a_par = []) : array
     {
