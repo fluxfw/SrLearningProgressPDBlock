@@ -40,7 +40,7 @@ abstract class BaseCourseBlock extends BaseBlock
 
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
     protected function enabled() : bool
     {
@@ -49,7 +49,7 @@ abstract class BaseCourseBlock extends BaseBlock
 
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
     protected function initObjIds()/*: void*/
     {
@@ -73,7 +73,7 @@ abstract class BaseCourseBlock extends BaseBlock
 
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
     protected function initTitle()/*: void*/
     {

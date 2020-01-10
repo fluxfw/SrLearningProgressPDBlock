@@ -13,7 +13,7 @@ abstract class BasePersonalDesktopBlock extends BaseBlock
 {
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
     protected function enabled() : bool
     {
@@ -22,7 +22,7 @@ abstract class BasePersonalDesktopBlock extends BaseBlock
 
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
     protected function initObjIds()/*: void*/
     {
@@ -31,7 +31,7 @@ abstract class BasePersonalDesktopBlock extends BaseBlock
 
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
     protected function initTitle()/*: void*/
     {
