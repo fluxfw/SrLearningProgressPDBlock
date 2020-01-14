@@ -26,7 +26,7 @@ abstract class BasePersonalDesktopBlock extends BaseBlock
      */
     protected function initObjIds()/*: void*/
     {
-        $this->obj_ids = self::ilias()->courses()->getCoursesOfUser(self::dic()->user());
+        $this->obj_ids = self::srLearningProgressPDBlock()->ilias()->courses()->getCoursesOfUser(self::dic()->user());
     }
 
 

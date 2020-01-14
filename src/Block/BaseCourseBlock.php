@@ -44,7 +44,7 @@ abstract class BaseCourseBlock extends BaseBlock
      */
     protected function enabled() : bool
     {
-        return self::ilias()->learningProgress(self::dic()->user())->enabled($this->course_obj_id);
+        return self::srLearningProgressPDBlock()->ilias()->learningProgress(self::dic()->user())->enabled($this->course_obj_id);
     }
 
 

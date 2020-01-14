@@ -117,6 +117,7 @@ return array(
     'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\PersonalDesktopBlock54' => $baseDir . '/src/Block/PersonalDesktopBlock54.php',
     'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\Config' => $baseDir . '/src/Config/Config.php',
     'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\ConfigFormGUI' => $baseDir . '/src/Config/ConfigFormGUI.php',
+    'srag\\Plugins\\SrLearningProgressPDBlock\\Repository' => $baseDir . '/src/Repository.php',
     'srag\\Plugins\\SrLearningProgressPDBlock\\Utils\\SrLearningProgressPDBlockTrait' => $baseDir . '/src/Utils/SrLearningProgressPDBlockTrait.php',
     'srag\\RemovePluginDataConfirm\\SrLearningProgressPDBlock\\BasePluginUninstallTrait' => $vendorDir . '/srag/removeplugindataconfirm/src/BasePluginUninstallTrait.php',
     'srag\\RemovePluginDataConfirm\\SrLearningProgressPDBlock\\PluginUninstallTrait' => $vendorDir . '/srag/removeplugindataconfirm/src/PluginUninstallTrait.php',

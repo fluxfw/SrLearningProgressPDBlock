@@ -73,7 +73,7 @@ abstract class BaseBlock extends ilBlockGUI
     public function fillDataSection()/*: void*/
     {
         $obj_ids = array_filter($this->obj_ids, function (int $obj_id) : bool {
-            return self::access()->hasReadAccess($obj_id);
+            return self::srLearningProgressPDBlock()->access()->hasReadAccess($obj_id);
         });
 
         $pie = self::output()->getHTML(self::customInputGUIs()->learningProgressPie()->objIds()->withObjIds($obj_ids)->withUsrId(self::dic()->user()

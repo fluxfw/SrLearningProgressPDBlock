@@ -2,8 +2,7 @@
 
 namespace srag\Plugins\SrLearningProgressPDBlock\Utils;
 
-use srag\Plugins\SrLearningProgressPDBlock\Access\Access;
-use srag\Plugins\SrLearningProgressPDBlock\Access\Ilias;
+use srag\Plugins\SrLearningProgressPDBlock\Repository;
 
 /**
  * Trait SrLearningProgressPDBlockTrait
@@ -16,19 +15,10 @@ trait SrLearningProgressPDBlockTrait
 {
 
     /**
-     * @return Access
+     * @return Repository
      */
-    protected static function access() : Access
+    protected static function srLearningProgressPDBlock() : Repository
     {
-        return Access::getInstance();
-    }
-
-
-    /**
-     * @return Ilias
-     */
-    protected static function ilias() : Ilias
-    {
-        return Ilias::getInstance();
+        return Repository::getInstance();
     }
 }
