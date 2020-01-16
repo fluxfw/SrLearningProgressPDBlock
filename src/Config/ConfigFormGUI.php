@@ -20,6 +20,8 @@ class ConfigFormGUI extends PropertyFormGUI
 
     use SrLearningProgressPDBlockTrait;
     const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
+    const KEY_SHOW_ON_COURSES = "show_on_courses";
+    const KEY_SHOW_ON_PERSONAL_DESKTOP = "show_on_personal_desktop";
     const LANG_MODULE = ilSrLearningProgressPDBlockConfigGUI::LANG_MODULE;
 
 
@@ -41,7 +43,7 @@ class ConfigFormGUI extends PropertyFormGUI
     {
         switch ($key) {
             default:
-                return Config::getField($key);
+                return self::srLearningProgressPDBlock()->config()->getField($key);
         }
     }
 
@@ -61,11 +63,11 @@ class ConfigFormGUI extends PropertyFormGUI
     protected function initFields()/*: void*/
     {
         $this->fields = [
-            Config::KEY_SHOW_ON_PERSONAL_DESKTOP => [
+            self::KEY_SHOW_ON_PERSONAL_DESKTOP => [
                 self::PROPERTY_CLASS => ilCheckboxInputGUI::class,
                 "setTitle"           => self::dic()->language()->txt("personal_desktop")
             ],
-            Config::KEY_SHOW_ON_COURSES          => [
+            self::KEY_SHOW_ON_COURSES          => [
                 self::PROPERTY_CLASS => ilCheckboxInputGUI::class,
                 "setTitle"           => self::dic()->language()->txt("repository")
             ]
@@ -98,7 +100,7 @@ class ConfigFormGUI extends PropertyFormGUI
     {
         switch ($key) {
             default:
-                Config::setField($key, $value);
+                self::srLearningProgressPDBlock()->config()->setField($key, $value);
                 break;
         }
     }

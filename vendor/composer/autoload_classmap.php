@@ -119,7 +119,6 @@ return array(
     'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\CourseBlock54' => $baseDir . '/src/Block/CourseBlock54.php',
     'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\PersonalDesktopBlock53' => $baseDir . '/src/Block/PersonalDesktopBlock53.php',
     'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\PersonalDesktopBlock54' => $baseDir . '/src/Block/PersonalDesktopBlock54.php',
-    'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\Config' => $baseDir . '/src/Config/Config.php',
     'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\ConfigFormGUI' => $baseDir . '/src/Config/ConfigFormGUI.php',
     'srag\\Plugins\\SrLearningProgressPDBlock\\Repository' => $baseDir . '/src/Repository.php',
     'srag\\Plugins\\SrLearningProgressPDBlock\\Utils\\SrLearningProgressPDBlockTrait' => $baseDir . '/src/Utils/SrLearningProgressPDBlockTrait.php',

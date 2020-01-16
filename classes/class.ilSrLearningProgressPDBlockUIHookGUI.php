@@ -5,7 +5,7 @@ use srag\Plugins\SrLearningProgressPDBlock\Block\CourseBlock53;
 use srag\Plugins\SrLearningProgressPDBlock\Block\CourseBlock54;
 use srag\Plugins\SrLearningProgressPDBlock\Block\PersonalDesktopBlock53;
 use srag\Plugins\SrLearningProgressPDBlock\Block\PersonalDesktopBlock54;
-use srag\Plugins\SrLearningProgressPDBlock\Config\Config;
+use srag\Plugins\SrLearningProgressPDBlock\Config\ConfigFormGUI;
 use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
 
 /**
@@ -44,7 +44,7 @@ class ilSrLearningProgressPDBlockUIHookGUI extends ilUIHookPluginGUI
 
         if (!self::$load[self::PERSONAL_DESKTOP_INIT]) {
 
-            if (Config::getField(Config::KEY_SHOW_ON_PERSONAL_DESKTOP)) {
+            if (self::srLearningProgressPDBlock()->config()->getField(ConfigFormGUI::KEY_SHOW_ON_PERSONAL_DESKTOP)) {
 
                 if ($a_comp === self::COMPONENT_PERSONAL_DESKTOP && $a_part === self::PART_RIGHT_COLUMN) {
 
@@ -60,7 +60,7 @@ class ilSrLearningProgressPDBlockUIHookGUI extends ilUIHookPluginGUI
 
         if (!self::$load[self::COURSES_INIT]) {
 
-            if (Config::getField(Config::KEY_SHOW_ON_COURSES)) {
+            if (self::srLearningProgressPDBlock()->config()->getField(ConfigFormGUI::KEY_SHOW_ON_COURSES)) {
 
                 if (self::dic()->ctrl()->getCmdClass() === strtolower(ilObjCourseGUI::class) && $a_comp === self::COMPONENT_CONTAINER
                     && $a_part === self::PART_RIGHT_COLUMN
