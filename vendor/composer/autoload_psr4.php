@@ -11,5 +11,5 @@ return array(
     'srag\\LibrariesNamespaceChanger\\' => array($vendorDir . '/srag/librariesnamespacechanger/src'),
     'srag\\DIC\\SrLearningProgressPDBlock\\' => array($vendorDir . '/srag/dic/src'),
     'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\' => array($vendorDir . '/srag/custominputguis/src'),
-    'srag\\ActiveRecordConfig\\' => array($vendorDir . '/srag/activerecordconfig/src'),
+    'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\' => array($vendorDir . '/srag/activerecordconfig/src'),
 );

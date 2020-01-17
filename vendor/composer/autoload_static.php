@@ -14,7 +14,7 @@ class ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e
             'srag\\LibrariesNamespaceChanger\\' => 31,
             'srag\\DIC\\SrLearningProgressPDBlock\\' => 35,
             'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\' => 47,
-            'srag\\ActiveRecordConfig\\' => 24,
+            'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\' => 50,
         ),
     );
 
@@ -39,7 +39,7 @@ class ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e
         array (
             0 => __DIR__ . '/..' . '/srag/custominputguis/src',
         ),
-        'srag\\ActiveRecordConfig\\' => 
+        'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/activerecordconfig/src',
         ),
@@ -50,15 +50,16 @@ class ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e
         'ilSrLearningProgressPDBlockPlugin' => __DIR__ . '/../..' . '/classes/class.ilSrLearningProgressPDBlockPlugin.php',
         'ilSrLearningProgressPDBlockUIHookGUI' => __DIR__ . '/../..' . '/classes/class.ilSrLearningProgressPDBlockUIHookGUI.php',
         'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\ActiveRecordConfig' => __DIR__ . '/..' . '/srag/activerecordconfig/src/ActiveRecordConfig.php',
+        'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\ActiveRecordConfigFactory' => __DIR__ . '/..' . '/srag/activerecordconfig/src/ActiveRecordConfig.php',
         'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\ActiveRecordConfigFormGUI' => __DIR__ . '/..' . '/srag/activerecordconfig/src/ActiveRecordConfigFormGUI.php',
         'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\ActiveRecordConfigGUI' => __DIR__ . '/..' . '/srag/activerecordconfig/src/ActiveRecordConfigGUI.php',
+        'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\ActiveRecordConfigRepository' => __DIR__ . '/..' . '/srag/activerecordconfig/src/ActiveRecordConfig.php',
         'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\ActiveRecordConfigTableGUI' => __DIR__ . '/..' . '/srag/activerecordconfig/src/ActiveRecordConfigTableGUI.php',
         'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\ActiveRecordObjectFormGUI' => __DIR__ . '/..' . '/srag/activerecordconfig/src/ActiveRecordObjectFormGUI.php',
+        'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\Config\\AbstractFactory' => __DIR__ . '/..' . '/srag/activerecordconfig/src/Config/AbstractFactory.php',
+        'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\Config\\AbstractRepository' => __DIR__ . '/..' . '/srag/activerecordconfig/src/Config/AbstractRepository.php',
         'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\Config\\Config' => __DIR__ . '/..' . '/srag/activerecordconfig/src/Config/Config.php',
-        'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\Config\\Factory' => __DIR__ . '/..' . '/srag/activerecordconfig/src/Config/Factory.php',
-        'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\Config\\Repository' => __DIR__ . '/..' . '/srag/activerecordconfig/src/Config/Repository.php',
         'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\Exception\\ActiveRecordConfigException' => __DIR__ . '/..' . '/srag/activerecordconfig/src/Exception/ActiveRecordConfigException.php',
-        'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\Utils\\ConfigTrait' => __DIR__ . '/..' . '/srag/activerecordconfig/src/Utils/ConfigTrait.php',
         'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\CheckboxInputGUI\\CheckboxInputGUI' => __DIR__ . '/..' . '/srag/custominputguis/src/CheckboxInputGUI/CheckboxInputGUI.php',
         'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\CustomInputGUIs' => __DIR__ . '/..' . '/srag/custominputguis/src/CustomInputGUIs.php',
         'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\CustomInputGUIsTrait' => __DIR__ . '/..' . '/srag/custominputguis/src/CustomInputGUIsTrait.php',
@@ -160,6 +161,8 @@ class ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e
         'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\PersonalDesktopBlock53' => __DIR__ . '/../..' . '/src/Block/PersonalDesktopBlock53.php',
         'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\PersonalDesktopBlock54' => __DIR__ . '/../..' . '/src/Block/PersonalDesktopBlock54.php',
         'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\ConfigFormGUI' => __DIR__ . '/../..' . '/src/Config/ConfigFormGUI.php',
+        'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\Factory' => __DIR__ . '/../..' . '/src/Config/Factory.php',
+        'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\Repository' => __DIR__ . '/../..' . '/src/Config/Repository.php',
         'srag\\Plugins\\SrLearningProgressPDBlock\\Repository' => __DIR__ . '/../..' . '/src/Repository.php',
         'srag\\Plugins\\SrLearningProgressPDBlock\\Utils\\SrLearningProgressPDBlockTrait' => __DIR__ . '/../..' . '/src/Utils/SrLearningProgressPDBlockTrait.php',
         'srag\\RemovePluginDataConfirm\\SrLearningProgressPDBlock\\BasePluginUninstallTrait' => __DIR__ . '/..' . '/srag/removeplugindataconfirm/src/BasePluginUninstallTrait.php',

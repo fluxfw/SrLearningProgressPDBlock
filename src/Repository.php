@@ -3,13 +3,10 @@
 namespace srag\Plugins\SrLearningProgressPDBlock;
 
 use ilSrLearningProgressPDBlockPlugin;
-use srag\ActiveRecordConfig\SrLearningProgressPDBlock\Config\Config;
-use srag\ActiveRecordConfig\SrLearningProgressPDBlock\Config\Repository as ConfigRepository;
-use srag\ActiveRecordConfig\SrLearningProgressPDBlock\Utils\ConfigTrait;
 use srag\DIC\SrLearningProgressPDBlock\DICTrait;
 use srag\Plugins\SrLearningProgressPDBlock\Access\Access;
 use srag\Plugins\SrLearningProgressPDBlock\Access\Ilias;
-use srag\Plugins\SrLearningProgressPDBlock\Config\ConfigFormGUI;
+use srag\Plugins\SrLearningProgressPDBlock\Config\Repository as ConfigRepository;
 use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
 
 /**
@@ -24,9 +21,6 @@ final class Repository
 
     use DICTrait;
     use SrLearningProgressPDBlockTrait;
-    use ConfigTrait {
-        config as protected _config;
-    }
     const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
     /**
      * @var self
@@ -52,10 +46,7 @@ final class Repository
      */
     private function __construct()
     {
-        $this->config()->withTableName(ilSrLearningProgressPDBlockPlugin::PLUGIN_ID . "_config")->withFields([
-            ConfigFormGUI::KEY_SHOW_ON_COURSES          => [Config::TYPE_BOOLEAN, true],
-            ConfigFormGUI::KEY_SHOW_ON_PERSONAL_DESKTOP => [Config::TYPE_BOOLEAN, true]
-        ]);
+
     }
 
 
@@ -69,11 +60,11 @@ final class Repository
 
 
     /**
-     * @inheritDoc
+     * @return ConfigRepository
      */
     public function config() : ConfigRepository
     {
-        return self::_config();
+        return ConfigRepository::getInstance();
     }
 
 

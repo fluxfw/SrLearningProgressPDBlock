@@ -43,7 +43,7 @@ class ConfigFormGUI extends PropertyFormGUI
     {
         switch ($key) {
             default:
-                return self::srLearningProgressPDBlock()->config()->getField($key);
+                return self::srLearningProgressPDBlock()->config()->getValue($key);
         }
     }
 
@@ -100,7 +100,7 @@ class ConfigFormGUI extends PropertyFormGUI
     {
         switch ($key) {
             default:
-                self::srLearningProgressPDBlock()->config()->setField($key, $value);
+                self::srLearningProgressPDBlock()->config()->setValue($key, $value);
                 break;
         }
     }

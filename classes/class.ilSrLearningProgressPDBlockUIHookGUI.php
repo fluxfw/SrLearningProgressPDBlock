@@ -44,7 +44,7 @@ class ilSrLearningProgressPDBlockUIHookGUI extends ilUIHookPluginGUI
 
         if (!self::$load[self::PERSONAL_DESKTOP_INIT]) {
 
-            if (self::srLearningProgressPDBlock()->config()->getField(ConfigFormGUI::KEY_SHOW_ON_PERSONAL_DESKTOP)) {
+            if (self::srLearningProgressPDBlock()->config()->getValue(ConfigFormGUI::KEY_SHOW_ON_PERSONAL_DESKTOP)) {
 
                 if ($a_comp === self::COMPONENT_PERSONAL_DESKTOP && $a_part === self::PART_RIGHT_COLUMN) {
 
@@ -60,7 +60,7 @@ class ilSrLearningProgressPDBlockUIHookGUI extends ilUIHookPluginGUI
 
         if (!self::$load[self::COURSES_INIT]) {
 
-            if (self::srLearningProgressPDBlock()->config()->getField(ConfigFormGUI::KEY_SHOW_ON_COURSES)) {
+            if (self::srLearningProgressPDBlock()->config()->getValue(ConfigFormGUI::KEY_SHOW_ON_COURSES)) {
 
                 if (self::dic()->ctrl()->getCmdClass() === strtolower(ilObjCourseGUI::class) && $a_comp === self::COMPONENT_CONTAINER
                     && $a_part === self::PART_RIGHT_COLUMN
