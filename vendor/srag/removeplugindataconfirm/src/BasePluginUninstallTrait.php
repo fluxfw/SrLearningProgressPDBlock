@@ -4,6 +4,7 @@ namespace srag\RemovePluginDataConfirm\SrLearningProgressPDBlock;
 
 use ilUIPluginRouterGUI;
 use srag\DIC\SrLearningProgressPDBlock\DICTrait;
+use srag\DIC\SrLearningProgressPDBlock\Util\LibraryLanguageInstaller;
 
 /**
  * Trait BasePluginUninstallTrait
@@ -53,6 +54,16 @@ trait BasePluginUninstallTrait
         }
 
         return true;
+    }
+
+
+    /**
+     *
+     */
+    protected function installRemovePluginDataConfirmLanguages()/*:void*/
+    {
+        LibraryLanguageInstaller::getInstance()->withPlugin(self::plugin())->withLibraryLanguageDirectory(__DIR__
+            . "/../lang")->updateLanguages();
     }
 
 

@@ -15,7 +15,7 @@ use srag\ActiveRecordConfig\SrLearningProgressPDBlock\Exception\ActiveRecordConf
  *
  * @author     studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  *
- * @deprecated Please use repository instead
+ * @deprecated Please use AbstractRepository instead
  */
 class ActiveRecordConfig extends Config
 {
