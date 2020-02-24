@@ -21,7 +21,7 @@ final class Ilias
     use SrLearningProgressPDBlockTrait;
     const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
     /**
-     * @var self
+     * @var self|null
      */
     protected static $instance = null;
 
