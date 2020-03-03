@@ -69,14 +69,14 @@ abstract class BaseBlock extends ilBlockGUI
      */
     public function fillDataSection()/*: void*/
     {
-        $this->setDataSection($this->getChart());
+        $this->setDataSection($this->getPie());
     }
 
 
     /**
      * @return string
      */
-    protected function getChart() : string
+    protected function getPie() : string
     {
         $obj_ids = array_filter($this->obj_ids, function (int $obj_id) : bool {
             return self::srLearningProgressPDBlock()->access()->hasReadAccess($obj_id);
