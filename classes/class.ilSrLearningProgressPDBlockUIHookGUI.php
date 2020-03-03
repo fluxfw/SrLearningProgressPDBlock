@@ -36,8 +36,6 @@ class ilSrLearningProgressPDBlockUIHookGUI extends ilUIHookPluginGUI
     public function getHTML(/*string*/ $a_comp, /*string*/ $a_part, $a_par = []) : array
     {
 
-        self::dic()->language()->loadLanguageModule("trac");
-
         if (!self::$load[self::PERSONAL_DESKTOP_INIT]) {
 
             if (self::srLearningProgressPDBlock()->config()->getValue(ConfigFormGUI::KEY_SHOW_ON_PERSONAL_DESKTOP)) {

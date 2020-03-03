@@ -37,6 +37,6 @@ abstract class BasePersonalDesktopBlock extends BaseBlock
      */
     protected function initTitle()/*: void*/
     {
-        $this->setTitle(self::dic()->language()->txt("trac_learning_progress") . " " . self::dic()->language()->txt("my_courses"));
+        $this->setTitle(self::plugin()->translate("learning_progress", self::LANG_MODULE) . " " . self::plugin()->translate("my_courses", self::LANG_MODULE));
     }
 }

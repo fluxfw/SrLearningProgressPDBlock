@@ -78,7 +78,7 @@ abstract class BaseCourseBlock extends BaseBlock
      */
     protected function initTitle()/*: void*/
     {
-        $this->setTitle(self::dic()->language()->txt("trac_learning_progress"));
+        $this->setTitle(self::plugin()->translate("learning_progress", self::LANG_MODULE));
     }
 
 

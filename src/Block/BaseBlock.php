@@ -24,7 +24,7 @@ abstract class BaseBlock extends ilBlockGUI
     use SrLearningProgressPDBlockTrait;
     use CustomInputGUIsTrait;
     const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
-    const LANG_MODULE_BLOCK = "block";
+    const LANG_MODULE = "block";
     /**
      * @var int[]
      */
@@ -82,7 +82,7 @@ abstract class BaseBlock extends ilBlockGUI
         if (!empty($pie)) {
             $this->setDataSection($pie);
         } else {
-            $this->setDataSection(self::dic()->language()->txt("none"));
+            $this->setDataSection(self::plugin()->translate("none", self::LANG_MODULE));
         }
     }
 
