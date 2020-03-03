@@ -1,19 +1,20 @@
 <?php
 
-namespace srag\Plugins\SrLearningProgressPDBlock\Block\Course;
+namespace srag\Plugins\SrLearningProgressPDBlock\Block\Courses;
 
 use ilLPCollection;
 use ilObjectLP;
 use srag\Plugins\SrLearningProgressPDBlock\Block\BaseBlock;
+use srag\Plugins\SrLearningProgressPDBlock\Config\ConfigFormGUI;
 
 /**
- * Class BaseCourseBlock
+ * Class BaseCoursesBlock
  *
- * @package srag\Plugins\SrLearningProgressPDBlock\Block\Course
+ * @package srag\Plugins\SrLearningProgressPDBlock\Block\Courses
  *
  * @author  studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  */
-abstract class BaseCourseBlock extends BaseBlock
+abstract class BaseCoursesBlock extends BaseBlock
 {
 
     const GET_PARAM_REF_ID = "ref_id";
@@ -29,7 +30,7 @@ abstract class BaseCourseBlock extends BaseBlock
 
 
     /**
-     * CourseBlock constructor
+     * BaseCoursesBlock constructor
      */
     public function __construct()
     {
@@ -45,7 +46,11 @@ abstract class BaseCourseBlock extends BaseBlock
      */
     protected function enabled() : bool
     {
-        return self::srLearningProgressPDBlock()->ilias()->learningProgress(self::dic()->user())->enabled($this->course_obj_id);
+        return (self::srLearningProgressPDBlock()->config()->getValue(ConfigFormGUI::KEY_SHOW_ON_COURSES)
+            && self::srLearningProgressPDBlock()
+                ->ilias()
+                ->learningProgress(self::dic()->user())
+                ->enabled($this->course_obj_id));
     }
 
 

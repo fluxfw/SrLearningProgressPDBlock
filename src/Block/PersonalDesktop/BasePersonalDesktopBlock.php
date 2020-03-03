@@ -3,6 +3,7 @@
 namespace srag\Plugins\SrLearningProgressPDBlock\Block\PersonalDesktop;
 
 use srag\Plugins\SrLearningProgressPDBlock\Block\BaseBlock;
+use srag\Plugins\SrLearningProgressPDBlock\Config\ConfigFormGUI;
 
 /**
  * Class BasePersonalDesktopBlock
@@ -19,7 +20,7 @@ abstract class BasePersonalDesktopBlock extends BaseBlock
      */
     protected function enabled() : bool
     {
-        return true;
+        return self::srLearningProgressPDBlock()->config()->getValue(ConfigFormGUI::KEY_SHOW_ON_PERSONAL_DESKTOP);
     }
 
 

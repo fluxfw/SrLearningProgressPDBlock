@@ -67,7 +67,7 @@ class ConfigFormGUI extends PropertyFormGUI
                 self::PROPERTY_CLASS => ilCheckboxInputGUI::class,
                 "setTitle"           => $this->txt("personal_desktop")
             ],
-            self::KEY_SHOW_ON_COURSES => [
+            self::KEY_SHOW_ON_COURSES          => [
                 self::PROPERTY_CLASS => ilCheckboxInputGUI::class,
                 "setTitle"           => $this->txt("courses")
             ]

@@ -4,9 +4,9 @@ namespace srag\Plugins\SrLearningProgressPDBlock\Block;
 
 use ilSrLearningProgressPDBlockPlugin;
 use srag\DIC\SrLearningProgressPDBlock\DICTrait;
-use srag\Plugins\SrLearningProgressPDBlock\Block\Course\BaseCourseBlock;
-use srag\Plugins\SrLearningProgressPDBlock\Block\Course\CourseBlock53;
-use srag\Plugins\SrLearningProgressPDBlock\Block\Course\CourseBlock54;
+use srag\Plugins\SrLearningProgressPDBlock\Block\Courses\BaseCoursesBlock;
+use srag\Plugins\SrLearningProgressPDBlock\Block\Courses\CoursesBlock53;
+use srag\Plugins\SrLearningProgressPDBlock\Block\Courses\CoursesBlock54;
 use srag\Plugins\SrLearningProgressPDBlock\Block\PersonalDesktop\BasePersonalDesktopBlock;
 use srag\Plugins\SrLearningProgressPDBlock\Block\PersonalDesktop\PersonalDesktopBlock53;
 use srag\Plugins\SrLearningProgressPDBlock\Block\PersonalDesktop\PersonalDesktopBlock54;
@@ -69,14 +69,14 @@ final class Factory
 
 
     /**
-     * @return BaseCourseBlock
+     * @return BaseCoursesBlock
      */
-    public function course() : BaseCourseBlock
+    public function courses() : BaseCoursesBlock
     {
         if (self::version()->is54()) {
-            $block = new CourseBlock54();
+            $block = new CoursesBlock54();
         } else {
-            $block = new CourseBlock53();
+            $block = new CoursesBlock53();
         }
 
         return $block;
