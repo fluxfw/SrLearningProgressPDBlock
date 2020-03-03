@@ -69,6 +69,15 @@ abstract class BaseBlock extends ilBlockGUI
      */
     public function fillDataSection()/*: void*/
     {
+        $this->setDataSection($this->getChart());
+    }
+
+
+    /**
+     * @return string
+     */
+    protected function getChart() : string
+    {
         $obj_ids = array_filter($this->obj_ids, function (int $obj_id) : bool {
             return self::srLearningProgressPDBlock()->access()->hasReadAccess($obj_id);
         });
@@ -77,9 +86,9 @@ abstract class BaseBlock extends ilBlockGUI
             ->getId())->withShowLegend(true));
 
         if (!empty($pie)) {
-            $this->setDataSection($pie);
+            return $pie;
         } else {
-            $this->setDataSection(self::plugin()->translate("none", self::LANG_MODULE));
+            return self::plugin()->translate("none", self::LANG_MODULE);
         }
     }
 
