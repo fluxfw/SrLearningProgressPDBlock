@@ -13,8 +13,8 @@ class ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e
             'srag\\Plugins\\SrLearningProgressPDBlock\\' => 39,
             'srag\\LibrariesNamespaceChanger\\' => 31,
             'srag\\DIC\\SrLearningProgressPDBlock\\' => 35,
-            'srag\\CustomInputGUIs\\' => 21,
-            'srag\\ActiveRecordConfig\\' => 24,
+            'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\' => 47,
+            'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\' => 50,
         ),
     );
 
@@ -35,11 +35,11 @@ class ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e
         array (
             0 => __DIR__ . '/..' . '/srag/dic/src',
         ),
-        'srag\\CustomInputGUIs\\' => 
+        'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/custominputguis/src',
         ),
-        'srag\\ActiveRecordConfig\\' => 
+        'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/activerecordconfig/src',
         ),
@@ -155,12 +155,14 @@ class ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e
         'srag\\Plugins\\SrLearningProgressPDBlock\\Access\\Ilias' => __DIR__ . '/../..' . '/src/Access/Ilias.php',
         'srag\\Plugins\\SrLearningProgressPDBlock\\Access\\LearningProgress' => __DIR__ . '/../..' . '/src/Access/LearningProgress.php',
         'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\BaseBlock' => __DIR__ . '/../..' . '/src/Block/BaseBlock.php',
-        'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\BaseCourseBlock' => __DIR__ . '/../..' . '/src/Block/BaseCourseBlock.php',
-        'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\BasePersonalDesktopBlock' => __DIR__ . '/../..' . '/src/Block/BasePersonalDesktopBlock.php',
-        'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\CourseBlock53' => __DIR__ . '/../..' . '/src/Block/CourseBlock53.php',
-        'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\CourseBlock54' => __DIR__ . '/../..' . '/src/Block/CourseBlock54.php',
-        'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\PersonalDesktopBlock53' => __DIR__ . '/../..' . '/src/Block/PersonalDesktopBlock53.php',
-        'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\PersonalDesktopBlock54' => __DIR__ . '/../..' . '/src/Block/PersonalDesktopBlock54.php',
+        'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\Course\\BaseCourseBlock' => __DIR__ . '/../..' . '/src/Block/Course/BaseCourseBlock.php',
+        'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\Course\\CourseBlock53' => __DIR__ . '/../..' . '/src/Block/Course/CourseBlock53.php',
+        'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\Course\\CourseBlock54' => __DIR__ . '/../..' . '/src/Block/Course/CourseBlock54.php',
+        'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\Factory' => __DIR__ . '/../..' . '/src/Block/Factory.php',
+        'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\PersonalDesktop\\BasePersonalDesktopBlock' => __DIR__ . '/../..' . '/src/Block/PersonalDesktop/BasePersonalDesktopBlock.php',
+        'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\PersonalDesktop\\PersonalDesktopBlock53' => __DIR__ . '/../..' . '/src/Block/PersonalDesktop/PersonalDesktopBlock53.php',
+        'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\PersonalDesktop\\PersonalDesktopBlock54' => __DIR__ . '/../..' . '/src/Block/PersonalDesktop/PersonalDesktopBlock54.php',
+        'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\Repository' => __DIR__ . '/../..' . '/src/Block/Repository.php',
         'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\ConfigFormGUI' => __DIR__ . '/../..' . '/src/Config/ConfigFormGUI.php',
         'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\Factory' => __DIR__ . '/../..' . '/src/Config/Factory.php',
         'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\Repository' => __DIR__ . '/../..' . '/src/Config/Repository.php',

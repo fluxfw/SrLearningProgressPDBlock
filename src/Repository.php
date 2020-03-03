@@ -6,6 +6,7 @@ use ilSrLearningProgressPDBlockPlugin;
 use srag\DIC\SrLearningProgressPDBlock\DICTrait;
 use srag\Plugins\SrLearningProgressPDBlock\Access\Access;
 use srag\Plugins\SrLearningProgressPDBlock\Access\Ilias;
+use srag\Plugins\SrLearningProgressPDBlock\Block\Repository as BlocksRepository;
 use srag\Plugins\SrLearningProgressPDBlock\Config\Repository as ConfigRepository;
 use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
 
@@ -60,6 +61,15 @@ final class Repository
 
 
     /**
+     * @return BlocksRepository
+     */
+    public function blocks() : BlocksRepository
+    {
+        return BlocksRepository::getInstance();
+    }
+
+
+    /**
      * @return ConfigRepository
      */
     public function config() : ConfigRepository
@@ -73,6 +83,7 @@ final class Repository
      */
     public function dropTables()/*:void*/
     {
+        $this->blocks()->dropTables();
         $this->config()->dropTables();
     }
 
@@ -91,6 +102,7 @@ final class Repository
      */
     public function installTables()/*:void*/
     {
+        $this->blocks()->installTables();
         $this->config()->installTables();
     }
 }

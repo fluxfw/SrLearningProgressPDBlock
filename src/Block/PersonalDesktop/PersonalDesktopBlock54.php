@@ -1,17 +1,17 @@
 <?php
 
-namespace srag\Plugins\SrLearningProgressPDBlock\Block;
+namespace srag\Plugins\SrLearningProgressPDBlock\Block\PersonalDesktop;
 
 use ilSrLearningProgressPDBlockPlugin;
 
 /**
- * Class CourseBlock54
+ * Class PersonalDesktopBlock54
  *
- * @package srag\Plugins\SrLearningProgressPDBlock\Block
+ * @package srag\Plugins\SrLearningProgressPDBlock\Block\PersonalDesktop
  *
  * @author  studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  */
-class CourseBlock54 extends BaseCourseBlock
+class PersonalDesktopBlock54 extends BasePersonalDesktopBlock
 {
 
     /**

@@ -1,14 +1,15 @@
 <?php
 
-namespace srag\Plugins\SrLearningProgressPDBlock\Block;
+namespace srag\Plugins\SrLearningProgressPDBlock\Block\Course;
 
 use ilLPCollection;
 use ilObjectLP;
+use srag\Plugins\SrLearningProgressPDBlock\Block\BaseBlock;
 
 /**
  * Class BaseCourseBlock
  *
- * @package srag\Plugins\SrLearningProgressPDBlock\Block
+ * @package srag\Plugins\SrLearningProgressPDBlock\Block\Course
  *
  * @author  studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  */

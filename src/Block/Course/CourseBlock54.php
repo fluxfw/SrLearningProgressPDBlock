@@ -1,23 +1,23 @@
 <?php
 
-namespace srag\Plugins\SrLearningProgressPDBlock\Block;
+namespace srag\Plugins\SrLearningProgressPDBlock\Block\Course;
 
 use ilSrLearningProgressPDBlockPlugin;
 
 /**
- * Class CourseBlock53
+ * Class CourseBlock54
  *
- * @package srag\Plugins\SrLearningProgressPDBlock\Block
+ * @package srag\Plugins\SrLearningProgressPDBlock\Block\Course
  *
  * @author  studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  */
-class CourseBlock53 extends BaseCourseBlock
+class CourseBlock54 extends BaseCourseBlock
 {
 
     /**
      * @return string
      */
-    public static function getBlockType() : string
+    public function getBlockType() : string
     {
         return ilSrLearningProgressPDBlockPlugin::PLUGIN_ID;
     }
@@ -26,7 +26,7 @@ class CourseBlock53 extends BaseCourseBlock
     /**
      * @return bool
      */
-    public static function isRepositoryObject() : bool
+    protected function isRepositoryObject() : bool
     {
         return false;
     }

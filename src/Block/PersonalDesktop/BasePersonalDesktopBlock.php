@@ -1,11 +1,13 @@
 <?php
 
-namespace srag\Plugins\SrLearningProgressPDBlock\Block;
+namespace srag\Plugins\SrLearningProgressPDBlock\Block\PersonalDesktop;
+
+use srag\Plugins\SrLearningProgressPDBlock\Block\BaseBlock;
 
 /**
  * Class BasePersonalDesktopBlock
  *
- * @package srag\Plugins\SrLearningProgressPDBlock\Block
+ * @package srag\Plugins\SrLearningProgressPDBlock\Block\PersonalDesktop
  *
  * @author  studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  */
