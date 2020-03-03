@@ -4,10 +4,8 @@ namespace srag\Plugins\SrLearningProgressPDBlock\Block;
 
 use ilBlockGUI;
 use ilSrLearningProgressPDBlockPlugin;
-use ilTemplateException;
 use srag\CustomInputGUIs\SrLearningProgressPDBlock\CustomInputGUIsTrait;
 use srag\DIC\SrLearningProgressPDBlock\DICTrait;
-use srag\DIC\SrLearningProgressPDBlock\Exception\DICException;
 use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
 
 /**
@@ -67,8 +65,7 @@ abstract class BaseBlock extends ilBlockGUI
 
 
     /**
-     * @throws DICException
-     * @throws ilTemplateException
+     *
      */
     public function fillDataSection()/*: void*/
     {
