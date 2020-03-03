@@ -33,9 +33,7 @@ class ilSrLearningProgressPDBlockUIHookGUI extends ilUIHookPluginGUI
             ];
         }
 
-        if (self::dic()->ctrl()->getCmdClass() === strtolower(ilObjCourseGUI::class) && $a_comp === self::COMPONENT_CONTAINER
-            && $a_part === self::PART_RIGHT_COLUMN
-        ) {
+        if (self::dic()->ctrl()->getCmdClass() === strtolower(ilObjCourseGUI::class) && $a_comp === self::COMPONENT_CONTAINER && $a_part === self::PART_RIGHT_COLUMN) {
 
             return [
                 "mode" => self::PREPEND,
