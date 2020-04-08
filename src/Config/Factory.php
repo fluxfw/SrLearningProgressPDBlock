@@ -2,7 +2,6 @@
 
 namespace srag\Plugins\SrLearningProgressPDBlock\Config;
 
-use ilSrLearningProgressPDBlockConfigGUI;
 use ilSrLearningProgressPDBlockPlugin;
 use srag\ActiveRecordConfig\SrLearningProgressPDBlock\Config\AbstractFactory;
 use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
@@ -48,11 +47,11 @@ final class Factory extends AbstractFactory
 
 
     /**
-     * @param ilSrLearningProgressPDBlockConfigGUI $parent
+     * @param ConfigCtrl $parent
      *
      * @return ConfigFormGUI
      */
-    public function newFormInstance(ilSrLearningProgressPDBlockConfigGUI $parent) : ConfigFormGUI
+    public function newFormInstance(ConfigCtrl $parent) : ConfigFormGUI
     {
         $form = new ConfigFormGUI($parent);
 

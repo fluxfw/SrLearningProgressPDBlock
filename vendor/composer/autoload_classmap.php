@@ -123,6 +123,7 @@ return array(
     'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\PersonalDesktop\\PersonalDesktopBlock53' => $baseDir . '/src/Block/PersonalDesktop/PersonalDesktopBlock53.php',
     'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\PersonalDesktop\\PersonalDesktopBlock54' => $baseDir . '/src/Block/PersonalDesktop/PersonalDesktopBlock54.php',
     'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\Repository' => $baseDir . '/src/Block/Repository.php',
+    'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\ConfigCtrl' => $baseDir . '/src/Config/class.ConfigCtrl.php',
     'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\ConfigFormGUI' => $baseDir . '/src/Config/ConfigFormGUI.php',
     'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\Factory' => $baseDir . '/src/Config/Factory.php',
     'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\Repository' => $baseDir . '/src/Config/Repository.php',

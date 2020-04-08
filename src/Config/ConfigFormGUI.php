@@ -3,7 +3,6 @@
 namespace srag\Plugins\SrLearningProgressPDBlock\Config;
 
 use ilCheckboxInputGUI;
-use ilSrLearningProgressPDBlockConfigGUI;
 use ilSrLearningProgressPDBlockPlugin;
 use srag\CustomInputGUIs\SrLearningProgressPDBlock\PropertyFormGUI\PropertyFormGUI;
 use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
@@ -22,15 +21,15 @@ class ConfigFormGUI extends PropertyFormGUI
     const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
     const KEY_SHOW_ON_COURSES = "show_on_courses";
     const KEY_SHOW_ON_PERSONAL_DESKTOP = "show_on_personal_desktop";
-    const LANG_MODULE = ilSrLearningProgressPDBlockConfigGUI::LANG_MODULE;
+    const LANG_MODULE = ConfigCtrl::LANG_MODULE;
 
 
     /**
      * ConfigFormGUI constructor
      *
-     * @param ilSrLearningProgressPDBlockConfigGUI $parent
+     * @param ConfigCtrl $parent
      */
-    public function __construct(ilSrLearningProgressPDBlockConfigGUI $parent)
+    public function __construct(ConfigCtrl $parent)
     {
         parent::__construct($parent);
     }
@@ -53,7 +52,7 @@ class ConfigFormGUI extends PropertyFormGUI
      */
     protected function initCommands()/*: void*/
     {
-        $this->addCommandButton(ilSrLearningProgressPDBlockConfigGUI::CMD_UPDATE_CONFIGURE, $this->txt("save"));
+        $this->addCommandButton(ConfigCtrl::CMD_UPDATE_CONFIGURE, $this->txt("save"));
     }
 
 

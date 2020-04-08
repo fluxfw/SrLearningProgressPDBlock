@@ -163,6 +163,7 @@ class ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e
         'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\PersonalDesktop\\PersonalDesktopBlock53' => __DIR__ . '/../..' . '/src/Block/PersonalDesktop/PersonalDesktopBlock53.php',
         'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\PersonalDesktop\\PersonalDesktopBlock54' => __DIR__ . '/../..' . '/src/Block/PersonalDesktop/PersonalDesktopBlock54.php',
         'srag\\Plugins\\SrLearningProgressPDBlock\\Block\\Repository' => __DIR__ . '/../..' . '/src/Block/Repository.php',
+        'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\ConfigCtrl' => __DIR__ . '/../..' . '/src/Config/class.ConfigCtrl.php',
         'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\ConfigFormGUI' => __DIR__ . '/../..' . '/src/Config/ConfigFormGUI.php',
         'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\Factory' => __DIR__ . '/../..' . '/src/Config/Factory.php',
         'srag\\Plugins\\SrLearningProgressPDBlock\\Config\\Repository' => __DIR__ . '/../..' . '/src/Config/Repository.php',
