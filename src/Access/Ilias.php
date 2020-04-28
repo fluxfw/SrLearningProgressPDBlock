@@ -19,6 +19,7 @@ final class Ilias
 
     use DICTrait;
     use SrLearningProgressPDBlockTrait;
+
     const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
     /**
      * @var self|null

@@ -18,6 +18,7 @@ class ConfigFormGUI extends PropertyFormGUI
 {
 
     use SrLearningProgressPDBlockTrait;
+
     const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
     const KEY_SHOW_ON_COURSES = "show_on_courses";
     const KEY_SHOW_ON_PERSONAL_DESKTOP = "show_on_personal_desktop";

@@ -15,6 +15,7 @@ class ilSrLearningProgressPDBlockPlugin extends ilUserInterfaceHookPlugin
 
     use PluginUninstallTrait;
     use SrLearningProgressPDBlockTrait;
+
     const PLUGIN_ID = "srlppd";
     const PLUGIN_NAME = "SrLearningProgressPDBlock";
     const PLUGIN_CLASS_NAME = self::class;

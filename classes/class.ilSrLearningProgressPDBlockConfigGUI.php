@@ -16,6 +16,7 @@ class ilSrLearningProgressPDBlockConfigGUI extends ilPluginConfigGUI
 
     use DICTrait;
     use SrLearningProgressPDBlockTrait;
+
     const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
     const CMD_CONFIGURE = "configure";
 

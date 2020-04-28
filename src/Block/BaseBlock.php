@@ -21,6 +21,7 @@ abstract class BaseBlock extends ilBlockGUI
     use DICTrait;
     use SrLearningProgressPDBlockTrait;
     use CustomInputGUIsTrait;
+
     const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
     const LANG_MODULE = "block";
     /**
