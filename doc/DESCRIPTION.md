@@ -1,4 +1,4 @@
-## SrLearningProgressPDBlock Description
+# SrLearningProgressPDBlock ILIAS Plugin Description
 
 Config:
 ![Config](./images/config.png)
