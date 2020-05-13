@@ -4,5 +4,5 @@ block_none#:#Keine
 config_configuration#:#Konfiguration
 config_configuration_saved#:#Konfiguration gespeichert
 config_courses#:#Kurse
-config_personal_desktop#:#Persönlicher Schreibtisch
+config_dashboard#:#Dashboard
 config_save#:#Speichern
