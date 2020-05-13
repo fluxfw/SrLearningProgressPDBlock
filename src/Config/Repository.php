@@ -6,6 +6,7 @@ use ilSrLearningProgressPDBlockPlugin;
 use srag\ActiveRecordConfig\SrLearningProgressPDBlock\Config\AbstractFactory;
 use srag\ActiveRecordConfig\SrLearningProgressPDBlock\Config\AbstractRepository;
 use srag\ActiveRecordConfig\SrLearningProgressPDBlock\Config\Config;
+use srag\Plugins\SrLearningProgressPDBlock\Config\Form\FormBuilder;
 use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
 
 /**
@@ -75,8 +76,8 @@ final class Repository extends AbstractRepository
     protected function getFields() : array
     {
         return [
-            ConfigFormGUI::KEY_SHOW_ON_COURSES          => [Config::TYPE_BOOLEAN, true],
-            ConfigFormGUI::KEY_SHOW_ON_PERSONAL_DESKTOP => [Config::TYPE_BOOLEAN, true]
+            FormBuilder::KEY_SHOW_ON_COURSES   => [Config::TYPE_BOOLEAN, true],
+            FormBuilder::KEY_SHOW_ON_DASHBOARD => [Config::TYPE_BOOLEAN, true]
         ];
     }
 }

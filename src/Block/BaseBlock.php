@@ -42,6 +42,24 @@ abstract class BaseBlock extends ilBlockGUI
     /**
      * @return string
      */
+    public function getBlockType() : string
+    {
+        return ilSrLearningProgressPDBlockPlugin::PLUGIN_ID;
+    }
+
+
+    /**
+     * @return bool
+     */
+    protected function isRepositoryObject() : bool
+    {
+        return false;
+    }
+
+
+    /**
+     * @return string
+     */
     public function getHTML() : string
     {
         if ($this->enabled()) {
@@ -62,6 +80,17 @@ abstract class BaseBlock extends ilBlockGUI
         $this->initTitle();
 
         $this->initObjIds();
+
+        $this->new_rendering = true;
+    }
+
+
+    /**
+     * @inheritDoc
+     */
+    protected function getLegacyContent() : string
+    {
+        return $this->getPie();
     }
 
 
