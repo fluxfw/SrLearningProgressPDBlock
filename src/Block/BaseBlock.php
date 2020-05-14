@@ -81,7 +81,9 @@ abstract class BaseBlock extends ilBlockGUI
 
         $this->initObjIds();
 
-        $this->new_rendering = true;
+        if (self::version()->is6()) {
+            $this->new_rendering = true;
+        }
     }
 
 
@@ -95,7 +97,7 @@ abstract class BaseBlock extends ilBlockGUI
 
 
     /**
-     *
+     * @inheritDoc
      */
     public function fillDataSection()/*: void*/
     {
