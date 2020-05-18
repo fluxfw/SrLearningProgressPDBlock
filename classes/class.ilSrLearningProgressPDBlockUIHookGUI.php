@@ -27,7 +27,7 @@ class ilSrLearningProgressPDBlockUIHookGUI extends ilUIHookPluginGUI
     public function getHTML(/*string*/ $a_comp, /*string*/ $a_part, $a_par = []) : array
     {
 
-        if (($a_comp === self::COMPONENT_PERSONAL_DESKTOP || $a_comp === self::COMPONENT_DASHBOARD) && $a_part === self::PART_RIGHT_COLUMN) {
+        if (($a_comp === self::COMPONENT_DASHBOARD || $a_comp === self::COMPONENT_PERSONAL_DESKTOP) && $a_part === self::PART_RIGHT_COLUMN) {
 
             return [
                 "mode" => self::PREPEND,
