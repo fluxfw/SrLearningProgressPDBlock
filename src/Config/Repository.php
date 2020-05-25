@@ -76,8 +76,8 @@ final class Repository extends AbstractRepository
     protected function getFields() : array
     {
         return [
-            FormBuilder::KEY_SHOW_ON_COURSES   => [Config::TYPE_BOOLEAN, true],
-            FormBuilder::KEY_SHOW_ON_DASHBOARD => [Config::TYPE_BOOLEAN, true]
+            FormBuilder::KEY_SHOW_ON_COURSES   => [Config::TYPE_BOOLEAN, false],
+            FormBuilder::KEY_SHOW_ON_DASHBOARD => [Config::TYPE_BOOLEAN, false]
         ];
     }
 }
