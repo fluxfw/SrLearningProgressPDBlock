@@ -2,6 +2,8 @@
 
 require_once __DIR__ . "/../vendor/autoload.php";
 
+use ILIAS\DI\Container;
+use srag\CustomInputGUIs\SrLearningProgressPDBlock\Loader\CustomInputGUIsLoaderDetector;
 use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
 use srag\RemovePluginDataConfirm\SrLearningProgressPDBlock\PluginUninstallTrait;
 
@@ -73,5 +75,14 @@ class ilSrLearningProgressPDBlockPlugin extends ilUserInterfaceHookPlugin
     protected function deleteData()/*: void*/
     {
         self::srLearningProgressPDBlock()->dropTables();
+    }
+
+
+    /**
+     * @inheritDoc
+     */
+    public function exchangeUIRendererAfterInitialization(Container $dic) : Closure
+    {
+        return CustomInputGUIsLoaderDetector::exchangeUIRendererAfterInitialization();
     }
 }

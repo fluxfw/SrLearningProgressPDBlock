@@ -12,8 +12,8 @@ class ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e
             'srag\\RemovePluginDataConfirm\\SrLearningProgressPDBlock\\' => 55,
             'srag\\Plugins\\SrLearningProgressPDBlock\\' => 39,
             'srag\\LibrariesNamespaceChanger\\' => 31,
-            'srag\\DIC\\' => 9,
-            'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\' => 47,
+            'srag\\DIC\\SrLearningProgressPDBlock\\' => 35,
+            'srag\\CustomInputGUIs\\' => 21,
             'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\' => 50,
         ),
     );
@@ -31,11 +31,11 @@ class ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e
         array (
             0 => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src',
         ),
-        'srag\\DIC\\' => 
+        'srag\\DIC\\SrLearningProgressPDBlock\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/dic/src',
         ),
-        'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\' => 
+        'srag\\CustomInputGUIs\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/custominputguis/src',
         ),
@@ -81,6 +81,7 @@ class ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e
         'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\LearningProgressPieUI\\LearningProgressPieUI' => __DIR__ . '/..' . '/srag/custominputguis/src/LearningProgressPieUI/LearningProgressPieUI.php',
         'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\LearningProgressPieUI\\ObjIdsLearningProgressPieUI' => __DIR__ . '/..' . '/srag/custominputguis/src/LearningProgressPieUI/ObjIdsLearningProgressPieUI.php',
         'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\LearningProgressPieUI\\UsrIdsLearningProgressPieUI' => __DIR__ . '/..' . '/srag/custominputguis/src/LearningProgressPieUI/UsrIdsLearningProgressPieUI.php',
+        'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\Loader\\CustomInputGUIsLoaderDetector' => __DIR__ . '/..' . '/srag/custominputguis/src/Loader/CustomInputGUIsLoaderDetector.php',
         'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\MultiLineInputGUI\\MultiLineInputGUI' => __DIR__ . '/..' . '/srag/custominputguis/src/MultiLineInputGUI/MultiLineInputGUI.php',
         'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\MultiLineNewInputGUI\\MultiLineNewInputGUI' => __DIR__ . '/..' . '/srag/custominputguis/src/MultiLineNewInputGUI/MultiLineNewInputGUI.php',
         'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\MultiSelectSearchInputGUI\\MultiSelectSearchInput2GUI' => __DIR__ . '/..' . '/srag/custominputguis/src/MultiSelectSearchInputGUI/MultiSelectSearchInput2GUI.php',
@@ -148,6 +149,7 @@ class ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e
         'srag\\DIC\\SrLearningProgressPDBlock\\Database\\PdoContextHelper' => __DIR__ . '/..' . '/srag/dic/src/Database/PdoContextHelper.php',
         'srag\\DIC\\SrLearningProgressPDBlock\\Database\\PdoStatementContextHelper' => __DIR__ . '/..' . '/srag/dic/src/Database/PdoStatementContextHelper.php',
         'srag\\DIC\\SrLearningProgressPDBlock\\Exception\\DICException' => __DIR__ . '/..' . '/srag/dic/src/Exception/DICException.php',
+        'srag\\DIC\\SrLearningProgressPDBlock\\Loader\\AbstractLoaderDetector' => __DIR__ . '/..' . '/srag/dic/src/Loader/AbstractLoaderDetector.php',
         'srag\\DIC\\SrLearningProgressPDBlock\\Output\\Output' => __DIR__ . '/..' . '/srag/dic/src/Output/Output.php',
         'srag\\DIC\\SrLearningProgressPDBlock\\Output\\OutputInterface' => __DIR__ . '/..' . '/srag/dic/src/Output/OutputInterface.php',
         'srag\\DIC\\SrLearningProgressPDBlock\\PHPVersionChecker' => __DIR__ . '/..' . '/srag/dic/src/PHPVersionChecker.php',
