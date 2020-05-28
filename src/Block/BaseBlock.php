@@ -4,10 +4,8 @@ namespace srag\Plugins\SrLearningProgressPDBlock\Block;
 
 use ilBlockGUI;
 use ilSrLearningProgressPDBlockPlugin;
-use ilTemplateException;
 use srag\CustomInputGUIs\SrLearningProgressPDBlock\CustomInputGUIsTrait;
 use srag\DIC\SrLearningProgressPDBlock\DICTrait;
-use srag\DIC\SrLearningProgressPDBlock\Exception\DICException;
 use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
 
 /**
@@ -23,8 +21,9 @@ abstract class BaseBlock extends ilBlockGUI
     use DICTrait;
     use SrLearningProgressPDBlockTrait;
     use CustomInputGUIsTrait;
+
     const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
-    const LANG_MODULE_BLOCK = "block";
+    const LANG_MODULE = "block";
     /**
      * @var int[]
      */
@@ -37,6 +36,24 @@ abstract class BaseBlock extends ilBlockGUI
     public function __construct()
     {
         parent::__construct();
+    }
+
+
+    /**
+     * @return string
+     */
+    public function getBlockType() : string
+    {
+        return ilSrLearningProgressPDBlockPlugin::PLUGIN_ID;
+    }
+
+
+    /**
+     * @return bool
+     */
+    protected function isRepositoryObject() : bool
+    {
+        return false;
     }
 
 
@@ -63,26 +80,47 @@ abstract class BaseBlock extends ilBlockGUI
         $this->initTitle();
 
         $this->initObjIds();
+
+        if (self::version()->is6()) {
+            $this->new_rendering = true;
+        }
     }
 
 
     /**
-     * @throws DICException
-     * @throws ilTemplateException
+     * @inheritDoc
+     */
+    protected function getLegacyContent() : string
+    {
+        return $this->getPie();
+    }
+
+
+    /**
+     * @inheritDoc
      */
     public function fillDataSection()/*: void*/
     {
+        $this->setDataSection($this->getPie());
+    }
+
+
+    /**
+     * @return string
+     */
+    protected function getPie() : string
+    {
         $obj_ids = array_filter($this->obj_ids, function (int $obj_id) : bool {
-            return self::access()->hasReadAccess($obj_id);
+            return self::srLearningProgressPDBlock()->access()->hasReadAccess($obj_id);
         });
 
         $pie = self::output()->getHTML(self::customInputGUIs()->learningProgressPie()->objIds()->withObjIds($obj_ids)->withUsrId(self::dic()->user()
             ->getId())->withShowLegend(true));
 
         if (!empty($pie)) {
-            $this->setDataSection($pie);
+            return $pie;
         } else {
-            $this->setDataSection(self::dic()->language()->txt("none"));
+            return self::plugin()->translate("none", self::LANG_MODULE);
         }
     }
 

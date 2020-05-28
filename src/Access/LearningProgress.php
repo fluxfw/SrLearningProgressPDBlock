@@ -21,6 +21,7 @@ class LearningProgress
 
     use SrLearningProgressPDBlockTrait;
     use DICTrait;
+
     const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
     /**
      * @var self[]

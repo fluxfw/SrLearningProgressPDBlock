@@ -4,15 +4,16 @@ namespace srag\Plugins\SrLearningProgressPDBlock\Block;
 
 use ilLPCollection;
 use ilObjectLP;
+use srag\Plugins\SrLearningProgressPDBlock\Config\Form\FormBuilder;
 
 /**
- * Class BaseCourseBlock
+ * Class CoursesBlock
  *
  * @package srag\Plugins\SrLearningProgressPDBlock\Block
  *
  * @author  studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  */
-abstract class BaseCourseBlock extends BaseBlock
+class CoursesBlock extends BaseBlock
 {
 
     const GET_PARAM_REF_ID = "ref_id";
@@ -28,7 +29,7 @@ abstract class BaseCourseBlock extends BaseBlock
 
 
     /**
-     * CourseBlock constructor
+     * CoursesBlock constructor
      */
     public function __construct()
     {
@@ -40,16 +41,20 @@ abstract class BaseCourseBlock extends BaseBlock
 
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
     protected function enabled() : bool
     {
-        return self::ilias()->learningProgress(self::dic()->user())->enabled($this->course_obj_id);
+        return (self::srLearningProgressPDBlock()->config()->getValue(FormBuilder::KEY_SHOW_ON_COURSES)
+            && self::srLearningProgressPDBlock()
+                ->ilias()
+                ->learningProgress(self::dic()->user())
+                ->enabled($this->course_obj_id));
     }
 
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
     protected function initObjIds()/*: void*/
     {
@@ -73,11 +78,11 @@ abstract class BaseCourseBlock extends BaseBlock
 
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
     protected function initTitle()/*: void*/
     {
-        $this->setTitle(self::dic()->language()->txt("trac_learning_progress"));
+        $this->setTitle(self::plugin()->translate("learning_progress", self::LANG_MODULE));
     }
 
 

@@ -2,8 +2,8 @@
 
 require_once __DIR__ . "/../vendor/autoload.php";
 
-use srag\DIC\SrLearningProgressPDBlock\Util\LibraryLanguageInstaller;
-use srag\Plugins\SrLearningProgressPDBlock\Config\Config;
+use ILIAS\DI\Container;
+use srag\CustomInputGUIs\SrLearningProgressPDBlock\Loader\CustomInputGUIsLoaderDetector;
 use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
 use srag\RemovePluginDataConfirm\SrLearningProgressPDBlock\PluginUninstallTrait;
 
@@ -17,6 +17,7 @@ class ilSrLearningProgressPDBlockPlugin extends ilUserInterfaceHookPlugin
 
     use PluginUninstallTrait;
     use SrLearningProgressPDBlockTrait;
+
     const PLUGIN_ID = "srlppd";
     const PLUGIN_NAME = "SrLearningProgressPDBlock";
     const PLUGIN_CLASS_NAME = self::class;
@@ -49,7 +50,7 @@ class ilSrLearningProgressPDBlockPlugin extends ilUserInterfaceHookPlugin
 
 
     /**
-     * @return string
+     * @inheritDoc
      */
     public function getPluginName() : string
     {
@@ -58,23 +59,30 @@ class ilSrLearningProgressPDBlockPlugin extends ilUserInterfaceHookPlugin
 
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
-    public function updateLanguages($a_lang_keys = null)
+    public function updateLanguages(/*?array*/ $a_lang_keys = null)/*:void*/
     {
         parent::updateLanguages($a_lang_keys);
 
-        LibraryLanguageInstaller::getInstance()->withPlugin(self::plugin())->withLibraryLanguageDirectory(__DIR__
-            . "/../vendor/srag/removeplugindataconfirm/lang")->updateLanguages();
+        $this->installRemovePluginDataConfirmLanguages();
     }
 
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
     protected function deleteData()/*: void*/
     {
-        self::dic()->database()->dropTable(Config::TABLE_NAME, false);
-        self::dic()->database()->dropTable(Config::TABLE_NAME_WRONG, false);
+        self::srLearningProgressPDBlock()->dropTables();
+    }
+
+
+    /**
+     * @inheritDoc
+     */
+    public function exchangeUIRendererAfterInitialization(Container $dic) : Closure
+    {
+        return CustomInputGUIsLoaderDetector::exchangeUIRendererAfterInitialization();
     }
 }
