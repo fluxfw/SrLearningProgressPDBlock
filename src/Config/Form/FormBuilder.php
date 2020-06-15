@@ -19,9 +19,9 @@ class FormBuilder extends AbstractFormBuilder
 
     use SrLearningProgressPDBlockTrait;
 
-    const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
-    const KEY_SHOW_ON_DASHBOARD = "show_on_personal_desktop";
     const KEY_SHOW_ON_COURSES = "show_on_courses";
+    const KEY_SHOW_ON_DASHBOARD = "show_on_personal_desktop";
+    const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
 
 
     /**

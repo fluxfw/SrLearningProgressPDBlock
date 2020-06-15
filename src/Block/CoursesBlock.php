@@ -21,11 +21,11 @@ class CoursesBlock extends BaseBlock
     /**
      * @var int
      */
-    protected $course_ref_id;
+    protected $course_obj_id;
     /**
      * @var int
      */
-    protected $course_obj_id;
+    protected $course_ref_id;
 
 
     /**

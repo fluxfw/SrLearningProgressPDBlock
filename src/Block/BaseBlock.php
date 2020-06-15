@@ -22,8 +22,8 @@ abstract class BaseBlock extends ilBlockGUI
     use SrLearningProgressPDBlockTrait;
     use CustomInputGUIsTrait;
 
-    const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
     const LANG_MODULE = "block";
+    const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
     /**
      * @var int[]
      */
@@ -40,20 +40,20 @@ abstract class BaseBlock extends ilBlockGUI
 
 
     /**
+     * @inheritDoc
+     */
+    public function fillDataSection()/*: void*/
+    {
+        $this->setDataSection($this->getPie());
+    }
+
+
+    /**
      * @return string
      */
     public function getBlockType() : string
     {
         return ilSrLearningProgressPDBlockPlugin::PLUGIN_ID;
-    }
-
-
-    /**
-     * @return bool
-     */
-    protected function isRepositoryObject() : bool
-    {
-        return false;
     }
 
 
@@ -73,18 +73,9 @@ abstract class BaseBlock extends ilBlockGUI
 
 
     /**
-     *
+     * @return bool
      */
-    protected function initBlock()/*: void*/
-    {
-        $this->initTitle();
-
-        $this->initObjIds();
-
-        if (self::version()->is6()) {
-            $this->new_rendering = true;
-        }
-    }
+    protected abstract function enabled() : bool;
 
 
     /**
@@ -93,15 +84,6 @@ abstract class BaseBlock extends ilBlockGUI
     protected function getLegacyContent() : string
     {
         return $this->getPie();
-    }
-
-
-    /**
-     * @inheritDoc
-     */
-    public function fillDataSection()/*: void*/
-    {
-        $this->setDataSection($this->getPie());
     }
 
 
@@ -126,9 +108,18 @@ abstract class BaseBlock extends ilBlockGUI
 
 
     /**
-     * @return bool
+     *
      */
-    protected abstract function enabled() : bool;
+    protected function initBlock()/*: void*/
+    {
+        $this->initTitle();
+
+        $this->initObjIds();
+
+        if (self::version()->is6()) {
+            $this->new_rendering = true;
+        }
+    }
 
 
     /**
@@ -141,4 +132,13 @@ abstract class BaseBlock extends ilBlockGUI
      *
      */
     protected abstract function initTitle()/*: void*/ ;
+
+
+    /**
+     * @return bool
+     */
+    protected function isRepositoryObject() : bool
+    {
+        return false;
+    }
 }
