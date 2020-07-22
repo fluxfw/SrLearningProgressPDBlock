@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d01794c3d211fe3793876dd108b6d494",
+    "content-hash": "4c84768840271ae7ed64258e80e86ced",
     "packages": [
         {
             "name": "srag/activerecordconfig",
@@ -54,16 +54,16 @@
         },
         {
             "name": "srag/custominputguis",
-            "version": "v0.36.0",
+            "version": "v0.37.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/studer-raimann/CustomInputGUIs.git",
-                "reference": "e3cd856796c04ad5b9b3ba7e5ef2375f0a8894b0"
+                "reference": "0a0819d962d126f940b083c59a8ad99646a358af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/studer-raimann/CustomInputGUIs/zipball/e3cd856796c04ad5b9b3ba7e5ef2375f0a8894b0",
-                "reference": "e3cd856796c04ad5b9b3ba7e5ef2375f0a8894b0",
+                "url": "https://api.github.com/repos/studer-raimann/CustomInputGUIs/zipball/0a0819d962d126f940b083c59a8ad99646a358af",
+                "reference": "0a0819d962d126f940b083c59a8ad99646a358af",
                 "shasum": ""
             },
             "require": {
@@ -97,7 +97,7 @@
                 "input",
                 "table"
             ],
-            "time": "2020-06-08T06:27:00+00:00"
+            "time": "2020-07-22T13:00:47+00:00"
         },
         {
             "name": "srag/dic",
@@ -145,17 +145,64 @@
             "time": "2020-06-09T05:30:37+00:00"
         },
         {
-            "name": "srag/librariesnamespacechanger",
-            "version": "v0.9.3",
+            "name": "srag/learningprogresspieui",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/studer-raimann/LibrariesNamespaceChanger.git",
-                "reference": "f1d8d9ce97723b1bc5850dcbb2031bca38fe6030"
+                "url": "https://github.com/studer-raimann/LearningProgressPieUI.git",
+                "reference": "a7e545e2865593fc7cca3a7a70da3a63cdfa309b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/studer-raimann/LibrariesNamespaceChanger/zipball/f1d8d9ce97723b1bc5850dcbb2031bca38fe6030",
-                "reference": "f1d8d9ce97723b1bc5850dcbb2031bca38fe6030",
+                "url": "https://api.github.com/repos/studer-raimann/LearningProgressPieUI/zipball/a7e545e2865593fc7cca3a7a70da3a63cdfa309b",
+                "reference": "a7e545e2865593fc7cca3a7a70da3a63cdfa309b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "srag/dic": ">=0.1.0",
+                "srag/piechart": "1.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "srag\\LearningProgressPieUI\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "studer + raimann ag - Team Custom 1",
+                    "email": "support-custom1@studer-raimann.ch",
+                    "homepage": "https://studer-raimann.ch",
+                    "role": "Developer"
+                }
+            ],
+            "homepage": "https://github.com/studer-raimann/LearningProgressPieUI",
+            "keywords": [
+                "ILIAS",
+                "chart",
+                "learning",
+                "pie",
+                "progress"
+            ],
+            "time": "2020-07-22T13:03:36+00:00"
+        },
+        {
+            "name": "srag/librariesnamespacechanger",
+            "version": "v0.9.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/studer-raimann/LibrariesNamespaceChanger.git",
+                "reference": "26d8eebf415afe713e18600cb6d1d4ade1ed35a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/studer-raimann/LibrariesNamespaceChanger/zipball/26d8eebf415afe713e18600cb6d1d4ade1ed35a8",
+                "reference": "26d8eebf415afe713e18600cb6d1d4ade1ed35a8",
                 "shasum": ""
             },
             "require": {
@@ -185,7 +232,50 @@
                 "ILIAS",
                 "libraries"
             ],
-            "time": "2020-06-09T10:27:35+00:00"
+            "time": "2020-06-15T05:33:10+00:00"
+        },
+        {
+            "name": "srag/piechart",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/studer-raimann/PieChart.git",
+                "reference": "a49afb5be2d2c13934081684f8761cf44d5f9ff7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/studer-raimann/PieChart/zipball/a49afb5be2d2c13934081684f8761cf44d5f9ff7",
+                "reference": "a49afb5be2d2c13934081684f8761cf44d5f9ff7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "srag\\PieChart\\SrLearningProgressPDBlock\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "studer + raimann ag - Team Custom 1",
+                    "email": "support-custom1@studer-raimann.ch",
+                    "homepage": "https://studer-raimann.ch",
+                    "role": "Developer"
+                }
+            ],
+            "homepage": "https://github.com/studer-raimann/PieChart",
+            "keywords": [
+                "ILIAS",
+                "chart",
+                "pie"
+            ],
+            "time": "2020-07-22T12:45:41+00:00"
         },
         {
             "name": "srag/removeplugindataconfirm",

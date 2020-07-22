@@ -1,0 +1,15 @@
+.il-chart-pie-chart-section {
+	fill: none;
+	stroke: gold;
+	stroke-width: 12px;
+}
+.il-chart-pie-chart-total-circle {
+	stroke: white;
+	fill: white;
+}
+.il-chart-pie-chart-section-text {
+	font-size: 3px;
+}
+.il-chart-pie-chart-legend-text {
+	font-size: 2px;
+}
