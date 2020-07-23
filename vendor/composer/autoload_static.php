@@ -15,9 +15,9 @@ class ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e
         array (
             'srag\\RemovePluginDataConfirm\\SrLearningProgressPDBlock\\' => 55,
             'srag\\Plugins\\SrLearningProgressPDBlock\\' => 39,
-            'srag\\PieChart\\' => 14,
+            'srag\\PieChart\\SrLearningProgressPDBlock\\' => 40,
             'srag\\LibrariesNamespaceChanger\\' => 31,
-            'srag\\LearningProgressPieUI\\' => 27,
+            'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\' => 53,
             'srag\\DIC\\SrLearningProgressPDBlock\\' => 35,
             'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\' => 47,
             'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\' => 50,
@@ -33,7 +33,7 @@ class ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
-        'srag\\PieChart\\' => 
+        'srag\\PieChart\\SrLearningProgressPDBlock\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/piechart/src',
         ),
@@ -41,7 +41,7 @@ class ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e
         array (
             0 => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src',
         ),
-        'srag\\LearningProgressPieUI\\' => 
+        'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/learningprogresspieui/src',
         ),
