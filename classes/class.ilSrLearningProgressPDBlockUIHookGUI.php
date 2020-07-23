@@ -14,11 +14,11 @@ class ilSrLearningProgressPDBlockUIHookGUI extends ilUIHookPluginGUI
     use DICTrait;
     use SrLearningProgressPDBlockTrait;
 
-    const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
     const COMPONENT_CONTAINER = "Services/Container";
     const COMPONENT_DASHBOARD = "Services/Dashboard";
     const COMPONENT_PERSONAL_DESKTOP = "Services/PersonalDesktop";
     const PART_RIGHT_COLUMN = "right_column";
+    const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
 
 
     /**

@@ -27,6 +27,15 @@ final class Factory
 
 
     /**
+     * Factory constructor
+     */
+    private function __construct()
+    {
+
+    }
+
+
+    /**
      * @return self
      */
     public static function getInstance() : self
@@ -40,11 +49,13 @@ final class Factory
 
 
     /**
-     * Factory constructor
+     * @return CoursesBlock
      */
-    private function __construct()
+    public function courses() : CoursesBlock
     {
+        $block = new CoursesBlock();
 
+        return $block;
     }
 
 
@@ -54,17 +65,6 @@ final class Factory
     public function dashboard() : DashboardBlock
     {
         $block = new DashboardBlock();
-
-        return $block;
-    }
-
-
-    /**
-     * @return CoursesBlock
-     */
-    public function courses() : CoursesBlock
-    {
-        $block = new CoursesBlock();
 
         return $block;
     }

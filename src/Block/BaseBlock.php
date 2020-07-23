@@ -4,8 +4,8 @@ namespace srag\Plugins\SrLearningProgressPDBlock\Block;
 
 use ilBlockGUI;
 use ilSrLearningProgressPDBlockPlugin;
-use srag\CustomInputGUIs\SrLearningProgressPDBlock\CustomInputGUIsTrait;
 use srag\DIC\SrLearningProgressPDBlock\DICTrait;
+use srag\LearningProgressPieUI\SrLearningProgressPDBlock\LearningProgressPieUITrait;
 use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
 
 /**
@@ -20,10 +20,10 @@ abstract class BaseBlock extends ilBlockGUI
 
     use DICTrait;
     use SrLearningProgressPDBlockTrait;
-    use CustomInputGUIsTrait;
+    use LearningProgressPieUITrait;
 
-    const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
     const LANG_MODULE = "block";
+    const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
     /**
      * @var int[]
      */
@@ -40,20 +40,20 @@ abstract class BaseBlock extends ilBlockGUI
 
 
     /**
+     * @inheritDoc
+     */
+    public function fillDataSection()/*: void*/
+    {
+        $this->setDataSection($this->getPie());
+    }
+
+
+    /**
      * @return string
      */
     public function getBlockType() : string
     {
         return ilSrLearningProgressPDBlockPlugin::PLUGIN_ID;
-    }
-
-
-    /**
-     * @return bool
-     */
-    protected function isRepositoryObject() : bool
-    {
-        return false;
     }
 
 
@@ -68,6 +68,41 @@ abstract class BaseBlock extends ilBlockGUI
             return parent::getHTML();
         } else {
             return "";
+        }
+    }
+
+
+    /**
+     * @return bool
+     */
+    protected abstract function enabled() : bool;
+
+
+    /**
+     * @inheritDoc
+     */
+    protected function getLegacyContent() : string
+    {
+        return $this->getPie();
+    }
+
+
+    /**
+     * @return string
+     */
+    protected function getPie() : string
+    {
+        $obj_ids = array_filter($this->obj_ids, function (int $obj_id) : bool {
+            return self::srLearningProgressPDBlock()->access()->hasReadAccess($obj_id);
+        });
+
+        $pie = self::output()->getHTML(self::learningProgressPieUI()->objIds()->withObjIds($obj_ids)->withUsrId(self::dic()->user()
+            ->getId())->withShowLegend(true));
+
+        if (!empty($pie)) {
+            return $pie;
+        } else {
+            return self::plugin()->translate("none", self::LANG_MODULE);
         }
     }
 
@@ -88,50 +123,6 @@ abstract class BaseBlock extends ilBlockGUI
 
 
     /**
-     * @inheritDoc
-     */
-    protected function getLegacyContent() : string
-    {
-        return $this->getPie();
-    }
-
-
-    /**
-     * @inheritDoc
-     */
-    public function fillDataSection()/*: void*/
-    {
-        $this->setDataSection($this->getPie());
-    }
-
-
-    /**
-     * @return string
-     */
-    protected function getPie() : string
-    {
-        $obj_ids = array_filter($this->obj_ids, function (int $obj_id) : bool {
-            return self::srLearningProgressPDBlock()->access()->hasReadAccess($obj_id);
-        });
-
-        $pie = self::output()->getHTML(self::customInputGUIs()->learningProgressPie()->objIds()->withObjIds($obj_ids)->withUsrId(self::dic()->user()
-            ->getId())->withShowLegend(true));
-
-        if (!empty($pie)) {
-            return $pie;
-        } else {
-            return self::plugin()->translate("none", self::LANG_MODULE);
-        }
-    }
-
-
-    /**
-     * @return bool
-     */
-    protected abstract function enabled() : bool;
-
-
-    /**
      *
      */
     protected abstract function initObjIds()/*: void*/ ;
@@ -141,4 +132,13 @@ abstract class BaseBlock extends ilBlockGUI
      *
      */
     protected abstract function initTitle()/*: void*/ ;
+
+
+    /**
+     * @return bool
+     */
+    protected function isRepositoryObject() : bool
+    {
+        return false;
+    }
 }

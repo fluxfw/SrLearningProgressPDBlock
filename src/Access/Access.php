@@ -28,6 +28,15 @@ final class Access
 
 
     /**
+     * Access constructor
+     */
+    private function __construct()
+    {
+
+    }
+
+
+    /**
      * @return self
      */
     public static function getInstance() : self
@@ -37,15 +46,6 @@ final class Access
         }
 
         return self::$instance;
-    }
-
-
-    /**
-     * Access constructor
-     */
-    private function __construct()
-    {
-
     }
 
 

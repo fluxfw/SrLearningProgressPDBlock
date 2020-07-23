@@ -1,6 +1,12 @@
 {
   "name": "srag/plugins/srlearningprogresspdblock",
   "description": "",
+  "version": "1.4.0",
+  "ilias_plugin": {
+    "id": "srlppd",
+    "ilias_min_version": "5.4.0",
+    "ilias_max_version": "6.999"
+  },
   "type": "project",
   "keywords": [
     "ILIAS",
@@ -24,6 +30,7 @@
     "srag/activerecordconfig": ">=0.1.0",
     "srag/custominputguis": ">=0.1.0",
     "srag/dic": ">=0.1.0",
+    "srag/learningprogresspieui": ">=1.0.0",
     "srag/librariesnamespacechanger": ">=0.1.0",
     "srag/removeplugindataconfirm": ">=0.1.0"
   },
@@ -33,6 +40,9 @@
     },
     "classmap": [
       "classes/"
+    ],
+    "files": [
+      "vendor/srag/dic/src/PHPVersionChecker.php"
     ]
   },
   "config": {
@@ -43,7 +53,9 @@
   "scripts": {
     "pre-autoload-dump": [
       "srag\\LibrariesNamespaceChanger\\LibrariesNamespaceChanger::rewriteLibrariesNamespaces",
-      "srag\\LibrariesNamespaceChanger\\PHP72Backport::PHP72Backport"
+      "srag\\LibrariesNamespaceChanger\\PHP72Backport::PHP72Backport",
+      "srag\\LibrariesNamespaceChanger\\GeneratePluginPhpAndXml::generatePluginPhpAndXml",
+      "srag\\LibrariesNamespaceChanger\\UpdatePluginReadme::updatePluginReadme"
     ]
   }
 }
