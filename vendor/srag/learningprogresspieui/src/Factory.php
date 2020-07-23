@@ -5,23 +5,42 @@ namespace srag\LearningProgressPieUI\SrLearningProgressPDBlock;
 use srag\DIC\SrLearningProgressPDBlock\DICTrait;
 
 /**
- * Class LearningProgressPieUI
+ * Class Factory
  *
  * @package srag\LearningProgressPieUI\SrLearningProgressPDBlock
  *
  * @author  studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  */
-class LearningProgressPieUI
+class Factory
 {
 
     use DICTrait;
 
     /**
-     * LearningProgressPieUI constructor
+     * @var self|null
      */
-    public function __construct()
+    protected static $instance = null;
+
+
+    /**
+     * Factory constructor
+     */
+    private function __construct()
     {
 
+    }
+
+
+    /**
+     * @return self
+     */
+    public static function getInstance() : self
+    {
+        if (self::$instance === null) {
+            self::$instance = new self();
+        }
+
+        return self::$instance;
     }
 
 

@@ -1,11 +1,13 @@
 {
   "name": "srag/piechart",
-  "description": "",
+  "description": "ILIAS Pie Chart UI Component",
   "type": "library",
   "keywords": [
     "ILIAS",
     "Pie",
-    "Chart"
+    "Chart",
+    "UI",
+    "Component"
   ],
   "homepage": "https://github.com/studer-raimann/PieChart",
   "license": "GPL-3.0-only",

@@ -125,7 +125,7 @@ abstract class AbstractLearningProgressPieUI
             }, $data);
 
             return self::output()->getHTML((new Factory())->pieChart($data)->withShowLegend($this->show_legend)
-                ->withCustomTotalValue($count));
+                ->withCustomTotalValue(floatval($count)));
         }
 
         return "";

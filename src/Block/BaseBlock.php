@@ -4,9 +4,8 @@ namespace srag\Plugins\SrLearningProgressPDBlock\Block;
 
 use ilBlockGUI;
 use ilSrLearningProgressPDBlockPlugin;
-use srag\CustomInputGUIs\SrLearningProgressPDBlock\CustomInputGUIsTrait;
 use srag\DIC\SrLearningProgressPDBlock\DICTrait;
-use srag\LearningProgressPieUI\SrLearningProgressPDBlock\LearningProgressPieUI;
+use srag\LearningProgressPieUI\SrLearningProgressPDBlock\LearningProgressPieUITrait;
 use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
 
 /**
@@ -21,7 +20,7 @@ abstract class BaseBlock extends ilBlockGUI
 
     use DICTrait;
     use SrLearningProgressPDBlockTrait;
-    use CustomInputGUIsTrait;
+    use LearningProgressPieUITrait;
 
     const LANG_MODULE = "block";
     const PLUGIN_CLASS_NAME = ilSrLearningProgressPDBlockPlugin::class;
@@ -97,7 +96,7 @@ abstract class BaseBlock extends ilBlockGUI
             return self::srLearningProgressPDBlock()->access()->hasReadAccess($obj_id);
         });
 
-        $pie = self::output()->getHTML((new LearningProgressPieUI())->objIds()->withObjIds($obj_ids)->withUsrId(self::dic()->user()
+        $pie = self::output()->getHTML(self::learningProgressPieUI()->objIds()->withObjIds($obj_ids)->withUsrId(self::dic()->user()
             ->getId())->withShowLegend(true));
 
         if (!empty($pie)) {

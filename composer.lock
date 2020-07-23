@@ -146,22 +146,22 @@
         },
         {
             "name": "srag/learningprogresspieui",
-            "version": "v1.0.0",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/studer-raimann/LearningProgressPieUI.git",
-                "reference": "a7e545e2865593fc7cca3a7a70da3a63cdfa309b"
+                "reference": "26c29f5dd1bb1427284db7cb67f50a41e67486fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/studer-raimann/LearningProgressPieUI/zipball/a7e545e2865593fc7cca3a7a70da3a63cdfa309b",
-                "reference": "a7e545e2865593fc7cca3a7a70da3a63cdfa309b",
+                "url": "https://api.github.com/repos/studer-raimann/LearningProgressPieUI/zipball/26c29f5dd1bb1427284db7cb67f50a41e67486fb",
+                "reference": "26c29f5dd1bb1427284db7cb67f50a41e67486fb",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2",
                 "srag/dic": ">=0.1.0",
-                "srag/piechart": "1.0.0"
+                "srag/piechart": "1.0.3"
             },
             "type": "library",
             "autoload": {
@@ -181,15 +181,16 @@
                     "role": "Developer"
                 }
             ],
+            "description": "ILIAS Learning Progress Pie UI",
             "homepage": "https://github.com/studer-raimann/LearningProgressPieUI",
             "keywords": [
                 "ILIAS",
-                "chart",
                 "learning",
                 "pie",
-                "progress"
+                "progress",
+                "ui"
             ],
-            "time": "2020-07-22T13:03:36+00:00"
+            "time": "2020-07-23T09:24:42+00:00"
         },
         {
             "name": "srag/librariesnamespacechanger",
@@ -236,16 +237,16 @@
         },
         {
             "name": "srag/piechart",
-            "version": "v1.0.0",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/studer-raimann/PieChart.git",
-                "reference": "a49afb5be2d2c13934081684f8761cf44d5f9ff7"
+                "reference": "046dcf7d8192aee134fc7ddcf8488cea53cc7cb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/studer-raimann/PieChart/zipball/a49afb5be2d2c13934081684f8761cf44d5f9ff7",
-                "reference": "a49afb5be2d2c13934081684f8761cf44d5f9ff7",
+                "url": "https://api.github.com/repos/studer-raimann/PieChart/zipball/046dcf7d8192aee134fc7ddcf8488cea53cc7cb3",
+                "reference": "046dcf7d8192aee134fc7ddcf8488cea53cc7cb3",
                 "shasum": ""
             },
             "require": {
@@ -254,7 +255,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "srag\\PieChart\\SrLearningProgressPDBlock\\": "src/"
+                    "srag\\PieChart\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -269,13 +270,16 @@
                     "role": "Developer"
                 }
             ],
+            "description": "ILIAS Pie Chart UI Component",
             "homepage": "https://github.com/studer-raimann/PieChart",
             "keywords": [
                 "ILIAS",
                 "chart",
-                "pie"
+                "component",
+                "pie",
+                "ui"
             ],
-            "time": "2020-07-22T12:45:41+00:00"
+            "time": "2020-07-23T09:21:33+00:00"
         },
         {
             "name": "srag/removeplugindataconfirm",

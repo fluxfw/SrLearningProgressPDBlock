@@ -15,7 +15,7 @@ class ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e
         array (
             'srag\\RemovePluginDataConfirm\\SrLearningProgressPDBlock\\' => 55,
             'srag\\Plugins\\SrLearningProgressPDBlock\\' => 39,
-            'srag\\PieChart\\SrLearningProgressPDBlock\\' => 40,
+            'srag\\PieChart\\' => 14,
             'srag\\LibrariesNamespaceChanger\\' => 31,
             'srag\\LearningProgressPieUI\\' => 27,
             'srag\\DIC\\SrLearningProgressPDBlock\\' => 35,
@@ -33,7 +33,7 @@ class ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
-        'srag\\PieChart\\SrLearningProgressPDBlock\\' => 
+        'srag\\PieChart\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/piechart/src',
         ),
@@ -148,7 +148,8 @@ class ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e
         'srag\\DIC\\SrLearningProgressPDBlock\\Version\\VersionInterface' => __DIR__ . '/..' . '/srag/dic/src/Version/VersionInterface.php',
         'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\AbstractLearningProgressPieUI' => __DIR__ . '/..' . '/srag/learningprogresspieui/src/AbstractLearningProgressPieUI.php',
         'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\CountLearningProgressPieUI' => __DIR__ . '/..' . '/srag/learningprogresspieui/src/CountLearningProgressPieUI.php',
-        'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\LearningProgressPieUI' => __DIR__ . '/..' . '/srag/learningprogresspieui/src/LearningProgressPieUI.php',
+        'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\Factory' => __DIR__ . '/..' . '/srag/learningprogresspieui/src/Factory.php',
+        'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\LearningProgressPieUITrait' => __DIR__ . '/..' . '/srag/learningprogresspieui/src/LearningProgressPieUITrait.php',
         'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\ObjIdsLearningProgressPieUI' => __DIR__ . '/..' . '/srag/learningprogresspieui/src/ObjIdsLearningProgressPieUI.php',
         'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\UsrIdsLearningProgressPieUI' => __DIR__ . '/..' . '/srag/learningprogresspieui/src/UsrIdsLearningProgressPieUI.php',
         'srag\\LibrariesNamespaceChanger\\GeneratePluginPhpAndXml' => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src/GeneratePluginPhpAndXml.php',

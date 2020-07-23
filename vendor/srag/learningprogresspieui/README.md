@@ -1,4 +1,8 @@
-# LearningProgressPieUI
+# LearningProgressPieUI Library for ILIAS Plugins
+
+ILIAS Learning Progress Pie UI
+
+Using [srag/piechart](https://packagist.org/packages/srag/piechart)
 
 ## Usage
 
