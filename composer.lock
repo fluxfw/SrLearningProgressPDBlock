@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4c84768840271ae7ed64258e80e86ced",
+    "content-hash": "865896910b8cc7b75f89d1d241140465",
     "packages": [
         {
             "name": "srag/activerecordconfig",
@@ -166,7 +166,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "srag\\LearningProgressPieUI\\": "src/"
+                    "srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -194,16 +194,16 @@
         },
         {
             "name": "srag/librariesnamespacechanger",
-            "version": "v0.9.7",
+            "version": "v0.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/studer-raimann/LibrariesNamespaceChanger.git",
-                "reference": "26d8eebf415afe713e18600cb6d1d4ade1ed35a8"
+                "reference": "35efb3557ea2d58ae3ea6133c2d89b3e41cc8564"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/studer-raimann/LibrariesNamespaceChanger/zipball/26d8eebf415afe713e18600cb6d1d4ade1ed35a8",
-                "reference": "26d8eebf415afe713e18600cb6d1d4ade1ed35a8",
+                "url": "https://api.github.com/repos/studer-raimann/LibrariesNamespaceChanger/zipball/35efb3557ea2d58ae3ea6133c2d89b3e41cc8564",
+                "reference": "35efb3557ea2d58ae3ea6133c2d89b3e41cc8564",
                 "shasum": ""
             },
             "require": {
@@ -233,7 +233,7 @@
                 "ILIAS",
                 "libraries"
             ],
-            "time": "2020-06-15T05:33:10+00:00"
+            "time": "2020-08-05T09:26:53+00:00"
         },
         {
             "name": "srag/piechart",
@@ -255,7 +255,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "srag\\PieChart\\": "src/"
+                    "srag\\PieChart\\SrLearningProgressPDBlock\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
