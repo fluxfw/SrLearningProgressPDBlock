@@ -13,19 +13,19 @@ class ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e
     public static $prefixLengthsPsr4 = array (
         's' => 
         array (
-            'srag\\RemovePluginDataConfirm\\' => 29,
+            'srag\\RemovePluginDataConfirm\\SrLearningProgressPDBlock\\' => 55,
             'srag\\Plugins\\SrLearningProgressPDBlock\\' => 39,
             'srag\\PieChart\\SrLearningProgressPDBlock\\' => 40,
             'srag\\LibrariesNamespaceChanger\\' => 31,
             'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\' => 53,
-            'srag\\DIC\\' => 9,
-            'srag\\CustomInputGUIs\\' => 21,
+            'srag\\DIC\\SrLearningProgressPDBlock\\' => 35,
+            'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\' => 47,
             'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\' => 50,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'srag\\RemovePluginDataConfirm\\' => 
+        'srag\\RemovePluginDataConfirm\\SrLearningProgressPDBlock\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/removeplugindataconfirm/src',
         ),
@@ -45,11 +45,11 @@ class ComposerStaticInitcd71b114fb20897e3b8fb7d6198a685e
         array (
             0 => __DIR__ . '/..' . '/srag/learningprogresspieui/src',
         ),
-        'srag\\DIC\\' => 
+        'srag\\DIC\\SrLearningProgressPDBlock\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/dic/src',
         ),
-        'srag\\CustomInputGUIs\\' => 
+        'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/custominputguis/src',
         ),
