@@ -4,6 +4,7 @@ require_once __DIR__ . "/../vendor/autoload.php";
 
 use ILIAS\DI\Container;
 use srag\CustomInputGUIs\SrLearningProgressPDBlock\Loader\CustomInputGUIsLoaderDetector;
+use srag\DIC\SrLearningProgressPDBlock\DevTools\DevToolsCtrl;
 use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
 use srag\RemovePluginDataConfirm\SrLearningProgressPDBlock\PluginUninstallTrait;
 
@@ -75,6 +76,8 @@ class ilSrLearningProgressPDBlockPlugin extends ilUserInterfaceHookPlugin
         parent::updateLanguages($a_lang_keys);
 
         $this->installRemovePluginDataConfirmLanguages();
+
+        DevToolsCtrl::installLanguages(self::plugin());
     }
 
 

@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.4.1]
+- Dev tools
+
 ## [1.4.0]
 - Switch to srag/learningprogresspieui library
 
