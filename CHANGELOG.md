@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.4.2]
+- `Ilias7PreWarn`
+
 ## [1.4.1]
 - Dev tools
 

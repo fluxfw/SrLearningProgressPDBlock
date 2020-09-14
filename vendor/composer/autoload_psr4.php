@@ -6,12 +6,12 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'srag\\RemovePluginDataConfirm\\SrLearningProgressPDBlock\\' => array($vendorDir . '/srag/removeplugindataconfirm/src'),
+    'srag\\RemovePluginDataConfirm\\' => array($vendorDir . '/srag/removeplugindataconfirm/src'),
     'srag\\Plugins\\SrLearningProgressPDBlock\\' => array($baseDir . '/src'),
-    'srag\\PieChart\\SrLearningProgressPDBlock\\' => array($vendorDir . '/srag/piechart/src'),
+    'srag\\PieChart\\' => array($vendorDir . '/srag/piechart/src'),
     'srag\\LibrariesNamespaceChanger\\' => array($vendorDir . '/srag/librariesnamespacechanger/src'),
-    'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\' => array($vendorDir . '/srag/learningprogresspieui/src'),
-    'srag\\DIC\\SrLearningProgressPDBlock\\' => array($vendorDir . '/srag/dic/src'),
-    'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\' => array($vendorDir . '/srag/custominputguis/src'),
-    'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\' => array($vendorDir . '/srag/activerecordconfig/src'),
+    'srag\\LearningProgressPieUI\\' => array($vendorDir . '/srag/learningprogresspieui/src'),
+    'srag\\DIC\\' => array($vendorDir . '/srag/dic/src'),
+    'srag\\CustomInputGUIs\\' => array($vendorDir . '/srag/custominputguis/src'),
+    'srag\\ActiveRecordConfig\\' => array($vendorDir . '/srag/activerecordconfig/src'),
 );

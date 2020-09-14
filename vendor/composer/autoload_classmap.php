@@ -83,6 +83,7 @@ return array(
     'srag\\DIC\\SrLearningProgressPDBlock\\Database\\PdoStatementContextHelper' => $vendorDir . '/srag/dic/src/Database/PdoStatementContextHelper.php',
     'srag\\DIC\\SrLearningProgressPDBlock\\DevTools\\DevToolsCtrl' => $vendorDir . '/srag/dic/src/DevTools/class.DevToolsCtrl.php',
     'srag\\DIC\\SrLearningProgressPDBlock\\Exception\\DICException' => $vendorDir . '/srag/dic/src/Exception/DICException.php',
+    'srag\\DIC\\SrLearningProgressPDBlock\\Ilias7PreWarn' => $vendorDir . '/srag/dic/src/Ilias7PreWarn.php',
     'srag\\DIC\\SrLearningProgressPDBlock\\Loader\\AbstractLoaderDetector' => $vendorDir . '/srag/dic/src/Loader/AbstractLoaderDetector.php',
     'srag\\DIC\\SrLearningProgressPDBlock\\Output\\Output' => $vendorDir . '/srag/dic/src/Output/Output.php',
     'srag\\DIC\\SrLearningProgressPDBlock\\Output\\OutputInterface' => $vendorDir . '/srag/dic/src/Output/OutputInterface.php',
