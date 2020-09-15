@@ -14,19 +14,19 @@ class ComposerStaticInit9031e92d4545ae46fb39804e12436631
     public static $prefixLengthsPsr4 = array (
         's' => 
         array (
-            'srag\\RemovePluginDataConfirm\\' => 29,
+            'srag\\RemovePluginDataConfirm\\SrLearningProgressPDBlock\\' => 55,
             'srag\\Plugins\\SrLearningProgressPDBlock\\' => 39,
-            'srag\\PieChart\\' => 14,
+            'srag\\PieChart\\SrLearningProgressPDBlock\\' => 40,
             'srag\\LibrariesNamespaceChanger\\' => 31,
-            'srag\\LearningProgressPieUI\\' => 27,
-            'srag\\DIC\\' => 9,
-            'srag\\CustomInputGUIs\\' => 21,
-            'srag\\ActiveRecordConfig\\' => 24,
+            'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\' => 53,
+            'srag\\DIC\\SrLearningProgressPDBlock\\' => 35,
+            'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\' => 47,
+            'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\' => 50,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'srag\\RemovePluginDataConfirm\\' => 
+        'srag\\RemovePluginDataConfirm\\SrLearningProgressPDBlock\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/removeplugindataconfirm/src',
         ),
@@ -34,7 +34,7 @@ class ComposerStaticInit9031e92d4545ae46fb39804e12436631
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
-        'srag\\PieChart\\' => 
+        'srag\\PieChart\\SrLearningProgressPDBlock\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/piechart/src',
         ),
@@ -42,19 +42,19 @@ class ComposerStaticInit9031e92d4545ae46fb39804e12436631
         array (
             0 => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src',
         ),
-        'srag\\LearningProgressPieUI\\' => 
+        'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/learningprogresspieui/src',
         ),
-        'srag\\DIC\\' => 
+        'srag\\DIC\\SrLearningProgressPDBlock\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/dic/src',
         ),
-        'srag\\CustomInputGUIs\\' => 
+        'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/custominputguis/src',
         ),
-        'srag\\ActiveRecordConfig\\' => 
+        'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/activerecordconfig/src',
         ),
