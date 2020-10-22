@@ -19,8 +19,8 @@ class ComposerStaticInit9031e92d4545ae46fb39804e12436631
             'srag\\PieChart\\SrLearningProgressPDBlock\\' => 40,
             'srag\\LibrariesNamespaceChanger\\' => 31,
             'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\' => 53,
-            'srag\\DIC\\SrLearningProgressPDBlock\\' => 35,
-            'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\' => 47,
+            'srag\\DIC\\' => 9,
+            'srag\\CustomInputGUIs\\' => 21,
             'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\' => 50,
         ),
     );
@@ -46,11 +46,11 @@ class ComposerStaticInit9031e92d4545ae46fb39804e12436631
         array (
             0 => __DIR__ . '/..' . '/srag/learningprogresspieui/src',
         ),
-        'srag\\DIC\\SrLearningProgressPDBlock\\' => 
+        'srag\\DIC\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/dic/src',
         ),
-        'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\' => 
+        'srag\\CustomInputGUIs\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/custominputguis/src',
         ),
@@ -121,7 +121,7 @@ class ComposerStaticInit9031e92d4545ae46fb39804e12436631
         'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\TextInputGUI\\TextInputGUIWithModernAutoComplete' => __DIR__ . '/..' . '/srag/custominputguis/src/TextInputGUI/TextInputGUIWithModernAutoComplete.php',
         'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\UIInputComponentWrapperInputGUI\\UIInputComponentWrapperInputGUI' => __DIR__ . '/..' . '/srag/custominputguis/src/UIInputComponentWrapperInputGUI/UIInputComponentWrapperInputGUI.php',
         'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\UIInputComponentWrapperInputGUI\\UIInputComponentWrapperNameSource' => __DIR__ . '/..' . '/srag/custominputguis/src/UIInputComponentWrapperInputGUI/UIInputComponentWrapperNameSource.php',
-        'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\ViewControlModeUI\\ViewControlModeUI' => __DIR__ . '/..' . '/srag/custominputguis/src/ViewControlModeGUI/ViewControlModeUI.php',
+        'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\ViewControlModeUI\\ViewControlModeUI' => __DIR__ . '/..' . '/srag/custominputguis/src/ViewControlModeUI/ViewControlModeUI.php',
         'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\Waiter\\Waiter' => __DIR__ . '/..' . '/srag/custominputguis/src/Waiter/Waiter.php',
         'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\WeekdayInputGUI\\WeekdayInputGUI' => __DIR__ . '/..' . '/srag/custominputguis/src/WeekdayInputGUI/WeekdayInputGUI.php',
         'srag\\DIC\\SrLearningProgressPDBlock\\DICStatic' => __DIR__ . '/..' . '/srag/dic/src/DICStatic.php',
@@ -156,6 +156,7 @@ class ComposerStaticInit9031e92d4545ae46fb39804e12436631
         'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\ObjIdsLearningProgressPieUI' => __DIR__ . '/..' . '/srag/learningprogresspieui/src/ObjIdsLearningProgressPieUI.php',
         'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\UsrIdsLearningProgressPieUI' => __DIR__ . '/..' . '/srag/learningprogresspieui/src/UsrIdsLearningProgressPieUI.php',
         'srag\\LibrariesNamespaceChanger\\GeneratePluginPhpAndXml' => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src/GeneratePluginPhpAndXml.php',
+        'srag\\LibrariesNamespaceChanger\\GeneratePluginReadme' => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src/GeneratePluginReadme.php',
         'srag\\LibrariesNamespaceChanger\\LibrariesNamespaceChanger' => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src/LibrariesNamespaceChanger.php',
         'srag\\LibrariesNamespaceChanger\\PHP72Backport' => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src/PHP72Backport.php',
         'srag\\LibrariesNamespaceChanger\\PHP7Backport' => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src/PHP7Backport.php',
