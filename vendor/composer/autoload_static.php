@@ -19,8 +19,9 @@ class ComposerStaticInit9031e92d4545ae46fb39804e12436631
             'srag\\PieChart\\SrLearningProgressPDBlock\\' => 40,
             'srag\\LibrariesNamespaceChanger\\' => 31,
             'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\' => 53,
-            'srag\\DIC\\' => 9,
-            'srag\\CustomInputGUIs\\' => 21,
+            'srag\\DevTools\\' => 14,
+            'srag\\DIC\\SrLearningProgressPDBlock\\' => 35,
+            'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\' => 47,
             'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\' => 50,
         ),
     );
@@ -46,11 +47,15 @@ class ComposerStaticInit9031e92d4545ae46fb39804e12436631
         array (
             0 => __DIR__ . '/..' . '/srag/learningprogresspieui/src',
         ),
-        'srag\\DIC\\' => 
+        'srag\\DevTools\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/srag/devtools/src',
+        ),
+        'srag\\DIC\\SrLearningProgressPDBlock\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/dic/src',
         ),
-        'srag\\CustomInputGUIs\\' => 
+        'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/custominputguis/src',
         ),
@@ -149,6 +154,7 @@ class ComposerStaticInit9031e92d4545ae46fb39804e12436631
         'srag\\DIC\\SrLearningProgressPDBlock\\Util\\LibraryLanguageInstaller' => __DIR__ . '/..' . '/srag/dic/src/Util/LibraryLanguageInstaller.php',
         'srag\\DIC\\SrLearningProgressPDBlock\\Version\\Version' => __DIR__ . '/..' . '/srag/dic/src/Version/Version.php',
         'srag\\DIC\\SrLearningProgressPDBlock\\Version\\VersionInterface' => __DIR__ . '/..' . '/srag/dic/src/Version/VersionInterface.php',
+        'srag\\DevTools\\SrLearningProgressPDBlock\\DevToolsCtrl' => __DIR__ . '/..' . '/srag/devtools/src/class.DevToolsCtrl.php',
         'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\AbstractLearningProgressPieUI' => __DIR__ . '/..' . '/srag/learningprogresspieui/src/AbstractLearningProgressPieUI.php',
         'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\CountLearningProgressPieUI' => __DIR__ . '/..' . '/srag/learningprogresspieui/src/CountLearningProgressPieUI.php',
         'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\Factory' => __DIR__ . '/..' . '/srag/learningprogresspieui/src/Factory.php',

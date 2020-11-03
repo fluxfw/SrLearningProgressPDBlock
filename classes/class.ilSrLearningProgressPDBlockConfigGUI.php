@@ -2,7 +2,7 @@
 
 require_once __DIR__ . "/../vendor/autoload.php";
 
-use srag\DIC\SrLearningProgressPDBlock\DevTools\DevToolsCtrl;
+use srag\DevTools\SrLearningProgressPDBlock\DevToolsCtrl;
 use srag\DIC\SrLearningProgressPDBlock\DICTrait;
 use srag\Plugins\SrLearningProgressPDBlock\Config\ConfigCtrl;
 use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
@@ -12,7 +12,7 @@ use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
  *
  * @author            studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  *
- * @ilCtrl_isCalledBy srag\DIC\SrLearningProgressPDBlock\DevTools\DevToolsCtrl: ilSrLearningProgressPDBlockConfigGUI
+ * @ilCtrl_isCalledBy srag\DevTools\SrLearningProgressPDBlock\DevToolsCtrl: ilSrLearningProgressPDBlockConfigGUI
  */
 class ilSrLearningProgressPDBlockConfigGUI extends ilPluginConfigGUI
 {

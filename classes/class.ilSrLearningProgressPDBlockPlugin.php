@@ -4,7 +4,7 @@ require_once __DIR__ . "/../vendor/autoload.php";
 
 use ILIAS\DI\Container;
 use srag\CustomInputGUIs\SrLearningProgressPDBlock\Loader\CustomInputGUIsLoaderDetector;
-use srag\DIC\SrLearningProgressPDBlock\DevTools\DevToolsCtrl;
+use srag\DevTools\SrLearningProgressPDBlock\DevToolsCtrl;
 use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
 use srag\RemovePluginDataConfirm\SrLearningProgressPDBlock\PluginUninstallTrait;
 

@@ -94,6 +94,7 @@ return array(
     'srag\\DIC\\SrLearningProgressPDBlock\\Util\\LibraryLanguageInstaller' => $vendorDir . '/srag/dic/src/Util/LibraryLanguageInstaller.php',
     'srag\\DIC\\SrLearningProgressPDBlock\\Version\\Version' => $vendorDir . '/srag/dic/src/Version/Version.php',
     'srag\\DIC\\SrLearningProgressPDBlock\\Version\\VersionInterface' => $vendorDir . '/srag/dic/src/Version/VersionInterface.php',
+    'srag\\DevTools\\SrLearningProgressPDBlock\\DevToolsCtrl' => $vendorDir . '/srag/devtools/src/class.DevToolsCtrl.php',
     'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\AbstractLearningProgressPieUI' => $vendorDir . '/srag/learningprogresspieui/src/AbstractLearningProgressPieUI.php',
     'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\CountLearningProgressPieUI' => $vendorDir . '/srag/learningprogresspieui/src/CountLearningProgressPieUI.php',
     'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\Factory' => $vendorDir . '/srag/learningprogresspieui/src/Factory.php',
