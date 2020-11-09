@@ -22,7 +22,7 @@ class ComposerStaticInit9031e92d4545ae46fb39804e12436631
             'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\' => 53,
             'srag\\GeneratePluginInfosHelper\\SrLearningProgressPDBlock\\' => 57,
             'srag\\DevTools\\SrLearningProgressPDBlock\\' => 40,
-            'srag\\DIC\\' => 9,
+            'srag\\DIC\\SrLearningProgressPDBlock\\' => 35,
             'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\' => 47,
             'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\' => 50,
         ),
@@ -61,7 +61,7 @@ class ComposerStaticInit9031e92d4545ae46fb39804e12436631
         array (
             0 => __DIR__ . '/..' . '/srag/devtools/src',
         ),
-        'srag\\DIC\\' => 
+        'srag\\DIC\\SrLearningProgressPDBlock\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/dic/src',
         ),
