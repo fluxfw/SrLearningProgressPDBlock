@@ -1,1 +1,0 @@
-# SrLearningProgressPDBlock ILIAS Plugin Documentation
