@@ -1,6 +1,7 @@
 {
   "name": "srag/learningprogresspieui",
   "description": "ILIAS Learning Progress Pie UI",
+  "version": "1.0.3",
   "type": "library",
   "keywords": [
     "ILIAS",

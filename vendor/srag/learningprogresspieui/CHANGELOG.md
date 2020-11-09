@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.0.3]
+- auto_version_tag_ci
+
 ## [1.0.2]
 - Fix pascal to camel case in `LearningProgressPieUITrait`
 - Update srag/piechart to v1.0.3

@@ -17,11 +17,12 @@ class ComposerStaticInit9031e92d4545ae46fb39804e12436631
             'srag\\RemovePluginDataConfirm\\SrLearningProgressPDBlock\\' => 55,
             'srag\\Plugins\\SrLearningProgressPDBlock\\' => 39,
             'srag\\PieChart\\SrLearningProgressPDBlock\\' => 40,
+            'srag\\LibraryLanguageInstaller\\SrLearningProgressPDBlock\\' => 56,
             'srag\\LibrariesNamespaceChanger\\' => 31,
             'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\' => 53,
             'srag\\GeneratePluginInfosHelper\\SrLearningProgressPDBlock\\' => 57,
             'srag\\DevTools\\SrLearningProgressPDBlock\\' => 40,
-            'srag\\DIC\\SrLearningProgressPDBlock\\' => 35,
+            'srag\\DIC\\' => 9,
             'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\' => 47,
             'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\' => 50,
         ),
@@ -40,6 +41,10 @@ class ComposerStaticInit9031e92d4545ae46fb39804e12436631
         array (
             0 => __DIR__ . '/..' . '/srag/piechart/src',
         ),
+        'srag\\LibraryLanguageInstaller\\SrLearningProgressPDBlock\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/srag/librarylanguageinstaller/src',
+        ),
         'srag\\LibrariesNamespaceChanger\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src',
@@ -56,7 +61,7 @@ class ComposerStaticInit9031e92d4545ae46fb39804e12436631
         array (
             0 => __DIR__ . '/..' . '/srag/devtools/src',
         ),
-        'srag\\DIC\\SrLearningProgressPDBlock\\' => 
+        'srag\\DIC\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/dic/src',
         ),
@@ -146,7 +151,6 @@ class ComposerStaticInit9031e92d4545ae46fb39804e12436631
         'srag\\DIC\\SrLearningProgressPDBlock\\Database\\DatabaseInterface' => __DIR__ . '/..' . '/srag/dic/src/Database/DatabaseInterface.php',
         'srag\\DIC\\SrLearningProgressPDBlock\\Database\\PdoContextHelper' => __DIR__ . '/..' . '/srag/dic/src/Database/PdoContextHelper.php',
         'srag\\DIC\\SrLearningProgressPDBlock\\Database\\PdoStatementContextHelper' => __DIR__ . '/..' . '/srag/dic/src/Database/PdoStatementContextHelper.php',
-        'srag\\DIC\\SrLearningProgressPDBlock\\DevTools\\DevToolsCtrl' => __DIR__ . '/..' . '/srag/dic/src/DevTools/class.DevToolsCtrl.php',
         'srag\\DIC\\SrLearningProgressPDBlock\\Exception\\DICException' => __DIR__ . '/..' . '/srag/dic/src/Exception/DICException.php',
         'srag\\DIC\\SrLearningProgressPDBlock\\Ilias7PreWarn' => __DIR__ . '/..' . '/srag/dic/src/Ilias7PreWarn.php',
         'srag\\DIC\\SrLearningProgressPDBlock\\Loader\\AbstractLoaderDetector' => __DIR__ . '/..' . '/srag/dic/src/Loader/AbstractLoaderDetector.php',
@@ -156,26 +160,22 @@ class ComposerStaticInit9031e92d4545ae46fb39804e12436631
         'srag\\DIC\\SrLearningProgressPDBlock\\Plugin\\Plugin' => __DIR__ . '/..' . '/srag/dic/src/Plugin/Plugin.php',
         'srag\\DIC\\SrLearningProgressPDBlock\\Plugin\\PluginInterface' => __DIR__ . '/..' . '/srag/dic/src/Plugin/PluginInterface.php',
         'srag\\DIC\\SrLearningProgressPDBlock\\Plugin\\Pluginable' => __DIR__ . '/..' . '/srag/dic/src/Plugin/Pluginable.php',
-        'srag\\DIC\\SrLearningProgressPDBlock\\Util\\LibraryLanguageInstaller' => __DIR__ . '/..' . '/srag/dic/src/Util/LibraryLanguageInstaller.php',
         'srag\\DIC\\SrLearningProgressPDBlock\\Version\\Version' => __DIR__ . '/..' . '/srag/dic/src/Version/Version.php',
         'srag\\DIC\\SrLearningProgressPDBlock\\Version\\VersionInterface' => __DIR__ . '/..' . '/srag/dic/src/Version/VersionInterface.php',
         'srag\\DevTools\\SrLearningProgressPDBlock\\DevToolsCtrl' => __DIR__ . '/..' . '/srag/devtools/src/class.DevToolsCtrl.php',
         'srag\\GeneratePluginInfosHelper\\SrLearningProgressPDBlock\\GeneratePluginPhpAndXml' => __DIR__ . '/..' . '/srag/generateplugininfoshelper/src/GeneratePluginPhpAndXml.php',
         'srag\\GeneratePluginInfosHelper\\SrLearningProgressPDBlock\\GeneratePluginReadme' => __DIR__ . '/..' . '/srag/generateplugininfoshelper/src/GeneratePluginReadme.php',
-        'srag\\GeneratePluginInfosHelper\\SrLearningProgressPDBlock\\UpdatePluginReadme' => __DIR__ . '/..' . '/srag/generateplugininfoshelper/src/UpdatePluginReadme.php',
         'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\AbstractLearningProgressPieUI' => __DIR__ . '/..' . '/srag/learningprogresspieui/src/AbstractLearningProgressPieUI.php',
         'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\CountLearningProgressPieUI' => __DIR__ . '/..' . '/srag/learningprogresspieui/src/CountLearningProgressPieUI.php',
         'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\Factory' => __DIR__ . '/..' . '/srag/learningprogresspieui/src/Factory.php',
         'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\LearningProgressPieUITrait' => __DIR__ . '/..' . '/srag/learningprogresspieui/src/LearningProgressPieUITrait.php',
         'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\ObjIdsLearningProgressPieUI' => __DIR__ . '/..' . '/srag/learningprogresspieui/src/ObjIdsLearningProgressPieUI.php',
         'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\UsrIdsLearningProgressPieUI' => __DIR__ . '/..' . '/srag/learningprogresspieui/src/UsrIdsLearningProgressPieUI.php',
-        'srag\\LibrariesNamespaceChanger\\GeneratePluginPhpAndXml' => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src/GeneratePluginPhpAndXml.php',
-        'srag\\LibrariesNamespaceChanger\\GeneratePluginReadme' => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src/GeneratePluginReadme.php',
         'srag\\LibrariesNamespaceChanger\\LibrariesNamespaceChanger' => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src/LibrariesNamespaceChanger.php',
         'srag\\LibrariesNamespaceChanger\\PHP72Backport' => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src/PHP72Backport.php',
         'srag\\LibrariesNamespaceChanger\\PHP7Backport' => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src/PHP7Backport.php',
         'srag\\LibrariesNamespaceChanger\\RemovePHP72Backport' => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src/RemovePHP72Backport.php',
-        'srag\\LibrariesNamespaceChanger\\UpdatePluginReadme' => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src/UpdatePluginReadme.php',
+        'srag\\LibraryLanguageInstaller\\SrLearningProgressPDBlock\\LibraryLanguageInstaller' => __DIR__ . '/..' . '/srag/librarylanguageinstaller/src/LibraryLanguageInstaller.php',
         'srag\\PieChart\\SrLearningProgressPDBlock\\Component\\Factory' => __DIR__ . '/..' . '/srag/piechart/src/Component/Factory.php',
         'srag\\PieChart\\SrLearningProgressPDBlock\\Component\\LegendEntry' => __DIR__ . '/..' . '/srag/piechart/src/Component/LegendEntry.php',
         'srag\\PieChart\\SrLearningProgressPDBlock\\Component\\PieChart' => __DIR__ . '/..' . '/srag/piechart/src/Component/PieChart.php',

@@ -9,7 +9,7 @@ use ilPluginConfigGUI;
 use ilUtil;
 use srag\DIC\SrLearningProgressPDBlock\DICTrait;
 use srag\DIC\SrLearningProgressPDBlock\Plugin\PluginInterface;
-use srag\DIC\SrLearningProgressPDBlock\Util\LibraryLanguageInstaller;
+use srag\LibraryLanguageInstaller\SrLearningProgressPDBlock\LibraryLanguageInstaller;
 
 /**
  * Class DevToolsCtrl

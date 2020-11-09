@@ -4,7 +4,7 @@ namespace srag\RemovePluginDataConfirm\SrLearningProgressPDBlock;
 
 use ilUIPluginRouterGUI;
 use srag\DIC\SrLearningProgressPDBlock\DICTrait;
-use srag\DIC\SrLearningProgressPDBlock\Util\LibraryLanguageInstaller;
+use srag\LibraryLanguageInstaller\SrLearningProgressPDBlock\LibraryLanguageInstaller;
 
 /**
  * Trait BasePluginUninstallTrait
