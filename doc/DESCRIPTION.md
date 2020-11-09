@@ -1,5 +1,3 @@
-# SrLearningProgressPDBlock ILIAS Plugin Description
-
 Display learn progress as a pie diagramm on personal desktop and in courses
 
 Config:
