@@ -1,6 +1,6 @@
 <?php
 
-namespace srag\CustomInputGUIs\SrLearningProgressPDBlock\CheckboxInputGUI;
+namespace srag\CustomInputGUIs\SrLearningProgressPDBlock\AjaxCheckbox;
 
 use srag\CustomInputGUIs\SrLearningProgressPDBlock\Template\Template;
 use srag\CustomInputGUIs\SrLearningProgressPDBlock\Waiter\Waiter;
@@ -9,7 +9,7 @@ use srag\DIC\SrLearningProgressPDBlock\DICTrait;
 /**
  * Class AjaxCheckbox
  *
- * @package srag\CustomInputGUIs\SrLearningProgressPDBlock\CheckboxInputGUI
+ * @package srag\CustomInputGUIs\SrLearningProgressPDBlock\AjaxCheckbox
  *
  * @author  studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  */

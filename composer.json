@@ -1,5 +1,5 @@
 {
-  "name": "srag/plugins/srlearningprogresspdblock",
+  "name": "srag/srlearningprogresspdblock",
   "description": "",
   "version": "1.4.2",
   "extra": {
@@ -46,7 +46,8 @@
       "srag\\Plugins\\SrLearningProgressPDBlock\\": "src/"
     },
     "classmap": [
-      "classes/"
+      "classes/",
+      "src/Config/class.ConfigCtrl.php"
     ],
     "files": [
       "vendor/srag/dic/src/PHPVersionChecker.php",

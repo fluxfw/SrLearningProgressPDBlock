@@ -7,8 +7,8 @@ namespace Composer\Autoload;
 class ComposerStaticInit9031e92d4545ae46fb39804e12436631
 {
     public static $files = array (
-        '779af04fe207fae4e42db6e047455008' => __DIR__ . '/..' . '/srag/dic/src/PHPVersionChecker.php',
-        'b2c133ea484d00cd5987cdf51795d550' => __DIR__ . '/..' . '/srag/dic/src/Ilias7PreWarn.php',
+        '21a34135c18522dae327df9032e76c7b' => __DIR__ . '/..' . '/srag/dic/src/PHPVersionChecker.php',
+        '06447ac90c55b1d9912b5fd01183ae73' => __DIR__ . '/..' . '/srag/dic/src/Ilias7PreWarn.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -90,7 +90,7 @@ class ComposerStaticInit9031e92d4545ae46fb39804e12436631
         'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\Config\\AbstractRepository' => __DIR__ . '/..' . '/srag/activerecordconfig/src/Config/AbstractRepository.php',
         'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\Config\\Config' => __DIR__ . '/..' . '/srag/activerecordconfig/src/Config/Config.php',
         'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\Exception\\ActiveRecordConfigException' => __DIR__ . '/..' . '/srag/activerecordconfig/src/Exception/ActiveRecordConfigException.php',
-        'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\CheckboxInputGUI\\AjaxCheckbox' => __DIR__ . '/..' . '/srag/custominputguis/src/AjaxCheckbox/AjaxCheckbox.php',
+        'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\AjaxCheckbox\\AjaxCheckbox' => __DIR__ . '/..' . '/srag/custominputguis/src/AjaxCheckbox/AjaxCheckbox.php',
         'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\CheckboxInputGUI\\CheckboxInputGUI' => __DIR__ . '/..' . '/srag/custominputguis/src/CheckboxInputGUI/CheckboxInputGUI.php',
         'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\ColorPickerInputGUI\\ColorPickerInputGUI' => __DIR__ . '/..' . '/srag/custominputguis/src/ColorPickerInputGUI/ColorPickerInputGUI.php',
         'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\CustomInputGUIs' => __DIR__ . '/..' . '/srag/custominputguis/src/CustomInputGUIs.php',

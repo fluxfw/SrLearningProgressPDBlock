@@ -8,6 +8,11 @@ This is an OpenSource project by studer + raimann ag, CH-Burgdorf (https://stude
 
 This project is licensed under the GPL-3.0-only license
 
+## Requirements
+
+* ILIAS 5.4.0 - 6.999
+* PHP >=7.0
+
 ## Installation
 
 Start at your ILIAS root directory
@@ -32,11 +37,6 @@ Dashboard:
 
 Course:
 ![Course](./doc/images/course.png)
-
-## Requirements
-
-* ILIAS 5.4.0 - 6.999
-* PHP >=7.0
 
 ## Adjustment suggestions
 

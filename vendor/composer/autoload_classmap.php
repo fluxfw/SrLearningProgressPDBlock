@@ -20,7 +20,7 @@ return array(
     'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\Config\\AbstractRepository' => $vendorDir . '/srag/activerecordconfig/src/Config/AbstractRepository.php',
     'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\Config\\Config' => $vendorDir . '/srag/activerecordconfig/src/Config/Config.php',
     'srag\\ActiveRecordConfig\\SrLearningProgressPDBlock\\Exception\\ActiveRecordConfigException' => $vendorDir . '/srag/activerecordconfig/src/Exception/ActiveRecordConfigException.php',
-    'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\CheckboxInputGUI\\AjaxCheckbox' => $vendorDir . '/srag/custominputguis/src/AjaxCheckbox/AjaxCheckbox.php',
+    'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\AjaxCheckbox\\AjaxCheckbox' => $vendorDir . '/srag/custominputguis/src/AjaxCheckbox/AjaxCheckbox.php',
     'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\CheckboxInputGUI\\CheckboxInputGUI' => $vendorDir . '/srag/custominputguis/src/CheckboxInputGUI/CheckboxInputGUI.php',
     'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\ColorPickerInputGUI\\ColorPickerInputGUI' => $vendorDir . '/srag/custominputguis/src/ColorPickerInputGUI/ColorPickerInputGUI.php',
     'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\CustomInputGUIs' => $vendorDir . '/srag/custominputguis/src/CustomInputGUIs.php',
