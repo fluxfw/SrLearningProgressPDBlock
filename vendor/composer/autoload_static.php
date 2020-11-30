@@ -139,6 +139,7 @@ class ComposerStaticInit9031e92d4545ae46fb39804e12436631
         'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\ViewControlModeUI\\ViewControlModeUI' => __DIR__ . '/..' . '/srag/custominputguis/src/ViewControlModeUI/ViewControlModeUI.php',
         'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\Waiter\\Waiter' => __DIR__ . '/..' . '/srag/custominputguis/src/Waiter/Waiter.php',
         'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\WeekdayInputGUI\\WeekdayInputGUI' => __DIR__ . '/..' . '/srag/custominputguis/src/WeekdayInputGUI/WeekdayInputGUI.php',
+        'srag\\DIC\\SrLearningProgressPDBlock\\Cron\\FixUITemplateInCronContext' => __DIR__ . '/..' . '/srag/dic/src/Cron/FixUITemplateInCronContext.php',
         'srag\\DIC\\SrLearningProgressPDBlock\\DICStatic' => __DIR__ . '/..' . '/srag/dic/src/DICStatic.php',
         'srag\\DIC\\SrLearningProgressPDBlock\\DICStaticInterface' => __DIR__ . '/..' . '/srag/dic/src/DICStaticInterface.php',
         'srag\\DIC\\SrLearningProgressPDBlock\\DICTrait' => __DIR__ . '/..' . '/srag/dic/src/DICTrait.php',
