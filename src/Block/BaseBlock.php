@@ -58,7 +58,7 @@ abstract class BaseBlock extends ilBlockGUI
 
 
     /**
-     * @return string
+     * @inheritDoc
      */
     public function getHTML() : string
     {
