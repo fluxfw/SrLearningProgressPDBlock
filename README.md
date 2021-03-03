@@ -20,7 +20,7 @@ Start at your ILIAS root directory
 ```bash
 mkdir -p Customizing/global/plugins/Services/UIComponent/UserInterfaceHook
 cd Customizing/global/plugins/Services/UIComponent/UserInterfaceHook
-git clone https://github.com/studer-raimann/SrLearningProgressPDBlock.git SrLearningProgressPDBlock
+git clone https://github.com/fluxfw/SrLearningProgressPDBlock.git SrLearningProgressPDBlock
 ```
 
 Update, activate and config the plugin in the ILIAS Plugin Administration
