@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.4.3]
+- Update project url
+
 ## [1.4.2]
 - `Ilias7PreWarn`
 
