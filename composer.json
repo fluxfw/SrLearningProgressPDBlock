@@ -1,20 +1,27 @@
 {
-  "name": "srag/plugins/srlearningprogresspdblock",
-  "description": "",
-  "version": "1.4.2",
-  "ilias_plugin": {
-    "id": "srlppd",
-    "name": "SrLearningProgressPDBlock",
-    "ilias_min_version": "5.4.0",
-    "ilias_max_version": "6.999",
-    "slot": "Services/UIComponent/UserInterfaceHook"
+  "name": "srag/srlearningprogresspdblock",
+  "description": "Add learning process of coursed to dashboard",
+  "version": "1.4.3",
+  "extra": {
+    "ilias_plugin": {
+      "id": "srlppd",
+      "name": "SrLearningProgressPDBlock",
+      "ilias_min_version": "5.4.0",
+      "ilias_max_version": "6.999",
+      "slot": "Services/UIComponent/UserInterfaceHook",
+      "supports_cli_setup": true
+    },
+    "generate_plugin_readme_template": "SRAG_ILIAS_PLUGIN",
+    "long_description_template": "src/LONG_DESCRIPTION.md"
   },
   "type": "project",
   "keywords": [
-    "ILIAS",
-    "Plugin"
+    "ilias",
+    "interface",
+    "plugin",
+    "user"
   ],
-  "homepage": "https://github.com/studer-raimann/SrLearningProgressPDBlock",
+  "homepage": "https://github.com/fluxfw/SrLearningProgressPDBlock",
   "license": "GPL-3.0-only",
   "authors": [
     {
@@ -31,7 +38,9 @@
     "php": ">=7.0",
     "srag/activerecordconfig": ">=0.1.0",
     "srag/custominputguis": ">=0.1.0",
+    "srag/devtools": ">=0.1.0",
     "srag/dic": ">=0.1.0",
+    "srag/generateplugininfoshelper": ">=0.1.0",
     "srag/learningprogresspieui": ">=1.0.0",
     "srag/librariesnamespacechanger": ">=0.1.0",
     "srag/removeplugindataconfirm": ">=0.1.0"
@@ -41,11 +50,11 @@
       "srag\\Plugins\\SrLearningProgressPDBlock\\": "src/"
     },
     "classmap": [
-      "classes/"
+      "classes/",
+      "src/Config/class.ConfigCtrl.php"
     ],
     "files": [
-      "vendor/srag/dic/src/PHPVersionChecker.php",
-      "vendor/srag/dic/src/Ilias7PreWarn.php"
+      "vendor/srag/dic/src/PHPVersionChecker.php"
     ]
   },
   "config": {
@@ -57,8 +66,8 @@
     "pre-autoload-dump": [
       "srag\\LibrariesNamespaceChanger\\LibrariesNamespaceChanger::rewriteLibrariesNamespaces",
       "srag\\LibrariesNamespaceChanger\\PHP72Backport::PHP72Backport",
-      "srag\\LibrariesNamespaceChanger\\GeneratePluginPhpAndXml::generatePluginPhpAndXml",
-      "srag\\LibrariesNamespaceChanger\\UpdatePluginReadme::updatePluginReadme"
+      "srag\\GeneratePluginInfosHelper\\SrLearningProgressPDBlock\\GeneratePluginPhpAndXml::generatePluginPhpAndXml",
+      "srag\\GeneratePluginInfosHelper\\SrLearningProgressPDBlock\\GeneratePluginReadme::generatePluginReadme"
     ]
   }
 }

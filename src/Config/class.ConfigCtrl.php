@@ -2,6 +2,8 @@
 
 namespace srag\Plugins\SrLearningProgressPDBlock\Config;
 
+require_once __DIR__ . "/../../vendor/autoload.php";
+
 use ilSrLearningProgressPDBlockPlugin;
 use ilUtil;
 use srag\DIC\SrLearningProgressPDBlock\DICTrait;

@@ -1,6 +1,6 @@
 <?php
 
-namespace srag\DIC\SrLearningProgressPDBlock\Util;
+namespace srag\LibraryLanguageInstaller\SrLearningProgressPDBlock;
 
 use ilDBConstants;
 use ilGlobalCache;
@@ -12,7 +12,7 @@ use srag\DIC\SrLearningProgressPDBlock\Plugin\PluginInterface;
 /**
  * Class LibraryLanguageInstaller
  *
- * @package srag\DIC\SrLearningProgressPDBlock\Util
+ * @package srag\LibraryLanguageInstaller\SrLearningProgressPDBlock
  *
  * @author  studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  */

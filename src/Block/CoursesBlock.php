@@ -70,7 +70,7 @@ class CoursesBlock extends BaseBlock
         if (method_exists($c, "getPossibleItems")) { // Abstraction?!
             $this->obj_ids = array_map(function (int $ref_id) : int {
                 return intval(self::dic()->objDataCache()->lookupObjId($ref_id));
-            }, array_filter($c->getPossibleItems($this->course_ref_id), function (int $ref_id) use ($c): bool {
+            }, array_filter($c->getPossibleItems($this->course_ref_id), function (int $ref_id) use ($c) : bool {
                 return $c->isAssignedEntry($ref_id);
             }));
         }
