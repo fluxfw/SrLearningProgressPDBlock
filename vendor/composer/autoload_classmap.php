@@ -95,6 +95,7 @@ return array(
     'srag\\DevTools\\SrLearningProgressPDBlock\\DevToolsCtrl' => $vendorDir . '/srag/devtools/src/class.DevToolsCtrl.php',
     'srag\\GeneratePluginInfosHelper\\SrLearningProgressPDBlock\\GeneratePluginPhpAndXml' => $vendorDir . '/srag/generateplugininfoshelper/src/GeneratePluginPhpAndXml.php',
     'srag\\GeneratePluginInfosHelper\\SrLearningProgressPDBlock\\GeneratePluginReadme' => $vendorDir . '/srag/generateplugininfoshelper/src/GeneratePluginReadme.php',
+    'srag\\GeneratePluginInfosHelper\\SrLearningProgressPDBlock\\UpdateVersion' => $vendorDir . '/srag/generateplugininfoshelper/src/UpdateVersion.php',
     'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\AbstractLearningProgressPieUI' => $vendorDir . '/srag/learningprogresspieui/src/AbstractLearningProgressPieUI.php',
     'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\CountLearningProgressPieUI' => $vendorDir . '/srag/learningprogresspieui/src/CountLearningProgressPieUI.php',
     'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\Factory' => $vendorDir . '/srag/learningprogresspieui/src/Factory.php',
