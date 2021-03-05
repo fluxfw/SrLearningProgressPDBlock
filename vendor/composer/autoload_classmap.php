@@ -90,6 +90,7 @@ return array(
     'srag\\DIC\\SrLearningProgressPDBlock\\Plugin\\Plugin' => $vendorDir . '/srag/dic/src/Plugin/Plugin.php',
     'srag\\DIC\\SrLearningProgressPDBlock\\Plugin\\PluginInterface' => $vendorDir . '/srag/dic/src/Plugin/PluginInterface.php',
     'srag\\DIC\\SrLearningProgressPDBlock\\Plugin\\Pluginable' => $vendorDir . '/srag/dic/src/Plugin/Pluginable.php',
+    'srag\\DIC\\SrLearningProgressPDBlock\\Version\\PluginVersionParameter' => $vendorDir . '/srag/dic/src/Version/PluginVersionParameter.php',
     'srag\\DIC\\SrLearningProgressPDBlock\\Version\\Version' => $vendorDir . '/srag/dic/src/Version/Version.php',
     'srag\\DIC\\SrLearningProgressPDBlock\\Version\\VersionInterface' => $vendorDir . '/srag/dic/src/Version/VersionInterface.php',
     'srag\\DevTools\\SrLearningProgressPDBlock\\DevToolsCtrl' => $vendorDir . '/srag/devtools/src/class.DevToolsCtrl.php',
