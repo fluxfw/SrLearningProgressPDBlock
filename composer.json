@@ -1,7 +1,7 @@
 {
   "name": "srag/srlearningprogresspdblock",
   "description": "Add learning process of coursed to dashboard",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "extra": {
     "ilias_plugin": {
       "id": "srlppd",
@@ -21,13 +21,13 @@
     "plugin",
     "user"
   ],
-  "homepage": "https://github.com/fluxfw/SrLearningProgressPDBlock",
+  "homepage": "https://github.com/fluxapps/SrLearningProgressPDBlock",
   "license": "GPL-3.0-only",
   "authors": [
     {
-      "name": "studer + raimann ag - Team Custom 1",
-      "email": "support-custom1@studer-raimann.ch",
-      "homepage": "https://studer-raimann.ch",
+      "name": "fluxlabs",
+      "email": "support@fluxlabs.ch",
+      "homepage": "https://fluxlabs.ch",
       "role": "Developer"
     }
   ],

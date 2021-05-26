@@ -8,8 +8,6 @@ use srag\Plugins\SrLearningProgressPDBlock\Config\Form\FormBuilder;
  * Class DashboardBlock
  *
  * @package srag\Plugins\SrLearningProgressPDBlock\Block
- *
- * @author  studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  */
 class DashboardBlock extends BaseBlock
 {

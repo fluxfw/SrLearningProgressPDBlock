@@ -19,8 +19,6 @@ use srag\LibraryLanguageInstaller\SrLearningProgressPDBlock\LibraryLanguageInsta
  * Class DevToolsCtrl
  *
  * @package srag\DevTools\SrLearningProgressPDBlock
- *
- * @author  studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  */
 class DevToolsCtrl
 {
