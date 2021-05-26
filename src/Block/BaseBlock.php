@@ -12,8 +12,6 @@ use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
  * Class BaseBlock
  *
  * @package srag\Plugins\SrLearningProgressPDBlock\Block
- *
- * @author  studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  */
 abstract class BaseBlock extends ilBlockGUI
 {

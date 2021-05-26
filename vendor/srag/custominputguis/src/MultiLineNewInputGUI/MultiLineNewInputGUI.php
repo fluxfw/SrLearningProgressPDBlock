@@ -17,8 +17,6 @@ use srag\DIC\SrLearningProgressPDBlock\Version\PluginVersionParameter;
  * Class MultiLineNewInputGUI
  *
  * @package srag\CustomInputGUIs\SrLearningProgressPDBlock\MultiLineNewInputGUI
- *
- * @author  studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  */
 class MultiLineNewInputGUI extends ilFormPropertyGUI implements ilTableFilterItem, ilToolbarItem
 {

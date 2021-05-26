@@ -13,8 +13,6 @@ use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
  * Class LearningProgress
  *
  * @package srag\Plugins\SrLearningProgressPDBlock\Access
- *
- * @author  studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  */
 class LearningProgress
 {

@@ -11,8 +11,6 @@ use srag\Plugins\SrLearningProgressPDBlock\Utils\SrLearningProgressPDBlockTrait;
  * Class Access
  *
  * @package srag\Plugins\SrLearningProgressPDBlock\Access
- *
- * @author  studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  */
 final class Access
 {
