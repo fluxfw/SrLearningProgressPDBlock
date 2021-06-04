@@ -1,7 +1,7 @@
 {
   "name": "srag/srlearningprogresspdblock",
   "description": "Add learning process of coursed to dashboard",
-  "version": "1.4.6",
+  "version": "1.4.7",
   "extra": {
     "ilias_plugin": {
       "id": "srlppd",
