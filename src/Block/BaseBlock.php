@@ -114,9 +114,7 @@ abstract class BaseBlock extends ilBlockGUI
 
         $this->initObjIds();
 
-        if (self::version()->is6()) {
-            $this->new_rendering = true;
-        }
+        $this->new_rendering = true;
     }
 
 

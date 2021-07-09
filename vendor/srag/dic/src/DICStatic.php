@@ -5,7 +5,6 @@ namespace srag\DIC\SrLearningProgressPDBlock;
 use ilLogLevel;
 use ilPlugin;
 use srag\DIC\SrLearningProgressPDBlock\DIC\DICInterface;
-use srag\DIC\SrLearningProgressPDBlock\DIC\Implementation\ILIAS54DIC;
 use srag\DIC\SrLearningProgressPDBlock\DIC\Implementation\ILIAS60DIC;
 use srag\DIC\SrLearningProgressPDBlock\Exception\DICException;
 use srag\DIC\SrLearningProgressPDBlock\Output\Output;
@@ -71,13 +70,8 @@ final class DICStatic implements DICStaticInterface
     {
         if (self::$dic === null) {
             switch (true) {
-                case (self::version()->isLower(VersionInterface::ILIAS_VERSION_5_4)):
-                    throw new DICException("DIC not supports ILIAS " . self::version()->getILIASVersion() . " anymore!");
-                    break;
-
                 case (self::version()->isLower(VersionInterface::ILIAS_VERSION_6)):
-                    global $DIC;
-                    self::$dic = new ILIAS54DIC($DIC);
+                    throw new DICException("DIC not supports ILIAS " . self::version()->getILIASVersion() . " anymore!");
                     break;
 
                 default:
