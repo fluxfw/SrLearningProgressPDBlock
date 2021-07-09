@@ -40,7 +40,7 @@ abstract class BaseBlock extends ilBlockGUI
     /**
      * @inheritDoc
      */
-    public function fillDataSection()/*: void*/
+    public function fillDataSection() : void
     {
         $this->setDataSection($this->getPie());
     }
@@ -108,7 +108,7 @@ abstract class BaseBlock extends ilBlockGUI
     /**
      *
      */
-    protected function initBlock()/*: void*/
+    protected function initBlock() : void
     {
         $this->initTitle();
 
@@ -121,13 +121,13 @@ abstract class BaseBlock extends ilBlockGUI
     /**
      *
      */
-    protected abstract function initObjIds()/*: void*/ ;
+    protected abstract function initObjIds() : void;
 
 
     /**
      *
      */
-    protected abstract function initTitle()/*: void*/ ;
+    protected abstract function initTitle() : void;
 
 
     /**
