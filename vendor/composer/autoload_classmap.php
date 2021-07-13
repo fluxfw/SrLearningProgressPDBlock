@@ -71,6 +71,7 @@ return array(
     'srag\\DIC\\SrLearningProgressPDBlock\\DIC\\AbstractDIC' => $vendorDir . '/srag/dic/src/DIC/AbstractDIC.php',
     'srag\\DIC\\SrLearningProgressPDBlock\\DIC\\DICInterface' => $vendorDir . '/srag/dic/src/DIC/DICInterface.php',
     'srag\\DIC\\SrLearningProgressPDBlock\\DIC\\Implementation\\ILIAS60DIC' => $vendorDir . '/srag/dic/src/DIC/Implementation/ILIAS60DIC.php',
+    'srag\\DIC\\SrLearningProgressPDBlock\\DIC\\Implementation\\ILIAS70DIC' => $vendorDir . '/srag/dic/src/DIC/Implementation/ILIAS70DIC.php',
     'srag\\DIC\\SrLearningProgressPDBlock\\Database\\AbstractILIASDatabaseDetector' => $vendorDir . '/srag/dic/src/Database/AbstractILIASDatabaseDetector.php',
     'srag\\DIC\\SrLearningProgressPDBlock\\Database\\DatabaseDetector' => $vendorDir . '/srag/dic/src/Database/DatabaseDetector.php',
     'srag\\DIC\\SrLearningProgressPDBlock\\Database\\DatabaseInterface' => $vendorDir . '/srag/dic/src/Database/DatabaseInterface.php',
