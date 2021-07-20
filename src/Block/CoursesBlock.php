@@ -54,7 +54,7 @@ class CoursesBlock extends BaseBlock
     /**
      * @inheritDoc
      */
-    protected function initObjIds()/*: void*/
+    protected function initObjIds() : void
     {
         /**
          * @var ilObjectLP $lp
@@ -78,7 +78,7 @@ class CoursesBlock extends BaseBlock
     /**
      * @inheritDoc
      */
-    protected function initTitle()/*: void*/
+    protected function initTitle() : void
     {
         $this->setTitle(self::plugin()->translate("learning_progress", self::LANG_MODULE));
     }
@@ -87,7 +87,7 @@ class CoursesBlock extends BaseBlock
     /**
      * @return int|null
      */
-    private function filterRefId()/*: ?int*/
+    private function filterRefId() : ?int
     {
         $obj_ref_id = filter_input(INPUT_GET, self::GET_PARAM_REF_ID);
 

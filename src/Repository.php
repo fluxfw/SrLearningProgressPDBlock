@@ -80,7 +80,7 @@ final class Repository
     /**
      *
      */
-    public function dropTables()/*:void*/
+    public function dropTables() : void
     {
         $this->blocks()->dropTables();
         $this->config()->dropTables();
@@ -99,7 +99,7 @@ final class Repository
     /**
      *
      */
-    public function installTables()/*:void*/
+    public function installTables() : void
     {
         $this->blocks()->installTables();
         $this->config()->installTables();

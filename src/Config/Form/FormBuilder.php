@@ -86,7 +86,7 @@ class FormBuilder extends AbstractFormBuilder
     /**
      * @inheritDoc
      */
-    protected function storeData(array $data)/* : void*/
+    protected function storeData(array $data) : void
     {
         self::srLearningProgressPDBlock()->config()->setValue(self::KEY_SHOW_ON_DASHBOARD, boolval($data[self::KEY_SHOW_ON_DASHBOARD]));
         self::srLearningProgressPDBlock()->config()->setValue(self::KEY_SHOW_ON_COURSES, boolval($data[self::KEY_SHOW_ON_COURSES]));

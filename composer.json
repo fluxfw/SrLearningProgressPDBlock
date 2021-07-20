@@ -1,18 +1,15 @@
 {
   "name": "srag/srlearningprogresspdblock",
   "description": "Add learning process of coursed to dashboard",
-  "version": "1.4.7",
+  "version": "1.5.0",
   "extra": {
     "ilias_plugin": {
       "id": "srlppd",
       "name": "SrLearningProgressPDBlock",
-      "ilias_min_version": "5.4.0",
-      "ilias_max_version": "6.999",
-      "slot": "Services/UIComponent/UserInterfaceHook",
-      "supports_cli_setup": true
-    },
-    "generate_plugin_readme_template": "ILIAS_PLUGIN",
-    "long_description_template": "src/LONG_DESCRIPTION.md"
+      "ilias_min_version": "6.0",
+      "ilias_max_version": "7.999",
+      "slot": "Services/UIComponent/UserInterfaceHook"
+    }
   },
   "type": "project",
   "keywords": [
@@ -32,7 +29,7 @@
     }
   ],
   "require": {
-    "php": ">=7.0",
+    "php": ">=7.2",
     "srag/activerecordconfig": ">=0.1.0",
     "srag/custominputguis": ">=0.1.0",
     "srag/devtools": ">=0.1.0",
@@ -62,9 +59,7 @@
   "scripts": {
     "pre-autoload-dump": [
       "srag\\LibrariesNamespaceChanger\\LibrariesNamespaceChanger::rewriteLibrariesNamespaces",
-      "srag\\LibrariesNamespaceChanger\\PHP72Backport::PHP72Backport",
-      "srag\\GeneratePluginInfosHelper\\SrLearningProgressPDBlock\\GeneratePluginPhpAndXml::generatePluginPhpAndXml",
-      "srag\\GeneratePluginInfosHelper\\SrLearningProgressPDBlock\\GeneratePluginReadme::generatePluginReadme"
+      "srag\\GeneratePluginInfosHelper\\SrLearningProgressPDBlock\\GeneratePluginPhpAndXml::generatePluginPhpAndXml"
     ],
     "update-version": [
       "srag\\GeneratePluginInfosHelper\\SrLearningProgressPDBlock\\UpdateVersion::updateVersion"

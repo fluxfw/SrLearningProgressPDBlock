@@ -24,7 +24,7 @@ class DashboardBlock extends BaseBlock
     /**
      * @inheritDoc
      */
-    protected function initObjIds()/*: void*/
+    protected function initObjIds() : void
     {
         $this->obj_ids = self::srLearningProgressPDBlock()->ilias()->courses()->getCoursesOfUser(self::dic()->user());
     }
@@ -33,7 +33,7 @@ class DashboardBlock extends BaseBlock
     /**
      * @inheritDoc
      */
-    protected function initTitle()/*: void*/
+    protected function initTitle() : void
     {
         $this->setTitle(self::plugin()->translate("learning_progress", self::LANG_MODULE) . " " . self::plugin()->translate("my_courses", self::LANG_MODULE));
     }
