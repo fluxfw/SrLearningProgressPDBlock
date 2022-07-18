@@ -19,7 +19,6 @@ class ComposerStaticInit9031e92d4545ae46fb39804e12436631
             'srag\\LibraryLanguageInstaller\\SrLearningProgressPDBlock\\' => 56,
             'srag\\LibrariesNamespaceChanger\\' => 31,
             'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\' => 53,
-            'srag\\GeneratePluginInfosHelper\\SrLearningProgressPDBlock\\' => 57,
             'srag\\DevTools\\SrLearningProgressPDBlock\\' => 40,
             'srag\\DIC\\SrLearningProgressPDBlock\\' => 35,
             'srag\\CustomInputGUIs\\SrLearningProgressPDBlock\\' => 47,
@@ -51,10 +50,6 @@ class ComposerStaticInit9031e92d4545ae46fb39804e12436631
         'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/learningprogresspieui/src',
-        ),
-        'srag\\GeneratePluginInfosHelper\\SrLearningProgressPDBlock\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/srag/generateplugininfoshelper/src',
         ),
         'srag\\DevTools\\SrLearningProgressPDBlock\\' => 
         array (
@@ -148,9 +143,6 @@ class ComposerStaticInit9031e92d4545ae46fb39804e12436631
         'srag\\DIC\\SrLearningProgressPDBlock\\Version\\Version' => __DIR__ . '/..' . '/srag/dic/src/Version/Version.php',
         'srag\\DIC\\SrLearningProgressPDBlock\\Version\\VersionInterface' => __DIR__ . '/..' . '/srag/dic/src/Version/VersionInterface.php',
         'srag\\DevTools\\SrLearningProgressPDBlock\\DevToolsCtrl' => __DIR__ . '/..' . '/srag/devtools/src/class.DevToolsCtrl.php',
-        'srag\\GeneratePluginInfosHelper\\SrLearningProgressPDBlock\\GeneratePluginPhpAndXml' => __DIR__ . '/..' . '/srag/generateplugininfoshelper/src/GeneratePluginPhpAndXml.php',
-        'srag\\GeneratePluginInfosHelper\\SrLearningProgressPDBlock\\GeneratePluginReadme' => __DIR__ . '/..' . '/srag/generateplugininfoshelper/src/GeneratePluginReadme.php',
-        'srag\\GeneratePluginInfosHelper\\SrLearningProgressPDBlock\\UpdateVersion' => __DIR__ . '/..' . '/srag/generateplugininfoshelper/src/UpdateVersion.php',
         'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\AbstractLearningProgressPieUI' => __DIR__ . '/..' . '/srag/learningprogresspieui/src/AbstractLearningProgressPieUI.php',
         'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\CountLearningProgressPieUI' => __DIR__ . '/..' . '/srag/learningprogresspieui/src/CountLearningProgressPieUI.php',
         'srag\\LearningProgressPieUI\\SrLearningProgressPDBlock\\Factory' => __DIR__ . '/..' . '/srag/learningprogresspieui/src/Factory.php',
